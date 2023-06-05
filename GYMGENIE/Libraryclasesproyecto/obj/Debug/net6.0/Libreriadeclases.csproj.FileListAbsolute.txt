@@ -1,0 +1,12 @@
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\bin\Debug\net6.0\Libreriadeclases.deps.json
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\bin\Debug\net6.0\Libreriadeclases.dll
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\bin\Debug\net6.0\Libreriadeclases.pdb
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\Libreriadeclases.csproj.AssemblyReference.cache
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\Libreriadeclases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\Libreriadeclases.AssemblyInfoInputs.cache
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\Libreriadeclases.AssemblyInfo.cs
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\Libreriadeclases.csproj.CoreCompileInputs.cache
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\Libreriadeclases.dll
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\refint\Libreriadeclases.dll
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\Libreriadeclases.pdb
+C:\Users\Joaquin\source\repos\GYMGENIE\Libraryclasesproyecto\obj\Debug\net6.0\ref\Libreriadeclases.dll
