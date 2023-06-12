@@ -1,2 +1,0 @@
-C:\Users\Joaquin\source\repos\GYMGENIE\Libreria de clases\obj\Debug\Libreria de clases.csproj.AssemblyReference.cache
-C:\Users\Joaquin\source\repos\GYMGENIE\Libreria de clases\obj\Debug\Libreria de clases.csproj.CoreCompileInputs.cache
