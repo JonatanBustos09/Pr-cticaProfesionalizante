@@ -1,0 +1,14 @@
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Debug\net6.0\Sistema GYM Genie.deps.json
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Debug\net6.0\Sistema GYM Genie.runtimeconfig.json
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Debug\net6.0\Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Debug\net6.0\Sistema GYM Genie.pdb
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.csproj.AssemblyReference.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.AssemblyInfoInputs.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.AssemblyInfo.cs
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.csproj.CoreCompileInputs.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\refint\Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.pdb
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\Sistema GYM Genie.genruntimeconfig.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Debug\net6.0\ref\Sistema GYM Genie.dll

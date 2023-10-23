@@ -1,0 +1,28 @@
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.deps.json
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.runtimeconfig.json
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.csproj.AssemblyReference.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.AssemblyInfoInputs.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.AssemblyInfo.cs
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.csproj.CoreCompileInputs.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\refint\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.genruntimeconfig.cache
+C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\Sistema GYM Genie\obj\Release\net6.0\ref\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.deps.json
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.runtimeconfig.json
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\bin\Release\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.csproj.AssemblyReference.cache
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.AssemblyInfoInputs.cache
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.AssemblyInfo.cs
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.csproj.CoreCompileInputs.cache
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\refint\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\( Back ) Sistema GYM Genie.genruntimeconfig.cache
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Release\net6.0\ref\( Back ) Sistema GYM Genie.dll
