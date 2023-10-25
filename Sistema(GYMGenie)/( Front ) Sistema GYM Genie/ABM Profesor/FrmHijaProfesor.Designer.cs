@@ -33,13 +33,13 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
-            BtnModProfesor = new Button();
-            BtnBajaProfesor = new Button();
-            BtnAltaProfesor = new Button();
             panel4 = new Panel();
             panel3 = new Panel();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
+            BtnModProfesor = new Button();
+            BtnBajaProfesor = new Button();
+            BtnAltaProfesor = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
@@ -99,6 +99,47 @@
             panel1.Size = new Size(1116, 738);
             panel1.TabIndex = 11;
             // 
+            // panel4
+            // 
+            panel4.Anchor = AnchorStyles.None;
+            panel4.BackColor = Color.FromArgb(0, 205, 255);
+            panel4.Controls.Add(pictureBox3);
+            panel4.Location = new Point(757, 189);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(324, 307);
+            panel4.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            panel3.Anchor = AnchorStyles.None;
+            panel3.BackColor = Color.FromArgb(0, 205, 255);
+            panel3.Controls.Add(pictureBox2);
+            panel3.Location = new Point(401, 189);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(324, 307);
+            panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            panel2.Anchor = AnchorStyles.None;
+            panel2.BackColor = Color.FromArgb(0, 205, 255);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(46, 189);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(324, 307);
+            panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(324, 209);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // BtnModProfesor
             // 
             BtnModProfesor.Anchor = AnchorStyles.None;
@@ -146,47 +187,6 @@
             BtnAltaProfesor.TabIndex = 6;
             BtnAltaProfesor.Text = "ALTA";
             BtnAltaProfesor.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            panel4.Anchor = AnchorStyles.None;
-            panel4.BackColor = Color.FromArgb(0, 205, 255);
-            panel4.Controls.Add(pictureBox3);
-            panel4.Location = new Point(757, 189);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(324, 307);
-            panel4.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            panel3.Anchor = AnchorStyles.None;
-            panel3.BackColor = Color.FromArgb(0, 205, 255);
-            panel3.Controls.Add(pictureBox2);
-            panel3.Location = new Point(401, 189);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(324, 307);
-            panel3.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            panel2.Anchor = AnchorStyles.None;
-            panel2.BackColor = Color.FromArgb(0, 205, 255);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(46, 189);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(324, 307);
-            panel2.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(324, 209);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
             // 
             // FrmHijaProfesor
             // 

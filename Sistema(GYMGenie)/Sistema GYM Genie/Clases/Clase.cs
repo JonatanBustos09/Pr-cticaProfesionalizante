@@ -12,5 +12,6 @@ namespace Sistema_GYM_Genie.Clases
         public string? TipoClase { get; set; }
         public string? NombreClase { get; set; }
         public string? Equipamiento { get; set; }
+        public decimal CostoClase { get; set; }
     }
 }
