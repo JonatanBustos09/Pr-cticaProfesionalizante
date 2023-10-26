@@ -34,8 +34,8 @@
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
             BtnModCliente = new Button();
-            BtnBajaCliente = new Button();
             BtnAltaCliente = new Button();
+            BtnBajaCliente = new Button();
             LblTituloCliente = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -47,7 +47,7 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox1.Image = Properties.Resources.Gimnasio4;
-            pictureBox1.Location = new Point(40, 165);
+            pictureBox1.Location = new Point(47, 165);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(324, 375);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -58,7 +58,7 @@
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(392, 165);
+            pictureBox2.Location = new Point(399, 165);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(324, 375);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -69,7 +69,7 @@
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(748, 165);
+            pictureBox3.Location = new Point(755, 165);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(324, 375);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -100,28 +100,12 @@
             BtnModCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
             BtnModCliente.Font = new Font("Impact", 30F, FontStyle.Italic, GraphicsUnit.Point);
             BtnModCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnModCliente.Location = new Point(748, 474);
+            BtnModCliente.Location = new Point(755, 474);
             BtnModCliente.Name = "BtnModCliente";
             BtnModCliente.Size = new Size(324, 66);
             BtnModCliente.TabIndex = 11;
             BtnModCliente.Text = "MODIFICACIÓN";
             BtnModCliente.UseVisualStyleBackColor = false;
-            // 
-            // BtnBajaCliente
-            // 
-            BtnBajaCliente.Anchor = AnchorStyles.None;
-            BtnBajaCliente.BackColor = Color.FromArgb(20, 20, 20);
-            BtnBajaCliente.FlatAppearance.BorderColor = Color.Gray;
-            BtnBajaCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnBajaCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnBajaCliente.Font = new Font("Impact", 30F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnBajaCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnBajaCliente.Location = new Point(392, 474);
-            BtnBajaCliente.Name = "BtnBajaCliente";
-            BtnBajaCliente.Size = new Size(324, 66);
-            BtnBajaCliente.TabIndex = 10;
-            BtnBajaCliente.Text = "BAJA";
-            BtnBajaCliente.UseVisualStyleBackColor = false;
             // 
             // BtnAltaCliente
             // 
@@ -132,12 +116,29 @@
             BtnAltaCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
             BtnAltaCliente.Font = new Font("Impact", 30F, FontStyle.Italic, GraphicsUnit.Point);
             BtnAltaCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnAltaCliente.Location = new Point(40, 474);
+            BtnAltaCliente.Location = new Point(47, 474);
             BtnAltaCliente.Name = "BtnAltaCliente";
             BtnAltaCliente.Size = new Size(324, 66);
             BtnAltaCliente.TabIndex = 9;
             BtnAltaCliente.Text = "ALTA";
             BtnAltaCliente.UseVisualStyleBackColor = false;
+            BtnAltaCliente.Click += BtnAltaCliente_Click;
+            // 
+            // BtnBajaCliente
+            // 
+            BtnBajaCliente.Anchor = AnchorStyles.None;
+            BtnBajaCliente.BackColor = Color.FromArgb(20, 20, 20);
+            BtnBajaCliente.FlatAppearance.BorderColor = Color.Gray;
+            BtnBajaCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnBajaCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnBajaCliente.Font = new Font("Impact", 30F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnBajaCliente.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnBajaCliente.Location = new Point(399, 474);
+            BtnBajaCliente.Name = "BtnBajaCliente";
+            BtnBajaCliente.Size = new Size(324, 66);
+            BtnBajaCliente.TabIndex = 10;
+            BtnBajaCliente.Text = "BAJA";
+            BtnBajaCliente.UseVisualStyleBackColor = false;
             // 
             // LblTituloCliente
             // 

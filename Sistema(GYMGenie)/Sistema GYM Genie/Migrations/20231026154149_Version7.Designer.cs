@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_GYM_Genie.DBConection;
 
@@ -11,9 +12,11 @@ using Sistema_GYM_Genie.DBConection;
 namespace Sistema_GYM_Genie.Migrations
 {
     [DbContext(typeof(Appdbcontext))]
-    partial class AppdbcontextModelSnapshot : ModelSnapshot
+    [Migration("20231026154149_Version7")]
+    partial class Version7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,8 +33,8 @@ namespace Sistema_GYM_Genie.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClaseId"));
 
-                    b.Property<float>("CostoClase")
-                        .HasColumnType("real");
+                    b.Property<decimal>("CostoClase")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Equipamiento")
                         .HasMaxLength(100)

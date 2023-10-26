@@ -122,3 +122,5 @@ C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sist
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.pdb
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.genruntimeconfig.cache
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\ref\( Front ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.ABM_Cliente.FrmHijaALTACliente.resources
+C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.Frms_Cliente.FrmResumenCliente.resources

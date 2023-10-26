@@ -52,7 +52,7 @@ namespace __Front___Sistema_GYM_Genie
         {
             Application.Exit();
         }
-        private void AbrirFormHija(object formhija)
+        public void AbrirFormHija(object formhija)
         {
             if (this.PnlContenedorInicio.Controls.Count > 0)
                 this.PnlContenedorInicio.Controls.RemoveAt(0);
@@ -76,6 +76,11 @@ namespace __Front___Sistema_GYM_Genie
         private void BtnInicio_Click(object? sender, EventArgs e)
         {
             AbrirFormHija(new FrmHijaInicio());
+            BtnProfesor.Visible = true;
+            BtnReserva.Visible = true;
+            BtnIndicador.Visible = true;
+            BtnClase.Visible = true;
+            BtnCliente.Visible = true;
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -88,11 +93,19 @@ namespace __Front___Sistema_GYM_Genie
         private void BtnCliente_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FrmHijaCliente());
+            BtnProfesor.Visible = false;
+            BtnReserva.Visible = false;
+            BtnIndicador.Visible = false;
+            BtnClase.Visible = false;
         }
 
         private void BtnProfesor_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FrmHijaProfesor());
+            BtnCliente.Visible = false;
+            BtnReserva.Visible = false;
+            BtnIndicador.Visible = false;
+            BtnClase.Visible = false;
         }
     }
 }

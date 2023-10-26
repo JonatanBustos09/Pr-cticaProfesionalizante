@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace __Front___Sistema_GYM_Genie
+namespace __Front___Sistema_GYM_Genie.Frms_Cliente
 {
-    public partial class FrmHijaCliente : Form
+    public partial class FrmResumenCliente : Form
     {
-        public FrmHijaCliente()
+        public FrmResumenCliente()
         {
             InitializeComponent();
         }
