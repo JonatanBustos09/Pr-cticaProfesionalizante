@@ -1,6 +1,6 @@
 ﻿namespace __Front___Sistema_GYM_Genie
 {
-    partial class FrmHijaCliente
+    partial class FrmHijaALTACliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaCliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaALTACliente));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
-            BtnModCliente = new Button();
-            BtnAltaCliente = new Button();
-            BtnBajaCliente = new Button();
             LblTituloCliente = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -47,9 +44,9 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox1.Image = Properties.Resources.Gimnasio4;
-            pictureBox1.Location = new Point(47, 165);
+            pictureBox1.Location = new Point(913, 506);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(324, 375);
+            pictureBox1.Size = new Size(167, 195);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -58,9 +55,9 @@
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(399, 165);
+            pictureBox2.Location = new Point(837, 265);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(324, 375);
+            pictureBox2.Size = new Size(167, 195);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -69,9 +66,9 @@
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(755, 165);
+            pictureBox3.Location = new Point(913, 27);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(324, 375);
+            pictureBox3.Size = new Size(167, 195);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -79,66 +76,14 @@
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(BtnModCliente);
-            panel1.Controls.Add(BtnAltaCliente);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(BtnBajaCliente);
             panel1.Controls.Add(pictureBox2);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1116, 738);
             panel1.TabIndex = 3;
-            // 
-            // BtnModCliente
-            // 
-            BtnModCliente.Anchor = AnchorStyles.None;
-            BtnModCliente.BackColor = Color.FromArgb(20, 20, 20);
-            BtnModCliente.FlatAppearance.BorderColor = Color.Gray;
-            BtnModCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnModCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnModCliente.Font = new Font("Impact", 30F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnModCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnModCliente.Location = new Point(755, 474);
-            BtnModCliente.Name = "BtnModCliente";
-            BtnModCliente.Size = new Size(324, 66);
-            BtnModCliente.TabIndex = 11;
-            BtnModCliente.Text = "MODIFICACIÓN";
-            BtnModCliente.UseVisualStyleBackColor = false;
-            // 
-            // BtnAltaCliente
-            // 
-            BtnAltaCliente.Anchor = AnchorStyles.None;
-            BtnAltaCliente.BackColor = Color.FromArgb(20, 20, 20);
-            BtnAltaCliente.FlatAppearance.BorderColor = Color.Gray;
-            BtnAltaCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnAltaCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnAltaCliente.Font = new Font("Impact", 30F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnAltaCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnAltaCliente.Location = new Point(47, 474);
-            BtnAltaCliente.Name = "BtnAltaCliente";
-            BtnAltaCliente.Size = new Size(324, 66);
-            BtnAltaCliente.TabIndex = 9;
-            BtnAltaCliente.Text = "ALTA";
-            BtnAltaCliente.UseVisualStyleBackColor = false;
-            BtnAltaCliente.Click += BtnAltaCliente_Click;
-            // 
-            // BtnBajaCliente
-            // 
-            BtnBajaCliente.Anchor = AnchorStyles.None;
-            BtnBajaCliente.BackColor = Color.FromArgb(20, 20, 20);
-            BtnBajaCliente.FlatAppearance.BorderColor = Color.Gray;
-            BtnBajaCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnBajaCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnBajaCliente.Font = new Font("Impact", 30F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnBajaCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnBajaCliente.Location = new Point(399, 474);
-            BtnBajaCliente.Name = "BtnBajaCliente";
-            BtnBajaCliente.Size = new Size(324, 66);
-            BtnBajaCliente.TabIndex = 10;
-            BtnBajaCliente.Text = "BAJA";
-            BtnBajaCliente.UseVisualStyleBackColor = false;
             // 
             // LblTituloCliente
             // 
@@ -148,12 +93,12 @@
             LblTituloCliente.ForeColor = Color.FromArgb(0, 205, 255);
             LblTituloCliente.Location = new Point(444, 29);
             LblTituloCliente.Name = "LblTituloCliente";
-            LblTituloCliente.Size = new Size(223, 66);
+            LblTituloCliente.Size = new Size(281, 66);
             LblTituloCliente.TabIndex = 7;
-            LblTituloCliente.Text = "CLIENTE";
+            LblTituloCliente.Text = "BAJA CLIENTE";
             LblTituloCliente.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // FrmHijaCliente
+            // FrmHijaALTACliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -164,7 +109,7 @@
             ForeColor = Color.FromArgb(20, 20, 20);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "FrmHijaCliente";
+            Name = "FrmHijaALTACliente";
             Text = "Cliente";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -180,8 +125,5 @@
         private PictureBox pictureBox3;
         private Panel panel1;
         private Label LblTituloCliente;
-        private Button BtnModCliente;
-        private Button BtnBajaCliente;
-        private Button BtnAltaCliente;
     }
 }

@@ -111,7 +111,7 @@
             // 
             LblUsuario.BackColor = Color.White;
             LblUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblUsuario.Location = new Point(87, 125);
+            LblUsuario.Location = new Point(87, 92);
             LblUsuario.Name = "LblUsuario";
             LblUsuario.Size = new Size(317, 23);
             LblUsuario.TabIndex = 5;
