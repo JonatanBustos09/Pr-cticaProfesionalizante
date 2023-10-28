@@ -42,28 +42,28 @@
             BtnProfesor = new Button();
             BtnCliente = new Button();
             BtnInicio = new PictureBox();
-            PnlContenedorInicio = new Panel();
-            PnlReserva = new Panel();
-            BtnMODReserva = new Button();
-            BtnALTAReserva = new Button();
-            BtnBAJAReserva = new Button();
-            PnlProfesor = new Panel();
-            BtnMODProfesor = new Button();
-            BtnALTAProfesor = new Button();
-            BtnBAJAProfesor = new Button();
             PnlCliente = new Panel();
             BtnMODCliente = new Button();
             BtnALTACliente = new Button();
             BtnBAJACliente = new Button();
-            PnlIndicador = new Panel();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            BtnPago = new Button();
+            PnlProfesor = new Panel();
+            BtnMODProfesor = new Button();
+            BtnALTAProfesor = new Button();
+            BtnBAJAProfesor = new Button();
+            PnlReserva = new Panel();
+            BtnMODReserva = new Button();
+            BtnALTAReserva = new Button();
+            BtnBAJAReserva = new Button();
             PnlClase = new Panel();
             BtnMODClase = new Button();
             BtnALTAClase = new Button();
             BtnBAJAClase = new Button();
+            PnlIndicador = new Panel();
+            BtnPago = new Button();
+            BtnIndicadorReserva = new Button();
+            BtnIndicadorCliente = new Button();
+            BtnIndicadorProfesor = new Button();
+            PnlContenedorInicio = new Panel();
             PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BtnMinizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnCerrar).BeginInit();
@@ -72,12 +72,11 @@
             PnlInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BtnSalir).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnInicio).BeginInit();
-            PnlContenedorInicio.SuspendLayout();
-            PnlReserva.SuspendLayout();
-            PnlProfesor.SuspendLayout();
             PnlCliente.SuspendLayout();
-            PnlIndicador.SuspendLayout();
+            PnlProfesor.SuspendLayout();
+            PnlReserva.SuspendLayout();
             PnlClase.SuspendLayout();
+            PnlIndicador.SuspendLayout();
             SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -147,7 +146,12 @@
             PnlInicio.BackColor = Color.FromArgb(20, 20, 20);
             PnlInicio.BackgroundImageLayout = ImageLayout.None;
             PnlInicio.BorderStyle = BorderStyle.Fixed3D;
+            PnlInicio.Controls.Add(PnlCliente);
+            PnlInicio.Controls.Add(PnlProfesor);
+            PnlInicio.Controls.Add(PnlReserva);
+            PnlInicio.Controls.Add(PnlClase);
             PnlInicio.Controls.Add(BtnIndicador);
+            PnlInicio.Controls.Add(PnlIndicador);
             PnlInicio.Controls.Add(BtnReserva);
             PnlInicio.Controls.Add(BtnSalir);
             PnlInicio.Controls.Add(BtnClase);
@@ -167,14 +171,15 @@
             BtnIndicador.FlatAppearance.BorderColor = Color.Gray;
             BtnIndicador.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnIndicador.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnIndicador.Font = new Font("Impact", 32F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnIndicador.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
             BtnIndicador.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnIndicador.Location = new Point(12, 549);
+            BtnIndicador.Location = new Point(12, 536);
             BtnIndicador.Name = "BtnIndicador";
             BtnIndicador.Size = new Size(219, 66);
             BtnIndicador.TabIndex = 10;
             BtnIndicador.Text = "INDICADOR";
             BtnIndicador.UseVisualStyleBackColor = false;
+            BtnIndicador.Click += BtnIndicador_Click;
             // 
             // BtnReserva
             // 
@@ -183,14 +188,15 @@
             BtnReserva.FlatAppearance.BorderColor = Color.Gray;
             BtnReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnReserva.Font = new Font("Impact", 32F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnReserva.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
             BtnReserva.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnReserva.Location = new Point(12, 405);
+            BtnReserva.Location = new Point(12, 392);
             BtnReserva.Name = "BtnReserva";
             BtnReserva.Size = new Size(219, 66);
             BtnReserva.TabIndex = 9;
             BtnReserva.Text = "RESERVA";
             BtnReserva.UseVisualStyleBackColor = false;
+            BtnReserva.Click += BtnReserva_Click;
             // 
             // BtnSalir
             // 
@@ -212,14 +218,15 @@
             BtnClase.FlatAppearance.BorderColor = Color.Gray;
             BtnClase.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnClase.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnClase.Font = new Font("Impact", 32F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnClase.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
             BtnClase.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnClase.Location = new Point(12, 477);
+            BtnClase.Location = new Point(12, 464);
             BtnClase.Name = "BtnClase";
             BtnClase.Size = new Size(219, 66);
             BtnClase.TabIndex = 7;
             BtnClase.Text = "CLASE";
             BtnClase.UseVisualStyleBackColor = false;
+            BtnClase.Click += BtnClase_Click;
             // 
             // BtnProfesor
             // 
@@ -228,9 +235,9 @@
             BtnProfesor.FlatAppearance.BorderColor = Color.Gray;
             BtnProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnProfesor.Font = new Font("Impact", 32F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnProfesor.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
             BtnProfesor.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnProfesor.Location = new Point(12, 333);
+            BtnProfesor.Location = new Point(12, 320);
             BtnProfesor.Name = "BtnProfesor";
             BtnProfesor.Size = new Size(219, 66);
             BtnProfesor.TabIndex = 6;
@@ -245,9 +252,9 @@
             BtnCliente.FlatAppearance.BorderColor = Color.Gray;
             BtnCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnCliente.Font = new Font("Impact", 32F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnCliente.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
             BtnCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnCliente.Location = new Point(12, 261);
+            BtnCliente.Location = new Point(12, 248);
             BtnCliente.Name = "BtnCliente";
             BtnCliente.Size = new Size(219, 66);
             BtnCliente.TabIndex = 5;
@@ -266,146 +273,17 @@
             BtnInicio.TabStop = false;
             BtnInicio.Click += BtnInicio_Click;
             // 
-            // PnlContenedorInicio
-            // 
-            PnlContenedorInicio.BackColor = Color.FromArgb(7, 29, 49);
-            PnlContenedorInicio.BorderStyle = BorderStyle.Fixed3D;
-            PnlContenedorInicio.Controls.Add(PnlClase);
-            PnlContenedorInicio.Controls.Add(PnlIndicador);
-            PnlContenedorInicio.Controls.Add(PnlReserva);
-            PnlContenedorInicio.Controls.Add(PnlProfesor);
-            PnlContenedorInicio.Controls.Add(PnlCliente);
-            PnlContenedorInicio.Dock = DockStyle.Fill;
-            PnlContenedorInicio.Location = new Point(250, 30);
-            PnlContenedorInicio.Name = "PnlContenedorInicio";
-            PnlContenedorInicio.Size = new Size(1116, 738);
-            PnlContenedorInicio.TabIndex = 2;
-            // 
-            // PnlReserva
-            // 
-            PnlReserva.Controls.Add(BtnMODReserva);
-            PnlReserva.Controls.Add(BtnALTAReserva);
-            PnlReserva.Controls.Add(BtnBAJAReserva);
-            PnlReserva.Location = new Point(482, 14);
-            PnlReserva.Name = "PnlReserva";
-            PnlReserva.Size = new Size(203, 215);
-            PnlReserva.TabIndex = 17;
-            // 
-            // BtnMODReserva
-            // 
-            BtnMODReserva.Anchor = AnchorStyles.None;
-            BtnMODReserva.BackColor = Color.FromArgb(20, 20, 20);
-            BtnMODReserva.FlatAppearance.BorderColor = Color.Gray;
-            BtnMODReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnMODReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnMODReserva.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnMODReserva.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnMODReserva.Location = new Point(0, 144);
-            BtnMODReserva.Name = "BtnMODReserva";
-            BtnMODReserva.Size = new Size(201, 66);
-            BtnMODReserva.TabIndex = 15;
-            BtnMODReserva.Text = "MODIFICACIÓN";
-            BtnMODReserva.UseVisualStyleBackColor = false;
-            // 
-            // BtnALTAReserva
-            // 
-            BtnALTAReserva.Anchor = AnchorStyles.None;
-            BtnALTAReserva.BackColor = Color.FromArgb(20, 20, 20);
-            BtnALTAReserva.FlatAppearance.BorderColor = Color.Gray;
-            BtnALTAReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnALTAReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnALTAReserva.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnALTAReserva.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnALTAReserva.Location = new Point(0, 1);
-            BtnALTAReserva.Name = "BtnALTAReserva";
-            BtnALTAReserva.Size = new Size(201, 66);
-            BtnALTAReserva.TabIndex = 13;
-            BtnALTAReserva.Text = "ALTA";
-            BtnALTAReserva.UseVisualStyleBackColor = false;
-            // 
-            // BtnBAJAReserva
-            // 
-            BtnBAJAReserva.Anchor = AnchorStyles.None;
-            BtnBAJAReserva.BackColor = Color.FromArgb(20, 20, 20);
-            BtnBAJAReserva.FlatAppearance.BorderColor = Color.Gray;
-            BtnBAJAReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnBAJAReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnBAJAReserva.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnBAJAReserva.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnBAJAReserva.Location = new Point(-1, 73);
-            BtnBAJAReserva.Name = "BtnBAJAReserva";
-            BtnBAJAReserva.Size = new Size(201, 66);
-            BtnBAJAReserva.TabIndex = 14;
-            BtnBAJAReserva.Text = "BAJA";
-            BtnBAJAReserva.UseVisualStyleBackColor = false;
-            // 
-            // PnlProfesor
-            // 
-            PnlProfesor.Controls.Add(BtnMODProfesor);
-            PnlProfesor.Controls.Add(BtnALTAProfesor);
-            PnlProfesor.Controls.Add(BtnBAJAProfesor);
-            PnlProfesor.Location = new Point(247, 13);
-            PnlProfesor.Name = "PnlProfesor";
-            PnlProfesor.Size = new Size(203, 215);
-            PnlProfesor.TabIndex = 16;
-            // 
-            // BtnMODProfesor
-            // 
-            BtnMODProfesor.Anchor = AnchorStyles.None;
-            BtnMODProfesor.BackColor = Color.FromArgb(20, 20, 20);
-            BtnMODProfesor.FlatAppearance.BorderColor = Color.Gray;
-            BtnMODProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnMODProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnMODProfesor.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnMODProfesor.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnMODProfesor.Location = new Point(1, 144);
-            BtnMODProfesor.Name = "BtnMODProfesor";
-            BtnMODProfesor.Size = new Size(201, 66);
-            BtnMODProfesor.TabIndex = 15;
-            BtnMODProfesor.Text = "MODIFICACIÓN";
-            BtnMODProfesor.UseVisualStyleBackColor = false;
-            // 
-            // BtnALTAProfesor
-            // 
-            BtnALTAProfesor.Anchor = AnchorStyles.None;
-            BtnALTAProfesor.BackColor = Color.FromArgb(20, 20, 20);
-            BtnALTAProfesor.FlatAppearance.BorderColor = Color.Gray;
-            BtnALTAProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnALTAProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnALTAProfesor.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnALTAProfesor.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnALTAProfesor.Location = new Point(1, 1);
-            BtnALTAProfesor.Name = "BtnALTAProfesor";
-            BtnALTAProfesor.Size = new Size(201, 66);
-            BtnALTAProfesor.TabIndex = 13;
-            BtnALTAProfesor.Text = "ALTA";
-            BtnALTAProfesor.UseVisualStyleBackColor = false;
-            // 
-            // BtnBAJAProfesor
-            // 
-            BtnBAJAProfesor.Anchor = AnchorStyles.None;
-            BtnBAJAProfesor.BackColor = Color.FromArgb(20, 20, 20);
-            BtnBAJAProfesor.FlatAppearance.BorderColor = Color.Gray;
-            BtnBAJAProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnBAJAProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnBAJAProfesor.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnBAJAProfesor.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnBAJAProfesor.Location = new Point(1, 72);
-            BtnBAJAProfesor.Name = "BtnBAJAProfesor";
-            BtnBAJAProfesor.Size = new Size(201, 66);
-            BtnBAJAProfesor.TabIndex = 14;
-            BtnBAJAProfesor.Text = "BAJA";
-            BtnBAJAProfesor.UseVisualStyleBackColor = false;
-            // 
             // PnlCliente
             // 
+            PnlCliente.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             PnlCliente.Controls.Add(BtnMODCliente);
             PnlCliente.Controls.Add(BtnALTACliente);
             PnlCliente.Controls.Add(BtnBAJACliente);
-            PnlCliente.Location = new Point(17, 13);
+            PnlCliente.Location = new Point(11, 320);
             PnlCliente.Name = "PnlCliente";
-            PnlCliente.Size = new Size(203, 215);
+            PnlCliente.Size = new Size(219, 332);
             PnlCliente.TabIndex = 0;
+            PnlCliente.Visible = false;
             // 
             // BtnMODCliente
             // 
@@ -414,14 +292,15 @@
             BtnMODCliente.FlatAppearance.BorderColor = Color.Gray;
             BtnMODCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnMODCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnMODCliente.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnMODCliente.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
             BtnMODCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnMODCliente.Location = new Point(2, 144);
+            BtnMODCliente.Location = new Point(9, 147);
             BtnMODCliente.Name = "BtnMODCliente";
             BtnMODCliente.Size = new Size(201, 66);
             BtnMODCliente.TabIndex = 15;
             BtnMODCliente.Text = "MODIFICACIÓN";
             BtnMODCliente.UseVisualStyleBackColor = false;
+            BtnMODCliente.Click += BtnMODCliente_Click;
             // 
             // BtnALTACliente
             // 
@@ -430,14 +309,15 @@
             BtnALTACliente.FlatAppearance.BorderColor = Color.Gray;
             BtnALTACliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnALTACliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnALTACliente.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnALTACliente.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
             BtnALTACliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnALTACliente.Location = new Point(2, 0);
+            BtnALTACliente.Location = new Point(9, 3);
             BtnALTACliente.Name = "BtnALTACliente";
             BtnALTACliente.Size = new Size(201, 66);
             BtnALTACliente.TabIndex = 13;
             BtnALTACliente.Text = "ALTA";
             BtnALTACliente.UseVisualStyleBackColor = false;
+            BtnALTACliente.Click += BtnALTACliente_Click;
             // 
             // BtnBAJACliente
             // 
@@ -446,99 +326,153 @@
             BtnBAJACliente.FlatAppearance.BorderColor = Color.Gray;
             BtnBAJACliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnBAJACliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnBAJACliente.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnBAJACliente.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
             BtnBAJACliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnBAJACliente.Location = new Point(2, 72);
+            BtnBAJACliente.Location = new Point(9, 75);
             BtnBAJACliente.Name = "BtnBAJACliente";
             BtnBAJACliente.Size = new Size(201, 66);
             BtnBAJACliente.TabIndex = 14;
             BtnBAJACliente.Text = "BAJA";
             BtnBAJACliente.UseVisualStyleBackColor = false;
+            BtnBAJACliente.Click += BtnBAJACliente_Click;
             // 
-            // PnlIndicador
+            // PnlProfesor
             // 
-            PnlIndicador.Controls.Add(BtnPago);
-            PnlIndicador.Controls.Add(button1);
-            PnlIndicador.Controls.Add(button2);
-            PnlIndicador.Controls.Add(button3);
-            PnlIndicador.Location = new Point(17, 256);
-            PnlIndicador.Name = "PnlIndicador";
-            PnlIndicador.Size = new Size(203, 287);
-            PnlIndicador.TabIndex = 16;
+            PnlProfesor.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            PnlProfesor.Controls.Add(BtnMODProfesor);
+            PnlProfesor.Controls.Add(BtnALTAProfesor);
+            PnlProfesor.Controls.Add(BtnBAJAProfesor);
+            PnlProfesor.Location = new Point(11, 392);
+            PnlProfesor.Name = "PnlProfesor";
+            PnlProfesor.Size = new Size(219, 332);
+            PnlProfesor.TabIndex = 16;
+            PnlProfesor.Visible = false;
             // 
-            // button1
+            // BtnMODProfesor
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.FromArgb(20, 20, 20);
-            button1.FlatAppearance.BorderColor = Color.Gray;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            button1.FlatAppearance.MouseOverBackColor = Color.Gray;
-            button1.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            button1.ForeColor = Color.FromArgb(0, 205, 255);
-            button1.Location = new Point(2, 148);
-            button1.Name = "button1";
-            button1.Size = new Size(201, 66);
-            button1.TabIndex = 15;
-            button1.Text = "RESERVA";
-            button1.UseVisualStyleBackColor = false;
+            BtnMODProfesor.Anchor = AnchorStyles.None;
+            BtnMODProfesor.BackColor = Color.FromArgb(20, 20, 20);
+            BtnMODProfesor.FlatAppearance.BorderColor = Color.Gray;
+            BtnMODProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnMODProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnMODProfesor.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnMODProfesor.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnMODProfesor.Location = new Point(9, 147);
+            BtnMODProfesor.Name = "BtnMODProfesor";
+            BtnMODProfesor.Size = new Size(201, 66);
+            BtnMODProfesor.TabIndex = 15;
+            BtnMODProfesor.Text = "MODIFICACIÓN";
+            BtnMODProfesor.UseVisualStyleBackColor = false;
+            BtnMODProfesor.Click += BtnMODProfesor_Click;
             // 
-            // button2
+            // BtnALTAProfesor
             // 
-            button2.Anchor = AnchorStyles.None;
-            button2.BackColor = Color.FromArgb(20, 20, 20);
-            button2.FlatAppearance.BorderColor = Color.Gray;
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            button2.FlatAppearance.MouseOverBackColor = Color.Gray;
-            button2.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            button2.ForeColor = Color.FromArgb(0, 205, 255);
-            button2.Location = new Point(2, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(201, 66);
-            button2.TabIndex = 13;
-            button2.Text = "CLIENTE";
-            button2.UseVisualStyleBackColor = false;
+            BtnALTAProfesor.Anchor = AnchorStyles.None;
+            BtnALTAProfesor.BackColor = Color.FromArgb(20, 20, 20);
+            BtnALTAProfesor.FlatAppearance.BorderColor = Color.Gray;
+            BtnALTAProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnALTAProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnALTAProfesor.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnALTAProfesor.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnALTAProfesor.Location = new Point(9, 4);
+            BtnALTAProfesor.Name = "BtnALTAProfesor";
+            BtnALTAProfesor.Size = new Size(201, 66);
+            BtnALTAProfesor.TabIndex = 13;
+            BtnALTAProfesor.Text = "ALTA";
+            BtnALTAProfesor.UseVisualStyleBackColor = false;
+            BtnALTAProfesor.Click += BtnALTAProfesor_Click;
             // 
-            // button3
+            // BtnBAJAProfesor
             // 
-            button3.Anchor = AnchorStyles.None;
-            button3.BackColor = Color.FromArgb(20, 20, 20);
-            button3.FlatAppearance.BorderColor = Color.Gray;
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            button3.FlatAppearance.MouseOverBackColor = Color.Gray;
-            button3.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            button3.ForeColor = Color.FromArgb(0, 205, 255);
-            button3.Location = new Point(2, 76);
-            button3.Name = "button3";
-            button3.Size = new Size(201, 66);
-            button3.TabIndex = 14;
-            button3.Text = "PROFESOR";
-            button3.UseVisualStyleBackColor = false;
+            BtnBAJAProfesor.Anchor = AnchorStyles.None;
+            BtnBAJAProfesor.BackColor = Color.FromArgb(20, 20, 20);
+            BtnBAJAProfesor.FlatAppearance.BorderColor = Color.Gray;
+            BtnBAJAProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnBAJAProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnBAJAProfesor.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnBAJAProfesor.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnBAJAProfesor.Location = new Point(9, 75);
+            BtnBAJAProfesor.Name = "BtnBAJAProfesor";
+            BtnBAJAProfesor.Size = new Size(201, 66);
+            BtnBAJAProfesor.TabIndex = 14;
+            BtnBAJAProfesor.Text = "BAJA";
+            BtnBAJAProfesor.UseVisualStyleBackColor = false;
+            BtnBAJAProfesor.Click += BtnBAJAProfesor_Click;
             // 
-            // BtnPago
+            // PnlReserva
             // 
-            BtnPago.Anchor = AnchorStyles.None;
-            BtnPago.BackColor = Color.FromArgb(20, 20, 20);
-            BtnPago.FlatAppearance.BorderColor = Color.Gray;
-            BtnPago.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnPago.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnPago.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnPago.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnPago.Location = new Point(2, 220);
-            BtnPago.Name = "BtnPago";
-            BtnPago.Size = new Size(201, 66);
-            BtnPago.TabIndex = 16;
-            BtnPago.Text = "PAGO";
-            BtnPago.UseVisualStyleBackColor = false;
+            PnlReserva.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            PnlReserva.Controls.Add(BtnMODReserva);
+            PnlReserva.Controls.Add(BtnALTAReserva);
+            PnlReserva.Controls.Add(BtnBAJAReserva);
+            PnlReserva.Location = new Point(12, 456);
+            PnlReserva.Name = "PnlReserva";
+            PnlReserva.Size = new Size(219, 282);
+            PnlReserva.TabIndex = 17;
+            PnlReserva.Visible = false;
+            // 
+            // BtnMODReserva
+            // 
+            BtnMODReserva.Anchor = AnchorStyles.None;
+            BtnMODReserva.BackColor = Color.FromArgb(20, 20, 20);
+            BtnMODReserva.FlatAppearance.BorderColor = Color.Gray;
+            BtnMODReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnMODReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnMODReserva.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnMODReserva.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnMODReserva.Location = new Point(8, 147);
+            BtnMODReserva.Name = "BtnMODReserva";
+            BtnMODReserva.Size = new Size(201, 66);
+            BtnMODReserva.TabIndex = 15;
+            BtnMODReserva.Text = "MODIFICACIÓN";
+            BtnMODReserva.UseVisualStyleBackColor = false;
+            BtnMODReserva.Click += BtnMODReserva_Click;
+            // 
+            // BtnALTAReserva
+            // 
+            BtnALTAReserva.Anchor = AnchorStyles.None;
+            BtnALTAReserva.BackColor = Color.FromArgb(20, 20, 20);
+            BtnALTAReserva.FlatAppearance.BorderColor = Color.Gray;
+            BtnALTAReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnALTAReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnALTAReserva.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnALTAReserva.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnALTAReserva.Location = new Point(8, 4);
+            BtnALTAReserva.Name = "BtnALTAReserva";
+            BtnALTAReserva.Size = new Size(201, 66);
+            BtnALTAReserva.TabIndex = 13;
+            BtnALTAReserva.Text = "ALTA";
+            BtnALTAReserva.UseVisualStyleBackColor = false;
+            BtnALTAReserva.Click += BtnALTAReserva_Click;
+            // 
+            // BtnBAJAReserva
+            // 
+            BtnBAJAReserva.Anchor = AnchorStyles.None;
+            BtnBAJAReserva.BackColor = Color.FromArgb(20, 20, 20);
+            BtnBAJAReserva.FlatAppearance.BorderColor = Color.Gray;
+            BtnBAJAReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnBAJAReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnBAJAReserva.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnBAJAReserva.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnBAJAReserva.Location = new Point(7, 76);
+            BtnBAJAReserva.Name = "BtnBAJAReserva";
+            BtnBAJAReserva.Size = new Size(201, 66);
+            BtnBAJAReserva.TabIndex = 14;
+            BtnBAJAReserva.Text = "BAJA";
+            BtnBAJAReserva.UseVisualStyleBackColor = false;
+            BtnBAJAReserva.Click += BtnBAJAReserva_Click;
             // 
             // PnlClase
             // 
+            PnlClase.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             PnlClase.Controls.Add(BtnMODClase);
             PnlClase.Controls.Add(BtnALTAClase);
             PnlClase.Controls.Add(BtnBAJAClase);
-            PnlClase.Location = new Point(716, 13);
+            PnlClase.Location = new Point(12, 536);
             PnlClase.Name = "PnlClase";
-            PnlClase.Size = new Size(203, 215);
+            PnlClase.Size = new Size(219, 215);
             PnlClase.TabIndex = 18;
+            PnlClase.Visible = false;
             // 
             // BtnMODClase
             // 
@@ -547,14 +481,15 @@
             BtnMODClase.FlatAppearance.BorderColor = Color.Gray;
             BtnMODClase.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnMODClase.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnMODClase.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnMODClase.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
             BtnMODClase.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnMODClase.Location = new Point(2, 146);
+            BtnMODClase.Location = new Point(10, 146);
             BtnMODClase.Name = "BtnMODClase";
             BtnMODClase.Size = new Size(201, 66);
             BtnMODClase.TabIndex = 15;
             BtnMODClase.Text = "MODIFICACIÓN";
             BtnMODClase.UseVisualStyleBackColor = false;
+            BtnMODClase.Click += BtnMODClase_Click;
             // 
             // BtnALTAClase
             // 
@@ -563,14 +498,15 @@
             BtnALTAClase.FlatAppearance.BorderColor = Color.Gray;
             BtnALTAClase.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnALTAClase.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnALTAClase.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnALTAClase.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
             BtnALTAClase.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnALTAClase.Location = new Point(1, 2);
+            BtnALTAClase.Location = new Point(9, 2);
             BtnALTAClase.Name = "BtnALTAClase";
             BtnALTAClase.Size = new Size(201, 66);
             BtnALTAClase.TabIndex = 13;
             BtnALTAClase.Text = "ALTA";
             BtnALTAClase.UseVisualStyleBackColor = false;
+            BtnALTAClase.Click += BtnALTAClase_Click;
             // 
             // BtnBAJAClase
             // 
@@ -579,14 +515,107 @@
             BtnBAJAClase.FlatAppearance.BorderColor = Color.Gray;
             BtnBAJAClase.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
             BtnBAJAClase.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnBAJAClase.Font = new Font("Impact", 22F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnBAJAClase.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
             BtnBAJAClase.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnBAJAClase.Location = new Point(2, 74);
+            BtnBAJAClase.Location = new Point(10, 74);
             BtnBAJAClase.Name = "BtnBAJAClase";
             BtnBAJAClase.Size = new Size(201, 66);
             BtnBAJAClase.TabIndex = 14;
             BtnBAJAClase.Text = "BAJA";
             BtnBAJAClase.UseVisualStyleBackColor = false;
+            BtnBAJAClase.Click += BtnBAJAClase_Click;
+            // 
+            // PnlIndicador
+            // 
+            PnlIndicador.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            PnlIndicador.Controls.Add(BtnPago);
+            PnlIndicador.Controls.Add(BtnIndicadorReserva);
+            PnlIndicador.Controls.Add(BtnIndicadorCliente);
+            PnlIndicador.Controls.Add(BtnIndicadorProfesor);
+            PnlIndicador.Location = new Point(12, 599);
+            PnlIndicador.Name = "PnlIndicador";
+            PnlIndicador.Size = new Size(219, 287);
+            PnlIndicador.TabIndex = 16;
+            PnlIndicador.Visible = false;
+            // 
+            // BtnPago
+            // 
+            BtnPago.Anchor = AnchorStyles.None;
+            BtnPago.BackColor = Color.FromArgb(20, 20, 20);
+            BtnPago.FlatAppearance.BorderColor = Color.Gray;
+            BtnPago.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnPago.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnPago.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnPago.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnPago.Location = new Point(10, 221);
+            BtnPago.Name = "BtnPago";
+            BtnPago.Size = new Size(201, 66);
+            BtnPago.TabIndex = 16;
+            BtnPago.Text = "PAGO";
+            BtnPago.UseVisualStyleBackColor = false;
+            BtnPago.Click += BtnPago_Click;
+            // 
+            // BtnIndicadorReserva
+            // 
+            BtnIndicadorReserva.Anchor = AnchorStyles.None;
+            BtnIndicadorReserva.BackColor = Color.FromArgb(20, 20, 20);
+            BtnIndicadorReserva.FlatAppearance.BorderColor = Color.Gray;
+            BtnIndicadorReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnIndicadorReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnIndicadorReserva.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnIndicadorReserva.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnIndicadorReserva.Location = new Point(10, 149);
+            BtnIndicadorReserva.Name = "BtnIndicadorReserva";
+            BtnIndicadorReserva.Size = new Size(201, 66);
+            BtnIndicadorReserva.TabIndex = 15;
+            BtnIndicadorReserva.Text = "RESERVA";
+            BtnIndicadorReserva.UseVisualStyleBackColor = false;
+            BtnIndicadorReserva.Click += BtnIndicadorReserva_Click;
+            // 
+            // BtnIndicadorCliente
+            // 
+            BtnIndicadorCliente.Anchor = AnchorStyles.None;
+            BtnIndicadorCliente.BackColor = Color.FromArgb(20, 20, 20);
+            BtnIndicadorCliente.FlatAppearance.BorderColor = Color.Gray;
+            BtnIndicadorCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnIndicadorCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnIndicadorCliente.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnIndicadorCliente.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnIndicadorCliente.Location = new Point(10, 5);
+            BtnIndicadorCliente.Name = "BtnIndicadorCliente";
+            BtnIndicadorCliente.Size = new Size(201, 66);
+            BtnIndicadorCliente.TabIndex = 13;
+            BtnIndicadorCliente.Text = "CLIENTE";
+            BtnIndicadorCliente.UseVisualStyleBackColor = false;
+            BtnIndicadorCliente.Click += BtnIndicadorCliente_Click;
+            // 
+            // BtnIndicadorProfesor
+            // 
+            BtnIndicadorProfesor.Anchor = AnchorStyles.None;
+            BtnIndicadorProfesor.BackColor = Color.FromArgb(20, 20, 20);
+            BtnIndicadorProfesor.FlatAppearance.BorderColor = Color.Gray;
+            BtnIndicadorProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnIndicadorProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnIndicadorProfesor.Font = new Font("Impact", 18F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnIndicadorProfesor.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnIndicadorProfesor.Location = new Point(10, 77);
+            BtnIndicadorProfesor.Name = "BtnIndicadorProfesor";
+            BtnIndicadorProfesor.Size = new Size(201, 66);
+            BtnIndicadorProfesor.TabIndex = 14;
+            BtnIndicadorProfesor.Text = "PROFESOR";
+            BtnIndicadorProfesor.UseVisualStyleBackColor = false;
+            BtnIndicadorProfesor.Click += BtnIndicadorProfesor_Click;
+            // 
+            // PnlContenedorInicio
+            // 
+            PnlContenedorInicio.BackColor = Color.FromArgb(7, 29, 49);
+            PnlContenedorInicio.BorderStyle = BorderStyle.Fixed3D;
+            PnlContenedorInicio.Dock = DockStyle.Fill;
+            PnlContenedorInicio.Location = new Point(250, 30);
+            PnlContenedorInicio.Name = "PnlContenedorInicio";
+            PnlContenedorInicio.Size = new Size(1116, 738);
+            PnlContenedorInicio.TabIndex = 2;
+            PnlContenedorInicio.Paint += PnlContenedorInicio_Paint;
             // 
             // FrmTableroInicio
             // 
@@ -611,12 +640,11 @@
             PnlInicio.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)BtnSalir).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnInicio).EndInit();
-            PnlContenedorInicio.ResumeLayout(false);
-            PnlReserva.ResumeLayout(false);
-            PnlProfesor.ResumeLayout(false);
             PnlCliente.ResumeLayout(false);
-            PnlIndicador.ResumeLayout(false);
+            PnlProfesor.ResumeLayout(false);
+            PnlReserva.ResumeLayout(false);
             PnlClase.ResumeLayout(false);
+            PnlIndicador.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -654,8 +682,8 @@
         private Button BtnBAJAClase;
         private Panel PnlIndicador;
         private Button BtnPago;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button BtnIndicadorReserva;
+        private Button BtnIndicadorCliente;
+        private Button BtnIndicadorProfesor;
     }
 }

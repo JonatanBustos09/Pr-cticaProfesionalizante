@@ -1,4 +1,4 @@
-﻿using __Front___Sistema_GYM_Genie.ABM_Cliente;
+﻿using __Front___Sistema_GYM_Genie.Frms_Cliente;
 using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;

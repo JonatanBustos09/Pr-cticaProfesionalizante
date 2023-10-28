@@ -99,7 +99,7 @@
             // 
             LblContrasena.BackColor = Color.White;
             LblContrasena.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblContrasena.Location = new Point(87, 175);
+            LblContrasena.Location = new Point(87, 178);
             LblContrasena.Name = "LblContrasena";
             LblContrasena.Size = new Size(317, 23);
             LblContrasena.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             LblUsuario.BackColor = Color.White;
             LblUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblUsuario.Location = new Point(87, 92);
+            LblUsuario.Location = new Point(87, 129);
             LblUsuario.Name = "LblUsuario";
             LblUsuario.Size = new Size(317, 23);
             LblUsuario.TabIndex = 5;
@@ -122,7 +122,7 @@
             // TxtContrasena
             // 
             TxtContrasena.ForeColor = Color.FromArgb(7, 29, 49);
-            TxtContrasena.Location = new Point(87, 177);
+            TxtContrasena.Location = new Point(87, 178);
             TxtContrasena.Name = "TxtContrasena";
             TxtContrasena.Size = new Size(317, 23);
             TxtContrasena.TabIndex = 2;
@@ -131,7 +131,7 @@
             // TxtUsuario
             // 
             TxtUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtUsuario.Location = new Point(87, 126);
+            TxtUsuario.Location = new Point(87, 133);
             TxtUsuario.Name = "TxtUsuario";
             TxtUsuario.Size = new Size(317, 21);
             TxtUsuario.TabIndex = 1;

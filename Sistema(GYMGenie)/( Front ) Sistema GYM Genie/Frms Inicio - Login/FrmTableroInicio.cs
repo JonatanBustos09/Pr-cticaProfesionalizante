@@ -81,6 +81,11 @@ namespace __Front___Sistema_GYM_Genie
             BtnIndicador.Visible = true;
             BtnClase.Visible = true;
             BtnCliente.Visible = true;
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -90,22 +95,217 @@ namespace __Front___Sistema_GYM_Genie
             Hide();
         }
 
+        // BOTONES PRINCIPALES DE TABLERO
+
         private void BtnCliente_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new FrmHijaCliente());
-            BtnProfesor.Visible = false;
-            BtnReserva.Visible = false;
-            BtnIndicador.Visible = false;
-            BtnClase.Visible = false;
+            PnlCliente.Visible = true;
+            PnlClase.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
         }
 
         private void BtnProfesor_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new FrmHijaProfesor());
-            BtnCliente.Visible = false;
-            BtnReserva.Visible = false;
-            BtnIndicador.Visible = false;
-            BtnClase.Visible = false;
+            PnlProfesor.Visible = true;
+            PnlCliente.Visible = false;
+            PnlClase.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnReserva_Click(object sender, EventArgs e)
+        {
+            PnlReserva.Visible = true;
+            PnlCliente.Visible = false;
+            PnlClase.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+        }
+
+        private void BtnIndicador_Click(object sender, EventArgs e)
+        {
+            PnlIndicador.Visible = true;
+            PnlCliente.Visible = false;
+            PnlClase.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnClase_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = true;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+
+
+        // BOTONES SECUNDARIOS DE TABLERO
+
+        private void PnlContenedorInicio_Paint(object sender, PaintEventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        // BOTONES PARA ABRIR FORMULARIO ABM CLIENTE
+
+        private void BtnMODCliente_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnBAJACliente_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnALTACliente_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        // BOTONES PARA ABRIR FORMULARIOS DE ABM PROFESOR
+
+        private void BtnMODProfesor_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnBAJAProfesor_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnALTAProfesor_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        // BOTONES PARA ABRIR FORMULARIOS DE ABM RESERVA
+
+        private void BtnMODReserva_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnBAJAReserva_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnALTAReserva_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+        // BOTONES PARA ABRIR FORMULARIOS DE ABM CLASE
+
+        private void BtnMODClase_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnBAJAClase_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnALTAClase_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        // BOTONES PARA ABRIR FORMULARIOS DE INDICADORES
+        private void BtnPago_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnIndicadorCliente_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+
+        }
+
+        private void BtnIndicadorProfesor_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
+        }
+
+        private void BtnIndicadorReserva_Click(object sender, EventArgs e)
+        {
+            PnlClase.Visible = false;
+            PnlCliente.Visible = false;
+            PnlProfesor.Visible = false;
+            PnlIndicador.Visible = false;
+            PnlReserva.Visible = false;
         }
     }
 }
