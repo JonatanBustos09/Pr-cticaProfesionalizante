@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_GYM_Genie.Clases
 {
-    public class Profesor
+    public class Profesor : Persona
     {
         public int ProfesorId { get; set; }
         [MaxLength(25)]

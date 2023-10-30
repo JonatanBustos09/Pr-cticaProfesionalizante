@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {}
+    "C:\\Users\\Cacu\\Source\\Repos\\PracticaProfesionalizante-GYMGENIE-G7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
+    "C:\\Users\\Cacu\\Source\\Repos\\PracticaProfesionalizante-GYMGENIE-G7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
+        "projectUniqueName": "C:\\Users\\Cacu\\Source\\Repos\\PracticaProfesionalizante-GYMGENIE-G7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
         "projectName": "( Back ) Sistema GYM Genie",
-        "projectPath": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
-        "packagesPath": "C:\\Users\\Jonatan Bustos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\obj\\",
+        "projectPath": "C:\\Users\\Cacu\\Source\\Repos\\PracticaProfesionalizante-GYMGENIE-G7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
+        "packagesPath": "C:\\Users\\Cacu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cacu\\Source\\Repos\\PracticaProfesionalizante-GYMGENIE-G7\\Sistema(GYMGenie)\\Sistema GYM Genie\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Jonatan Bustos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cacu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

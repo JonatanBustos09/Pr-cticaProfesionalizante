@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_GYM_Genie.Clases
 {
-    public class Cliente
+    public class Cliente : Persona
     {
         public int ClienteId { get; set; }
         public float PesoCliente { get; set; }
