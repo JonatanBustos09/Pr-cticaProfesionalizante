@@ -125,3 +125,68 @@ C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sist
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.Frms_Cliente.FrmHijaALTACliente.resources
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.FrmHijaBAJACliente.resources
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.Frms_Cliente.FrmHijaMODCliente.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\( Front ) Sistema GYM Genie.exe
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\( Front ) Sistema GYM Genie.deps.json
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\( Front ) Sistema GYM Genie.runtimeconfig.json
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\( Front ) Sistema GYM Genie.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\( Front ) Sistema GYM Genie.pdb
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Azure.Core.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Azure.Identity.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\System.Memory.Data.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\( Back ) Sistema GYM Genie.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\bin\Release\net6.0-windows\( Back ) Sistema GYM Genie.pdb
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.csproj.AssemblyReference.cache
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.Frms_Cliente.FrmHijaALTACliente.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.FrmHijaBAJACliente.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.Frms_Cliente.FrmHijaMODCliente.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.Frms_Cliente.FrmResumenCliente.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.FrmHijaInicio.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.FrmLogin.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.FrmTableroInicio.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.FrmHijaProfesor.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\__Front___Sistema_GYM_Genie.Properties.Resources.resources
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.csproj.GenerateResource.cache
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.AssemblyInfoInputs.cache
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.AssemblyInfo.cs
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.csproj.CoreCompileInputs.cache
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.csproj.CopyComplete
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\refint\( Front ) Sistema GYM Genie.dll
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.pdb
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\( Front ) Sistema GYM Genie.genruntimeconfig.cache
+C:\Users\jabustos\source\repos\PracticaProfesionalizante-GRUPO-7\Sistema(GYMGenie)\( Front ) Sistema GYM Genie\obj\Release\net6.0-windows\ref\( Front ) Sistema GYM Genie.dll
