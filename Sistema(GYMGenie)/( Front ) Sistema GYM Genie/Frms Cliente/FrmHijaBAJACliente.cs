@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace __Front___Sistema_GYM_Genie
 {
-    public partial class FrmHijaALTACliente : Form
+    public partial class FrmHijaBAJACliente : Form
     {
-        public FrmHijaALTACliente()
+        public FrmHijaBAJACliente()
         {
             InitializeComponent();
         }

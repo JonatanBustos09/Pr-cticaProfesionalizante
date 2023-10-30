@@ -98,6 +98,7 @@
             // LblContrasena
             // 
             LblContrasena.BackColor = Color.White;
+            LblContrasena.Cursor = Cursors.IBeam;
             LblContrasena.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             LblContrasena.Location = new Point(87, 178);
             LblContrasena.Name = "LblContrasena";
@@ -110,6 +111,7 @@
             // LblUsuario
             // 
             LblUsuario.BackColor = Color.White;
+            LblUsuario.Cursor = Cursors.IBeam;
             LblUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             LblUsuario.Location = new Point(87, 129);
             LblUsuario.Name = "LblUsuario";
@@ -138,6 +140,7 @@
             // 
             // BtnIngresar
             // 
+            BtnIngresar.Cursor = Cursors.AppStarting;
             BtnIngresar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
             BtnIngresar.ForeColor = Color.FromArgb(7, 29, 49);
             BtnIngresar.Location = new Point(189, 234);

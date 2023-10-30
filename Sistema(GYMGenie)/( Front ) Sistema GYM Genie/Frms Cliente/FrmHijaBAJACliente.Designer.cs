@@ -1,6 +1,6 @@
 ﻿namespace __Front___Sistema_GYM_Genie
 {
-    partial class FrmHijaALTACliente
+    partial class FrmHijaBAJACliente
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaALTACliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaBAJACliente));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -44,7 +44,7 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox1.Image = Properties.Resources.Gimnasio4;
-            pictureBox1.Location = new Point(913, 506);
+            pictureBox1.Location = new Point(925, 506);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(167, 195);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -55,7 +55,7 @@
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(837, 265);
+            pictureBox2.Location = new Point(849, 265);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(167, 195);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -66,7 +66,7 @@
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(913, 27);
+            pictureBox3.Location = new Point(925, 27);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(167, 195);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -91,14 +91,14 @@
             LblTituloCliente.BorderStyle = BorderStyle.Fixed3D;
             LblTituloCliente.Font = new Font("Impact", 34F, FontStyle.Italic, GraphicsUnit.Point);
             LblTituloCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            LblTituloCliente.Location = new Point(444, 29);
+            LblTituloCliente.Location = new Point(409, 30);
             LblTituloCliente.Name = "LblTituloCliente";
             LblTituloCliente.Size = new Size(281, 66);
             LblTituloCliente.TabIndex = 7;
             LblTituloCliente.Text = "BAJA CLIENTE";
             LblTituloCliente.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // FrmHijaALTACliente
+            // FrmHijaBAJACliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -109,7 +109,7 @@
             ForeColor = Color.FromArgb(20, 20, 20);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "FrmHijaALTACliente";
+            Name = "FrmHijaBAJACliente";
             Text = "Cliente";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

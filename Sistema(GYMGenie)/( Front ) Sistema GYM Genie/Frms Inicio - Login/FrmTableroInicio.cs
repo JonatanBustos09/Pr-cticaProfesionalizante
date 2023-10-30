@@ -1,4 +1,5 @@
-﻿using System;
+﻿using __Front___Sistema_GYM_Genie.Frms_Cliente;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -159,6 +160,7 @@ namespace __Front___Sistema_GYM_Genie
 
         private void BtnMODCliente_Click(object sender, EventArgs e)
         {
+            AbrirFormHija(new FrmHijaMODCliente());
             PnlClase.Visible = false;
             PnlCliente.Visible = false;
             PnlProfesor.Visible = false;
@@ -168,6 +170,7 @@ namespace __Front___Sistema_GYM_Genie
 
         private void BtnBAJACliente_Click(object sender, EventArgs e)
         {
+            AbrirFormHija(new FrmHijaBAJACliente());
             PnlClase.Visible = false;
             PnlCliente.Visible = false;
             PnlProfesor.Visible = false;
@@ -177,6 +180,7 @@ namespace __Front___Sistema_GYM_Genie
 
         private void BtnALTACliente_Click(object sender, EventArgs e)
         {
+            AbrirFormHija(new FrmHijaALTACliente());
             PnlClase.Visible = false;
             PnlCliente.Visible = false;
             PnlProfesor.Visible = false;

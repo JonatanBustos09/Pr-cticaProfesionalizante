@@ -35,13 +35,6 @@
             BtnMaximizar = new PictureBox();
             BtnRestaurar = new PictureBox();
             PnlInicio = new Panel();
-            BtnIndicador = new Button();
-            BtnReserva = new Button();
-            BtnSalir = new PictureBox();
-            BtnClase = new Button();
-            BtnProfesor = new Button();
-            BtnCliente = new Button();
-            BtnInicio = new PictureBox();
             PnlCliente = new Panel();
             BtnMODCliente = new Button();
             BtnALTACliente = new Button();
@@ -58,11 +51,18 @@
             BtnMODClase = new Button();
             BtnALTAClase = new Button();
             BtnBAJAClase = new Button();
+            BtnIndicador = new Button();
             PnlIndicador = new Panel();
             BtnPago = new Button();
             BtnIndicadorReserva = new Button();
             BtnIndicadorCliente = new Button();
             BtnIndicadorProfesor = new Button();
+            BtnReserva = new Button();
+            BtnSalir = new PictureBox();
+            BtnClase = new Button();
+            BtnProfesor = new Button();
+            BtnCliente = new Button();
+            BtnInicio = new PictureBox();
             PnlContenedorInicio = new Panel();
             PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BtnMinizar).BeginInit();
@@ -70,13 +70,13 @@
             ((System.ComponentModel.ISupportInitialize)BtnMaximizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnRestaurar).BeginInit();
             PnlInicio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)BtnSalir).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)BtnInicio).BeginInit();
             PnlCliente.SuspendLayout();
             PnlProfesor.SuspendLayout();
             PnlReserva.SuspendLayout();
             PnlClase.SuspendLayout();
             PnlIndicador.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)BtnSalir).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnInicio).BeginInit();
             SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -163,115 +163,6 @@
             PnlInicio.Name = "PnlInicio";
             PnlInicio.Size = new Size(250, 738);
             PnlInicio.TabIndex = 1;
-            // 
-            // BtnIndicador
-            // 
-            BtnIndicador.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            BtnIndicador.BackColor = Color.FromArgb(20, 20, 20);
-            BtnIndicador.FlatAppearance.BorderColor = Color.Gray;
-            BtnIndicador.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnIndicador.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnIndicador.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnIndicador.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnIndicador.Location = new Point(12, 536);
-            BtnIndicador.Name = "BtnIndicador";
-            BtnIndicador.Size = new Size(219, 66);
-            BtnIndicador.TabIndex = 10;
-            BtnIndicador.Text = "INDICADOR";
-            BtnIndicador.UseVisualStyleBackColor = false;
-            BtnIndicador.Click += BtnIndicador_Click;
-            // 
-            // BtnReserva
-            // 
-            BtnReserva.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            BtnReserva.BackColor = Color.FromArgb(20, 20, 20);
-            BtnReserva.FlatAppearance.BorderColor = Color.Gray;
-            BtnReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnReserva.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnReserva.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnReserva.Location = new Point(12, 392);
-            BtnReserva.Name = "BtnReserva";
-            BtnReserva.Size = new Size(219, 66);
-            BtnReserva.TabIndex = 9;
-            BtnReserva.Text = "RESERVA";
-            BtnReserva.UseVisualStyleBackColor = false;
-            BtnReserva.Click += BtnReserva_Click;
-            // 
-            // BtnSalir
-            // 
-            BtnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            BtnSalir.BackColor = Color.FromArgb(7, 29, 49);
-            BtnSalir.Image = (Image)resources.GetObject("BtnSalir.Image");
-            BtnSalir.Location = new Point(12, 672);
-            BtnSalir.Name = "BtnSalir";
-            BtnSalir.Size = new Size(51, 50);
-            BtnSalir.SizeMode = PictureBoxSizeMode.Zoom;
-            BtnSalir.TabIndex = 8;
-            BtnSalir.TabStop = false;
-            BtnSalir.Click += BtnSalir_Click;
-            // 
-            // BtnClase
-            // 
-            BtnClase.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            BtnClase.BackColor = Color.FromArgb(20, 20, 20);
-            BtnClase.FlatAppearance.BorderColor = Color.Gray;
-            BtnClase.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnClase.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnClase.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnClase.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnClase.Location = new Point(12, 464);
-            BtnClase.Name = "BtnClase";
-            BtnClase.Size = new Size(219, 66);
-            BtnClase.TabIndex = 7;
-            BtnClase.Text = "CLASE";
-            BtnClase.UseVisualStyleBackColor = false;
-            BtnClase.Click += BtnClase_Click;
-            // 
-            // BtnProfesor
-            // 
-            BtnProfesor.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            BtnProfesor.BackColor = Color.FromArgb(20, 20, 20);
-            BtnProfesor.FlatAppearance.BorderColor = Color.Gray;
-            BtnProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnProfesor.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnProfesor.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnProfesor.Location = new Point(12, 320);
-            BtnProfesor.Name = "BtnProfesor";
-            BtnProfesor.Size = new Size(219, 66);
-            BtnProfesor.TabIndex = 6;
-            BtnProfesor.Text = "PROFESOR";
-            BtnProfesor.UseVisualStyleBackColor = false;
-            BtnProfesor.Click += BtnProfesor_Click;
-            // 
-            // BtnCliente
-            // 
-            BtnCliente.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            BtnCliente.BackColor = Color.FromArgb(20, 20, 20);
-            BtnCliente.FlatAppearance.BorderColor = Color.Gray;
-            BtnCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
-            BtnCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
-            BtnCliente.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
-            BtnCliente.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnCliente.Location = new Point(12, 248);
-            BtnCliente.Name = "BtnCliente";
-            BtnCliente.Size = new Size(219, 66);
-            BtnCliente.TabIndex = 5;
-            BtnCliente.Text = "CLIENTE";
-            BtnCliente.UseVisualStyleBackColor = false;
-            BtnCliente.Click += BtnCliente_Click;
-            // 
-            // BtnInicio
-            // 
-            BtnInicio.Image = Properties.Resources.Logo;
-            BtnInicio.Location = new Point(0, 13);
-            BtnInicio.Name = "BtnInicio";
-            BtnInicio.Size = new Size(250, 226);
-            BtnInicio.SizeMode = PictureBoxSizeMode.Zoom;
-            BtnInicio.TabIndex = 0;
-            BtnInicio.TabStop = false;
-            BtnInicio.Click += BtnInicio_Click;
             // 
             // PnlCliente
             // 
@@ -525,6 +416,23 @@
             BtnBAJAClase.UseVisualStyleBackColor = false;
             BtnBAJAClase.Click += BtnBAJAClase_Click;
             // 
+            // BtnIndicador
+            // 
+            BtnIndicador.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            BtnIndicador.BackColor = Color.FromArgb(20, 20, 20);
+            BtnIndicador.FlatAppearance.BorderColor = Color.Gray;
+            BtnIndicador.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnIndicador.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnIndicador.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnIndicador.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnIndicador.Location = new Point(12, 536);
+            BtnIndicador.Name = "BtnIndicador";
+            BtnIndicador.Size = new Size(219, 66);
+            BtnIndicador.TabIndex = 10;
+            BtnIndicador.Text = "INDICADOR";
+            BtnIndicador.UseVisualStyleBackColor = false;
+            BtnIndicador.Click += BtnIndicador_Click;
+            // 
             // PnlIndicador
             // 
             PnlIndicador.Anchor = AnchorStyles.Left | AnchorStyles.Right;
@@ -606,6 +514,98 @@
             BtnIndicadorProfesor.UseVisualStyleBackColor = false;
             BtnIndicadorProfesor.Click += BtnIndicadorProfesor_Click;
             // 
+            // BtnReserva
+            // 
+            BtnReserva.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            BtnReserva.BackColor = Color.FromArgb(20, 20, 20);
+            BtnReserva.FlatAppearance.BorderColor = Color.Gray;
+            BtnReserva.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnReserva.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnReserva.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnReserva.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnReserva.Location = new Point(12, 392);
+            BtnReserva.Name = "BtnReserva";
+            BtnReserva.Size = new Size(219, 66);
+            BtnReserva.TabIndex = 9;
+            BtnReserva.Text = "RESERVA";
+            BtnReserva.UseVisualStyleBackColor = false;
+            BtnReserva.Click += BtnReserva_Click;
+            // 
+            // BtnSalir
+            // 
+            BtnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            BtnSalir.BackColor = Color.FromArgb(7, 29, 49);
+            BtnSalir.Image = (Image)resources.GetObject("BtnSalir.Image");
+            BtnSalir.Location = new Point(12, 672);
+            BtnSalir.Name = "BtnSalir";
+            BtnSalir.Size = new Size(51, 50);
+            BtnSalir.SizeMode = PictureBoxSizeMode.Zoom;
+            BtnSalir.TabIndex = 8;
+            BtnSalir.TabStop = false;
+            BtnSalir.Click += BtnSalir_Click;
+            // 
+            // BtnClase
+            // 
+            BtnClase.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            BtnClase.BackColor = Color.FromArgb(20, 20, 20);
+            BtnClase.FlatAppearance.BorderColor = Color.Gray;
+            BtnClase.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnClase.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnClase.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnClase.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnClase.Location = new Point(12, 464);
+            BtnClase.Name = "BtnClase";
+            BtnClase.Size = new Size(219, 66);
+            BtnClase.TabIndex = 7;
+            BtnClase.Text = "CLASE";
+            BtnClase.UseVisualStyleBackColor = false;
+            BtnClase.Click += BtnClase_Click;
+            // 
+            // BtnProfesor
+            // 
+            BtnProfesor.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            BtnProfesor.BackColor = Color.FromArgb(20, 20, 20);
+            BtnProfesor.FlatAppearance.BorderColor = Color.Gray;
+            BtnProfesor.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnProfesor.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnProfesor.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnProfesor.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnProfesor.Location = new Point(12, 320);
+            BtnProfesor.Name = "BtnProfesor";
+            BtnProfesor.Size = new Size(219, 66);
+            BtnProfesor.TabIndex = 6;
+            BtnProfesor.Text = "PROFESOR";
+            BtnProfesor.UseVisualStyleBackColor = false;
+            BtnProfesor.Click += BtnProfesor_Click;
+            // 
+            // BtnCliente
+            // 
+            BtnCliente.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            BtnCliente.BackColor = Color.FromArgb(20, 20, 20);
+            BtnCliente.FlatAppearance.BorderColor = Color.Gray;
+            BtnCliente.FlatAppearance.MouseDownBackColor = Color.FromArgb(7, 29, 49);
+            BtnCliente.FlatAppearance.MouseOverBackColor = Color.Gray;
+            BtnCliente.Font = new Font("Impact", 26F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnCliente.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnCliente.Location = new Point(12, 248);
+            BtnCliente.Name = "BtnCliente";
+            BtnCliente.Size = new Size(219, 66);
+            BtnCliente.TabIndex = 5;
+            BtnCliente.Text = "CLIENTE";
+            BtnCliente.UseVisualStyleBackColor = false;
+            BtnCliente.Click += BtnCliente_Click;
+            // 
+            // BtnInicio
+            // 
+            BtnInicio.Image = Properties.Resources.Logo;
+            BtnInicio.Location = new Point(0, 13);
+            BtnInicio.Name = "BtnInicio";
+            BtnInicio.Size = new Size(250, 226);
+            BtnInicio.SizeMode = PictureBoxSizeMode.Zoom;
+            BtnInicio.TabIndex = 0;
+            BtnInicio.TabStop = false;
+            BtnInicio.Click += BtnInicio_Click;
+            // 
             // PnlContenedorInicio
             // 
             PnlContenedorInicio.BackColor = Color.FromArgb(7, 29, 49);
@@ -638,13 +638,13 @@
             ((System.ComponentModel.ISupportInitialize)BtnMaximizar).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnRestaurar).EndInit();
             PnlInicio.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)BtnSalir).EndInit();
-            ((System.ComponentModel.ISupportInitialize)BtnInicio).EndInit();
             PnlCliente.ResumeLayout(false);
             PnlProfesor.ResumeLayout(false);
             PnlReserva.ResumeLayout(false);
             PnlClase.ResumeLayout(false);
             PnlIndicador.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)BtnSalir).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnInicio).EndInit();
             ResumeLayout(false);
         }
 
