@@ -93,6 +93,36 @@ namespace @__Front___Sistema_GYM_Genie.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gimnasio10 {
+            get {
+                object obj = ResourceManager.GetObject("Gimnasio10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gimnasio11 {
+            get {
+                object obj = ResourceManager.GetObject("Gimnasio11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gimnasio13 {
+            get {
+                object obj = ResourceManager.GetObject("Gimnasio13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gimnasio4 {
             get {
                 object obj = ResourceManager.GetObject("Gimnasio4", resourceCulture);

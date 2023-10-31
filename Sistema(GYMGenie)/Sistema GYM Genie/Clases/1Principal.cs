@@ -41,11 +41,25 @@ namespace Sistema_GYM_Genie.Clases
             }
         }
 
-        // ALTA de una Persona
+        // ALTA de una Persona/ Cliente
 
-        public void AgregarPersona(Persona personaNueva)
+        public void AltaPersona(int dni, string nombre, string apellido, int telefono, DateTime fechaNac, string correo, string usuario, string contrasena, string ciudad, string direccion, int altura, bool profesor)
         {
-            context.Personas.Add(personaNueva);
+            Persona persona = new Persona();
+            persona.DNI_Persona = dni;
+            persona.NombrePersona = nombre;
+            persona.ApellidoPersona = apellido;
+            persona.TelefonoPersona = telefono;
+            persona.FechaNacimiento = fechaNac;
+            persona.CorreoElectronico = correo;
+            persona.NombreUsuario = usuario;
+            persona.Contrasenia = contrasena;
+            persona.Ciudad = ciudad;
+            persona.Direccion = direccion;
+            persona.AlturaDireccion = altura;
+            persona.Profesor = profesor;
+
+            context.Personas.Add(persona);
             context.SaveChanges();
         }
 

@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaALTACliente));
             PnlALTACliente = new Panel();
+            pictureBox6 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
             PreVisible = new PictureBox();
             PreNoVisible = new PictureBox();
             BtnCancelar = new Button();
@@ -63,6 +66,9 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             PnlALTACliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PreVisible).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PreNoVisible).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -74,6 +80,9 @@
             // 
             PnlALTACliente.BackColor = Color.FromArgb(20, 20, 20);
             PnlALTACliente.BorderStyle = BorderStyle.Fixed3D;
+            PnlALTACliente.Controls.Add(pictureBox6);
+            PnlALTACliente.Controls.Add(pictureBox5);
+            PnlALTACliente.Controls.Add(pictureBox4);
             PnlALTACliente.Controls.Add(PreVisible);
             PnlALTACliente.Controls.Add(PreNoVisible);
             PnlALTACliente.Controls.Add(BtnCancelar);
@@ -112,13 +121,47 @@
             PnlALTACliente.Size = new Size(1116, 738);
             PnlALTACliente.TabIndex = 9;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.Anchor = AnchorStyles.Right;
+            pictureBox6.Image = Properties.Resources.Gimnasio13;
+            pictureBox6.Location = new Point(858, 462);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(148, 211);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 43;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Anchor = AnchorStyles.Right;
+            pictureBox5.Image = Properties.Resources.Gimnasio11;
+            pictureBox5.Location = new Point(651, 248);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(148, 211);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 42;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Anchor = AnchorStyles.Right;
+            pictureBox4.Image = Properties.Resources.Gimnasio10;
+            pictureBox4.Location = new Point(858, 30);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(148, 211);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 41;
+            pictureBox4.TabStop = false;
+            // 
             // PreVisible
             // 
+            PreVisible.Anchor = AnchorStyles.Left;
             PreVisible.BackColor = Color.DarkGray;
             PreVisible.Image = Properties.Resources.icons8_visible_50;
-            PreVisible.Location = new Point(411, 411);
+            PreVisible.Location = new Point(420, 411);
             PreVisible.Name = "PreVisible";
-            PreVisible.Size = new Size(21, 21);
+            PreVisible.Size = new Size(19, 19);
             PreVisible.SizeMode = PictureBoxSizeMode.Zoom;
             PreVisible.TabIndex = 39;
             PreVisible.TabStop = false;
@@ -126,11 +169,12 @@
             // 
             // PreNoVisible
             // 
+            PreNoVisible.Anchor = AnchorStyles.Left;
             PreNoVisible.BackColor = Color.DarkGray;
             PreNoVisible.Image = (Image)resources.GetObject("PreNoVisible.Image");
-            PreNoVisible.Location = new Point(411, 411);
+            PreNoVisible.Location = new Point(420, 411);
             PreNoVisible.Name = "PreNoVisible";
-            PreNoVisible.Size = new Size(21, 21);
+            PreNoVisible.Size = new Size(19, 19);
             PreNoVisible.SizeMode = PictureBoxSizeMode.Zoom;
             PreNoVisible.TabIndex = 40;
             PreNoVisible.TabStop = false;
@@ -138,11 +182,12 @@
             // 
             // BtnCancelar
             // 
+            BtnCancelar.Anchor = AnchorStyles.Left;
             BtnCancelar.BackColor = Color.FromArgb(64, 64, 64);
             BtnCancelar.Cursor = Cursors.AppStarting;
             BtnCancelar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
             BtnCancelar.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnCancelar.Location = new Point(143, 630);
+            BtnCancelar.Location = new Point(152, 630);
             BtnCancelar.Name = "BtnCancelar";
             BtnCancelar.Size = new Size(113, 33);
             BtnCancelar.TabIndex = 38;
@@ -151,20 +196,23 @@
             // 
             // BtnAgregar
             // 
+            BtnAgregar.Anchor = AnchorStyles.Left;
             BtnAgregar.BackColor = Color.FromArgb(64, 64, 64);
             BtnAgregar.Cursor = Cursors.AppStarting;
             BtnAgregar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
             BtnAgregar.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnAgregar.Location = new Point(319, 630);
+            BtnAgregar.Location = new Point(328, 630);
             BtnAgregar.Name = "BtnAgregar";
             BtnAgregar.Size = new Size(113, 33);
             BtnAgregar.TabIndex = 37;
             BtnAgregar.Text = "AGREGAR";
             BtnAgregar.UseVisualStyleBackColor = false;
+            BtnAgregar.Click += BtnAgregar_Click;
             // 
             // checkBoxProfesor
             // 
-            checkBoxProfesor.Location = new Point(268, 569);
+            checkBoxProfesor.Anchor = AnchorStyles.Left;
+            checkBoxProfesor.Location = new Point(277, 569);
             checkBoxProfesor.Name = "checkBoxProfesor";
             checkBoxProfesor.Size = new Size(38, 38);
             checkBoxProfesor.TabIndex = 36;
@@ -172,19 +220,22 @@
             // 
             // DtpFecha
             // 
+            DtpFecha.Anchor = AnchorStyles.Left;
+            DtpFecha.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             DtpFecha.Format = DateTimePickerFormat.Short;
-            DtpFecha.Location = new Point(315, 289);
+            DtpFecha.Location = new Point(324, 289);
             DtpFecha.Name = "DtpFecha";
-            DtpFecha.Size = new Size(117, 23);
+            DtpFecha.Size = new Size(117, 21);
             DtpFecha.TabIndex = 35;
             DtpFecha.Value = new DateTime(2023, 10, 30, 0, 0, 0, 0);
             // 
             // label11
             // 
+            label11.Anchor = AnchorStyles.Left;
             label11.BackColor = Color.White;
             label11.BorderStyle = BorderStyle.Fixed3D;
             label11.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(143, 575);
+            label11.Location = new Point(152, 575);
             label11.Name = "label11";
             label11.Size = new Size(102, 21);
             label11.TabIndex = 33;
@@ -193,19 +244,21 @@
             // 
             // TxtAltura
             // 
+            TxtAltura.Anchor = AnchorStyles.Left;
             TxtAltura.Cursor = Cursors.IBeam;
             TxtAltura.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtAltura.Location = new Point(268, 535);
+            TxtAltura.Location = new Point(277, 535);
             TxtAltura.Name = "TxtAltura";
             TxtAltura.Size = new Size(164, 21);
             TxtAltura.TabIndex = 30;
             // 
             // label9
             // 
+            label9.Anchor = AnchorStyles.Left;
             label9.BackColor = Color.White;
             label9.BorderStyle = BorderStyle.Fixed3D;
             label9.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(143, 533);
+            label9.Location = new Point(152, 533);
             label9.Name = "label9";
             label9.Size = new Size(102, 21);
             label9.TabIndex = 29;
@@ -214,19 +267,21 @@
             // 
             // TxtDireccion
             // 
+            TxtDireccion.Anchor = AnchorStyles.Left;
             TxtDireccion.Cursor = Cursors.IBeam;
             TxtDireccion.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtDireccion.Location = new Point(268, 494);
+            TxtDireccion.Location = new Point(277, 494);
             TxtDireccion.Name = "TxtDireccion";
             TxtDireccion.Size = new Size(164, 21);
             TxtDireccion.TabIndex = 28;
             // 
             // label8
             // 
+            label8.Anchor = AnchorStyles.Left;
             label8.BackColor = Color.White;
             label8.BorderStyle = BorderStyle.Fixed3D;
             label8.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(143, 493);
+            label8.Location = new Point(152, 493);
             label8.Name = "label8";
             label8.Size = new Size(102, 21);
             label8.TabIndex = 27;
@@ -235,19 +290,21 @@
             // 
             // TxtCiudad
             // 
+            TxtCiudad.Anchor = AnchorStyles.Left;
             TxtCiudad.Cursor = Cursors.IBeam;
             TxtCiudad.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtCiudad.Location = new Point(268, 452);
+            TxtCiudad.Location = new Point(277, 452);
             TxtCiudad.Name = "TxtCiudad";
             TxtCiudad.Size = new Size(164, 21);
             TxtCiudad.TabIndex = 26;
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.Left;
             label7.BackColor = Color.White;
             label7.BorderStyle = BorderStyle.Fixed3D;
             label7.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(143, 450);
+            label7.Location = new Point(152, 450);
             label7.Name = "label7";
             label7.Size = new Size(102, 21);
             label7.TabIndex = 25;
@@ -256,9 +313,10 @@
             // 
             // TxtContrasena
             // 
+            TxtContrasena.Anchor = AnchorStyles.Left;
             TxtContrasena.Cursor = Cursors.IBeam;
             TxtContrasena.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtContrasena.Location = new Point(268, 411);
+            TxtContrasena.Location = new Point(276, 410);
             TxtContrasena.Name = "TxtContrasena";
             TxtContrasena.Size = new Size(164, 21);
             TxtContrasena.TabIndex = 24;
@@ -266,10 +324,11 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.Left;
             label6.BackColor = Color.White;
             label6.BorderStyle = BorderStyle.Fixed3D;
             label6.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(143, 409);
+            label6.Location = new Point(152, 409);
             label6.Name = "label6";
             label6.Size = new Size(102, 21);
             label6.TabIndex = 23;
@@ -278,19 +337,21 @@
             // 
             // TxtUsuario
             // 
+            TxtUsuario.Anchor = AnchorStyles.Left;
             TxtUsuario.Cursor = Cursors.IBeam;
             TxtUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtUsuario.Location = new Point(268, 372);
+            TxtUsuario.Location = new Point(277, 372);
             TxtUsuario.Name = "TxtUsuario";
             TxtUsuario.Size = new Size(164, 21);
             TxtUsuario.TabIndex = 22;
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.Left;
             label5.BackColor = Color.White;
             label5.BorderStyle = BorderStyle.Fixed3D;
             label5.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(143, 370);
+            label5.Location = new Point(152, 370);
             label5.Name = "label5";
             label5.Size = new Size(102, 21);
             label5.TabIndex = 21;
@@ -299,19 +360,21 @@
             // 
             // TxtCorreo
             // 
+            TxtCorreo.Anchor = AnchorStyles.Left;
             TxtCorreo.Cursor = Cursors.IBeam;
             TxtCorreo.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtCorreo.Location = new Point(268, 331);
+            TxtCorreo.Location = new Point(277, 331);
             TxtCorreo.Name = "TxtCorreo";
             TxtCorreo.Size = new Size(164, 21);
             TxtCorreo.TabIndex = 20;
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Left;
             label4.BackColor = Color.White;
             label4.BorderStyle = BorderStyle.Fixed3D;
             label4.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(143, 331);
+            label4.Location = new Point(152, 331);
             label4.Name = "label4";
             label4.Size = new Size(102, 21);
             label4.TabIndex = 19;
@@ -320,10 +383,11 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Left;
             label3.BackColor = Color.White;
             label3.BorderStyle = BorderStyle.Fixed3D;
             label3.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(143, 290);
+            label3.Location = new Point(152, 290);
             label3.Name = "label3";
             label3.Size = new Size(137, 21);
             label3.TabIndex = 17;
@@ -332,19 +396,21 @@
             // 
             // TxtTelefono
             // 
+            TxtTelefono.Anchor = AnchorStyles.Left;
             TxtTelefono.Cursor = Cursors.IBeam;
             TxtTelefono.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtTelefono.Location = new Point(268, 248);
+            TxtTelefono.Location = new Point(277, 248);
             TxtTelefono.Name = "TxtTelefono";
             TxtTelefono.Size = new Size(164, 21);
             TxtTelefono.TabIndex = 16;
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Left;
             label2.BackColor = Color.White;
             label2.BorderStyle = BorderStyle.Fixed3D;
             label2.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(143, 246);
+            label2.Location = new Point(152, 246);
             label2.Name = "label2";
             label2.Size = new Size(102, 21);
             label2.TabIndex = 15;
@@ -353,19 +419,21 @@
             // 
             // TxtApellido
             // 
+            TxtApellido.Anchor = AnchorStyles.Left;
             TxtApellido.Cursor = Cursors.IBeam;
             TxtApellido.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtApellido.Location = new Point(268, 209);
+            TxtApellido.Location = new Point(277, 209);
             TxtApellido.Name = "TxtApellido";
             TxtApellido.Size = new Size(164, 21);
             TxtApellido.TabIndex = 14;
             // 
             // LblApellido
             // 
+            LblApellido.Anchor = AnchorStyles.Left;
             LblApellido.BackColor = Color.White;
             LblApellido.BorderStyle = BorderStyle.Fixed3D;
             LblApellido.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblApellido.Location = new Point(143, 207);
+            LblApellido.Location = new Point(152, 207);
             LblApellido.Name = "LblApellido";
             LblApellido.Size = new Size(102, 21);
             LblApellido.TabIndex = 13;
@@ -374,19 +442,21 @@
             // 
             // TxtNombre
             // 
+            TxtNombre.Anchor = AnchorStyles.Left;
             TxtNombre.Cursor = Cursors.IBeam;
             TxtNombre.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtNombre.Location = new Point(268, 173);
+            TxtNombre.Location = new Point(277, 173);
             TxtNombre.Name = "TxtNombre";
             TxtNombre.Size = new Size(164, 21);
             TxtNombre.TabIndex = 12;
             // 
             // LblNombre
             // 
+            LblNombre.Anchor = AnchorStyles.Left;
             LblNombre.BackColor = Color.White;
             LblNombre.BorderStyle = BorderStyle.Fixed3D;
             LblNombre.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblNombre.Location = new Point(143, 173);
+            LblNombre.Location = new Point(152, 173);
             LblNombre.Name = "LblNombre";
             LblNombre.Size = new Size(102, 21);
             LblNombre.TabIndex = 11;
@@ -395,19 +465,21 @@
             // 
             // TxtDNI
             // 
+            TxtDNI.Anchor = AnchorStyles.Left;
             TxtDNI.Cursor = Cursors.IBeam;
             TxtDNI.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtDNI.Location = new Point(268, 139);
+            TxtDNI.Location = new Point(277, 139);
             TxtDNI.Name = "TxtDNI";
             TxtDNI.Size = new Size(164, 21);
             TxtDNI.TabIndex = 10;
             // 
             // LblDNI
             // 
+            LblDNI.Anchor = AnchorStyles.Left;
             LblDNI.BackColor = Color.White;
             LblDNI.BorderStyle = BorderStyle.Fixed3D;
             LblDNI.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblDNI.Location = new Point(143, 139);
+            LblDNI.Location = new Point(152, 139);
             LblDNI.Name = "LblDNI";
             LblDNI.Size = new Size(102, 21);
             LblDNI.TabIndex = 9;
@@ -471,6 +543,9 @@
             Text = "FrmHijaALTACliente";
             PnlALTACliente.ResumeLayout(false);
             PnlALTACliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)PreVisible).EndInit();
             ((System.ComponentModel.ISupportInitialize)PreNoVisible).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -514,5 +589,8 @@
         private Button BtnCancelar;
         private PictureBox PreNoVisible;
         private PictureBox PreVisible;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
     }
 }

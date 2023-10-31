@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sistema_GYM_Genie.DBConection;
 
@@ -11,9 +12,11 @@ using Sistema_GYM_Genie.DBConection;
 namespace Sistema_GYM_Genie.Migrations
 {
     [DbContext(typeof(Appdbcontext))]
-    partial class AppdbcontextModelSnapshot : ModelSnapshot
+    [Migration("20231031140103_Version9")]
+    partial class Version9
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -156,6 +159,9 @@ namespace Sistema_GYM_Genie.Migrations
                     b.Property<int>("CBU")
                         .HasColumnType("int");
 
+                    b.Property<int?>("PersonaId")
+                        .HasColumnType("int");
+
                     b.Property<float>("Sueldo")
                         .HasColumnType("real");
 
@@ -164,6 +170,8 @@ namespace Sistema_GYM_Genie.Migrations
                         .HasColumnType("nvarchar(25)");
 
                     b.HasKey("ProfesorId");
+
+                    b.HasIndex("PersonaId");
 
                     b.ToTable("Profesores");
                 });
@@ -224,6 +232,15 @@ namespace Sistema_GYM_Genie.Migrations
                     b.HasKey("TurnoId");
 
                     b.ToTable("Turnos");
+                });
+
+            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Profesor", b =>
+                {
+                    b.HasOne("Sistema_GYM_Genie.Clases.Persona", "persona")
+                        .WithMany()
+                        .HasForeignKey("PersonaId");
+
+                    b.Navigation("persona");
                 });
 #pragma warning restore 612, 618
         }
