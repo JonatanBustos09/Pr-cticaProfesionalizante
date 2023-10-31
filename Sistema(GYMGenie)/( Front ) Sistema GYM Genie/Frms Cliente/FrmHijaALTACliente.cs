@@ -17,9 +17,18 @@ namespace __Front___Sistema_GYM_Genie.Frms_Cliente
             InitializeComponent();
         }
 
-
-        private void LblTituloCliente_Click(object sender, EventArgs e)
+        private void PreVisible_Click(object sender, EventArgs e)
         {
+            TxtContrasena.UseSystemPasswordChar = false;
+            PreVisible.Visible = false;
+            PreNoVisible.Visible = true;
+        }
+
+        private void PreNoVisible_Click(object sender, EventArgs e)
+        {
+            TxtContrasena.UseSystemPasswordChar = true;
+            PreVisible.Visible = true;
+            PreNoVisible.Visible = false;
         }
     }
 }

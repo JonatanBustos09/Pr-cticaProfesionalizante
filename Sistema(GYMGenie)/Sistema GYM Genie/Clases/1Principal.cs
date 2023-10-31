@@ -7,7 +7,40 @@ namespace Sistema_GYM_Genie.Clases
     public class Principal
     {
         Appdbcontext context = new Appdbcontext();
-        
+
+        // ALTA de un Profesor
+
+        public void AltaProfesor(string titulo, string alias, int cbu, float sueldo)
+        {
+            Profesor profesor = new Profesor();
+            profesor.Titulo = titulo;
+            profesor.Alias = alias;
+            profesor.CBU = cbu;
+            profesor.Sueldo = sueldo;
+
+            context.Profesores.Add(profesor);
+            context.SaveChanges();
+        }
+        // BAJA de un Profesor
+        public void EliminarProfesor(Profesor profesorDelete)
+        {
+            context.Profesores.Remove(profesorDelete);
+            context.SaveChanges();
+        }
+        //BUSCAR para Modificar un Profesor
+        public bool BuscarProfesor(int DNI_Persona)
+        {
+            var profesorEncontrado = context.Profesores.Find(DNI_Persona);
+            if (profesorEncontrado != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         // ALTA de una Persona
 
         public void AgregarPersona(Persona personaNueva)
@@ -15,6 +48,8 @@ namespace Sistema_GYM_Genie.Clases
             context.Personas.Add(personaNueva);
             context.SaveChanges();
         }
+
+
 
         // BAJA de una Persona
 

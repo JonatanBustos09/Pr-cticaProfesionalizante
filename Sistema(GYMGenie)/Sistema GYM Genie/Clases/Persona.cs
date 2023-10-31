@@ -28,5 +28,6 @@ namespace Sistema_GYM_Genie.Clases
         [MaxLength(25)]
         public string? Direccion { get; set; }
         public int AlturaDireccion { get; set; }
+        public bool Profesor { get;set; }
     }
 }

@@ -9,6 +9,7 @@ namespace Sistema_GYM_Genie.Clases
 {
     public class Profesor
     {
+        public Persona? persona { get; set; }
         public int ProfesorId { get; set; }
         [MaxLength(25)]
         public string? Titulo { get; set; }
