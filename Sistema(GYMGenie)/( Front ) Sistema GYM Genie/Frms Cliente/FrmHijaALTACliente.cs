@@ -37,7 +37,7 @@ namespace __Front___Sistema_GYM_Genie.Frms_Cliente
         {
             DateTime fecha = DtpFecha.Value;
 
-            principal.AltaPersona(int.Parse(TxtDNI.Text), TxtNombre.Text,TxtApellido.Text, int.Parse(TxtTelefono.Text),fecha,TxtCorreo.Text, TxtUsuario.Text, TxtContrasena.Text, TxtCiudad.Text, TxtDireccion.Text, int.Parse(TxtAltura.Text), checkBoxProfesor.Checked);
+            principal.AltaPersona(TxtDNI.Text, TxtNombre.Text,TxtApellido.Text, TxtTelefono.Text,fecha,TxtCorreo.Text, TxtUsuario.Text, TxtContrasena.Text, TxtCiudad.Text, TxtDireccion.Text, int.Parse(TxtAltura.Text), checkBoxProfesor.Checked);
             MessageBox.Show($"La Persona {TxtNombre.Text} {TxtApellido.Text} fue agregado con exito!", "LISTO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

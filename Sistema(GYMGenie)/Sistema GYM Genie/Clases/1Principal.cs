@@ -43,7 +43,7 @@ namespace Sistema_GYM_Genie.Clases
 
         // ALTA de una Persona/ Cliente
 
-        public void AltaPersona(int dni, string nombre, string apellido, int telefono, DateTime fechaNac, string correo, string usuario, string contrasena, string ciudad, string direccion, int altura, bool profesor)
+        public void AltaPersona(string dni, string nombre, string apellido, string telefono, DateTime fechaNac, string correo, string usuario, string contrasena, string ciudad, string direccion, int altura, bool profesor)
         {
             Persona persona = new Persona();
             persona.DNI_Persona = dni;

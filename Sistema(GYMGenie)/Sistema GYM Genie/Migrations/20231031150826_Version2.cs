@@ -5,26 +5,10 @@
 namespace Sistema_GYM_Genie.Migrations
 {
     /// <inheritdoc />
-    public partial class Version10 : Migration
+    public partial class Version2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Profesores_Personas_PersonaId",
-                table: "Profesores");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Profesores_PersonaId",
-                table: "Profesores");
-
-            migrationBuilder.DropColumn(
-                name: "PersonaId",
-                table: "Profesores");
-        }
-
-        /// <inheritdoc />
-        protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<int>(
                 name: "PersonaId",
@@ -43,6 +27,22 @@ namespace Sistema_GYM_Genie.Migrations
                 column: "PersonaId",
                 principalTable: "Personas",
                 principalColumn: "PersonaId");
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Profesores_Personas_PersonaId",
+                table: "Profesores");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Profesores_PersonaId",
+                table: "Profesores");
+
+            migrationBuilder.DropColumn(
+                name: "PersonaId",
+                table: "Profesores");
         }
     }
 }

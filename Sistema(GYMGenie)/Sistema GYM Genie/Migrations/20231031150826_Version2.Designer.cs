@@ -12,8 +12,8 @@ using Sistema_GYM_Genie.DBConection;
 namespace Sistema_GYM_Genie.Migrations
 {
     [DbContext(typeof(Appdbcontext))]
-    [Migration("20231022125752_Version6")]
-    partial class Version6
+    [Migration("20231031150826_Version2")]
+    partial class Version2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,14 +33,20 @@ namespace Sistema_GYM_Genie.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClaseId"));
 
+                    b.Property<float>("CostoClase")
+                        .HasColumnType("real");
+
                     b.Property<string>("Equipamiento")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("NombreClase")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("TipoClase")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.HasKey("ClaseId");
 
@@ -94,31 +100,41 @@ namespace Sistema_GYM_Genie.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ApellidoPersona")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Ciudad")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Contrasenia")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("CorreoElectronico")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("DNI_Persona")
                         .HasColumnType("int");
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<DateTime>("FechaNacimiento")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("NombrePersona")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("NombreUsuario")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<bool>("Profesor")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("TelefonoPersona")
                         .HasColumnType("int");
@@ -137,18 +153,25 @@ namespace Sistema_GYM_Genie.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProfesorId"));
 
                     b.Property<string>("Alias")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<int>("CBU")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PersonaId")
                         .HasColumnType("int");
 
                     b.Property<float>("Sueldo")
                         .HasColumnType("real");
 
                     b.Property<string>("Titulo")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.HasKey("ProfesorId");
+
+                    b.HasIndex("PersonaId");
 
                     b.ToTable("Profesores");
                 });
@@ -181,7 +204,8 @@ namespace Sistema_GYM_Genie.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RolId"));
 
                     b.Property<string>("TipoRol")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.HasKey("RolId");
 
@@ -208,6 +232,15 @@ namespace Sistema_GYM_Genie.Migrations
                     b.HasKey("TurnoId");
 
                     b.ToTable("Turnos");
+                });
+
+            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Profesor", b =>
+                {
+                    b.HasOne("Sistema_GYM_Genie.Clases.Persona", "Persona")
+                        .WithMany()
+                        .HasForeignKey("PersonaId");
+
+                    b.Navigation("Persona");
                 });
 #pragma warning restore 612, 618
         }

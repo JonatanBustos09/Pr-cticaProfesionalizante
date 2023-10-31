@@ -4,18 +4,21 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Sistema_GYM_Genie.Clases
 {
     public class Persona
     {
         public int PersonaId { get; set; }
-        public int DNI_Persona { get; set; }
+        [MaxLength(25)]
+        public string? DNI_Persona { get; set; }
         [MaxLength(25)]
         public string? NombrePersona { get; set; }
         [MaxLength(25)]
         public string? ApellidoPersona { get; set; }
-        public int? TelefonoPersona { get; set; }
+        [MaxLength(25)]
+        public string? TelefonoPersona { get; set; }
         public DateTime FechaNacimiento { get; set; }
         [MaxLength(50)]
         public string? CorreoElectronico { get; set; }

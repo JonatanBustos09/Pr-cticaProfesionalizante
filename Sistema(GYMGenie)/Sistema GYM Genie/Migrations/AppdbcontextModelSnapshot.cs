@@ -112,8 +112,9 @@ namespace Sistema_GYM_Genie.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("DNI_Persona")
-                        .HasColumnType("int");
+                    b.Property<string>("DNI_Persona")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Direccion")
                         .HasMaxLength(25)
@@ -133,8 +134,9 @@ namespace Sistema_GYM_Genie.Migrations
                     b.Property<bool>("Profesor")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("TelefonoPersona")
-                        .HasColumnType("int");
+                    b.Property<string>("TelefonoPersona")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.HasKey("PersonaId");
 
@@ -156,6 +158,9 @@ namespace Sistema_GYM_Genie.Migrations
                     b.Property<int>("CBU")
                         .HasColumnType("int");
 
+                    b.Property<int?>("PersonaId")
+                        .HasColumnType("int");
+
                     b.Property<float>("Sueldo")
                         .HasColumnType("real");
 
@@ -164,6 +169,8 @@ namespace Sistema_GYM_Genie.Migrations
                         .HasColumnType("nvarchar(25)");
 
                     b.HasKey("ProfesorId");
+
+                    b.HasIndex("PersonaId");
 
                     b.ToTable("Profesores");
                 });
@@ -224,6 +231,15 @@ namespace Sistema_GYM_Genie.Migrations
                     b.HasKey("TurnoId");
 
                     b.ToTable("Turnos");
+                });
+
+            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Profesor", b =>
+                {
+                    b.HasOne("Sistema_GYM_Genie.Clases.Persona", "Persona")
+                        .WithMany()
+                        .HasForeignKey("PersonaId");
+
+                    b.Navigation("Persona");
                 });
 #pragma warning restore 612, 618
         }

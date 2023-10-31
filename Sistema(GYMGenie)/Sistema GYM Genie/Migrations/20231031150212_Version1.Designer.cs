@@ -12,8 +12,8 @@ using Sistema_GYM_Genie.DBConection;
 namespace Sistema_GYM_Genie.Migrations
 {
     [DbContext(typeof(Appdbcontext))]
-    [Migration("20231026154259_Version8")]
-    partial class Version8
+    [Migration("20231031150212_Version1")]
+    partial class Version1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -132,6 +132,9 @@ namespace Sistema_GYM_Genie.Migrations
                     b.Property<string>("NombreUsuario")
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
+
+                    b.Property<bool>("Profesor")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("TelefonoPersona")
                         .HasColumnType("int");
