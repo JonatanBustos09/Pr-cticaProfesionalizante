@@ -10,16 +10,23 @@ namespace Sistema_GYM_Genie.Clases
 
         // ALTA de un Profesor
 
-        public void AltaProfesor(string titulo, string alias, int cbu, float sueldo)
+        public string AgregarProfesor(Profesor ProfeNuevo)
         {
-            Profesor profesor = new Profesor();
-            profesor.Titulo = titulo;
-            profesor.Alias = alias;
-            profesor.CBU = cbu;
-            profesor.Sueldo = sueldo;
+            // Realiza una consulta para verificar si el cliente ya existe en la base de datos.
+            var ProfeExistente = context.Profesores.FirstOrDefault(x => x.DNIProfesor == ProfeNuevo.DNIProfesor);
+            //FirstOrDefault recuperar el primer elemento de una secuencia que cumple con una condición específica, si no lo encuentra devuelve null
 
-            context.Profesores.Add(profesor);
-            context.SaveChanges();
+            if (ProfeExistente == null)
+            {
+                // Si clienteExistente es null, el cliente no existe, entonces lo agregamos.
+                context.Profesores.Add(ProfeNuevo);
+                context.SaveChanges();
+                return ("Cliente agregado exitosamente.");
+            }
+            else
+            {
+                return ("El cliente ya existe.");
+            }
         }
         // BAJA de un Profesor
         public void EliminarProfesor(Profesor profesorDelete)
@@ -41,67 +48,47 @@ namespace Sistema_GYM_Genie.Clases
             }
         }
 
-        // ALTA de una Persona/ Cliente
+        // ALTA de una Cliente
 
-        public void AltaPersona(string dni, string nombre, string apellido, string telefono, DateTime fechaNac, string correo, string usuario, string contrasena, string ciudad, string direccion, int altura, bool profesor)
+        public string AgregarCliente(Cliente clienteNuevo)
         {
-            Persona persona = new Persona();
-            persona.DNI_Persona = dni;
-            persona.NombrePersona = nombre;
-            persona.ApellidoPersona = apellido;
-            persona.TelefonoPersona = telefono;
-            persona.FechaNacimiento = fechaNac;
-            persona.CorreoElectronico = correo;
-            persona.NombreUsuario = usuario;
-            persona.Contrasenia = contrasena;
-            persona.Ciudad = ciudad;
-            persona.Direccion = direccion;
-            persona.AlturaDireccion = altura;
-            persona.Profesor = profesor;
+            // Realiza una consulta para verificar si el cliente ya existe en la base de datos.
+            var clienteExistente = context.Clientes.FirstOrDefault(x => x.DNICliente == clienteNuevo.DNICliente);
+            //FirstOrDefault recuperar el primer elemento de una secuencia que cumple con una condición específica, si no lo encuentra devuelve null
 
-            context.Personas.Add(persona);
+            if (clienteExistente == null)
+            {
+                // Si clienteExistente es null, el cliente no existe, entonces lo agregamos.
+                context.Clientes.Add(clienteNuevo);
+                context.SaveChanges();
+                return ("Cliente agregado exitosamente.");
+            }
+            else
+            {
+                return ("El cliente ya existe.");
+            }
+        }
+        //Baja Cliente
+        public void EliminarCliente(Cliente ClienteDelete)
+        {
+            context.Clientes.Remove(ClienteDelete);
             context.SaveChanges();
         }
 
-
-
-        // BAJA de una Persona
-
-        public void EliminarPersona(int DNI_Persona)
+        //BUSCAR para Modificar un Cliente
+        public bool BuscarCliente(int DNI_Cliente)
         {
-            var personaEncontrada = context.Personas.Find(DNI_Persona);
-            if (personaEncontrada != null)
-            {
-                context.Personas.Remove(personaEncontrada);
-                context.SaveChanges();
-            }
-        }
-
-        // MODIFICACIÓN de una Persona
-        public void ModificarPersona(Persona personaModificado)
-        {
-            var personaEncontrada = context.Personas.Find(personaModificado.DNI_Persona);
-            if (personaEncontrada != null)
-            {
-                personaEncontrada.DNI_Persona = personaModificado.DNI_Persona;
-                context.SaveChanges();
-            }
-        }
-
-        // BUSCAR una Persona a traves del DNI
-        // True si Encontre el DNI o False si no encontre el DNI
-
-        public bool BuscarPersona(int DNI_Persona)
-        {
-            var productoEncontrado = context.Personas.Find(DNI_Persona);
-            if (productoEncontrado != null)
+            var ClienteEncontrado = context.Clientes.Find(DNI_Cliente);
+            if (ClienteEncontrado != null)
             {
                 return true;
             }
             else
             {
-                return false; 
+                return false;
             }
         }
+
     }
+
 }

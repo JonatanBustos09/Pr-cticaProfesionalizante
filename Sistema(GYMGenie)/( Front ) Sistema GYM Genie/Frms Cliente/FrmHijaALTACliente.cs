@@ -19,25 +19,12 @@ namespace __Front___Sistema_GYM_Genie.Frms_Cliente
         }
 
         Principal principal = new Principal();
-        private void PreVisible_Click(object sender, EventArgs e)
-        {
-            TxtContrasena.UseSystemPasswordChar = false;
-            PreVisible.Visible = false;
-            PreNoVisible.Visible = true;
-        }
-
-        private void PreNoVisible_Click(object sender, EventArgs e)
-        {
-            TxtContrasena.UseSystemPasswordChar = true;
-            PreVisible.Visible = true;
-            PreNoVisible.Visible = false;
-        }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             DateTime fecha = DtpFecha.Value;
 
-            principal.AltaPersona(TxtDNI.Text, TxtNombre.Text,TxtApellido.Text, TxtTelefono.Text,fecha,TxtCorreo.Text, TxtUsuario.Text, TxtContrasena.Text, TxtCiudad.Text, TxtDireccion.Text, int.Parse(TxtAltura.Text), checkBoxProfesor.Checked);
+            principal.AgregarCliente(TxtDNI.Text, TxtNombre.Text, TxtApellido.Text, TxtTelefono.Text, fecha, TxtCorreo.Text, TxtCiudad.Text, TxtDireccion.Text, int.Parse(TxtAltura.Text), TxtPeso.Text, TxtAltura.Text,);
             MessageBox.Show($"La Persona {TxtNombre.Text} {TxtApellido.Text} fue agregado con exito!", "LISTO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

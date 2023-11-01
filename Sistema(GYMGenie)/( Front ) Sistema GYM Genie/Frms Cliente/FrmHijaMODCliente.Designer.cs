@@ -31,27 +31,11 @@
             components = new System.ComponentModel.Container();
             PnlMODCliente = new Panel();
             BtnMODCliente = new Button();
-            panel1 = new Panel();
-            DgvMODCliente = new DataGridView();
-            personaIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            dNIPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nombrePersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            apellidoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            telefonoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            fechaNacimientoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            correoElectronicoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nombreUsuarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            contraseniaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ciudadDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            direccionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            alturaDireccionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             personaBindingSource = new BindingSource(components);
             TxtBuscarDNI = new TextBox();
             LblBuscarDNI = new Label();
             label1 = new Label();
             PnlMODCliente.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)DgvMODCliente).BeginInit();
             ((System.ComponentModel.ISupportInitialize)personaBindingSource).BeginInit();
             SuspendLayout();
             // 
@@ -59,7 +43,6 @@
             // 
             PnlMODCliente.BackColor = Color.FromArgb(20, 20, 20);
             PnlMODCliente.Controls.Add(BtnMODCliente);
-            PnlMODCliente.Controls.Add(panel1);
             PnlMODCliente.Controls.Add(TxtBuscarDNI);
             PnlMODCliente.Controls.Add(LblBuscarDNI);
             PnlMODCliente.Controls.Add(label1);
@@ -85,106 +68,8 @@
             BtnMODCliente.Text = "MODIFICAR";
             BtnMODCliente.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(DgvMODCliente);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 212);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1116, 526);
-            panel1.TabIndex = 13;
-            // 
-            // DgvMODCliente
-            // 
-            DgvMODCliente.AllowUserToAddRows = false;
-            DgvMODCliente.AllowUserToDeleteRows = false;
-            DgvMODCliente.AutoGenerateColumns = false;
-            DgvMODCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvMODCliente.Columns.AddRange(new DataGridViewColumn[] { personaIdDataGridViewTextBoxColumn, dNIPersonaDataGridViewTextBoxColumn, nombrePersonaDataGridViewTextBoxColumn, apellidoPersonaDataGridViewTextBoxColumn, telefonoPersonaDataGridViewTextBoxColumn, fechaNacimientoDataGridViewTextBoxColumn, correoElectronicoDataGridViewTextBoxColumn, nombreUsuarioDataGridViewTextBoxColumn, contraseniaDataGridViewTextBoxColumn, ciudadDataGridViewTextBoxColumn, direccionDataGridViewTextBoxColumn, alturaDireccionDataGridViewTextBoxColumn });
-            DgvMODCliente.DataSource = personaBindingSource;
-            DgvMODCliente.Dock = DockStyle.Fill;
-            DgvMODCliente.Location = new Point(0, 0);
-            DgvMODCliente.Name = "DgvMODCliente";
-            DgvMODCliente.RowTemplate.Height = 25;
-            DgvMODCliente.Size = new Size(1116, 526);
-            DgvMODCliente.TabIndex = 0;
-            // 
-            // personaIdDataGridViewTextBoxColumn
-            // 
-            personaIdDataGridViewTextBoxColumn.DataPropertyName = "PersonaId";
-            personaIdDataGridViewTextBoxColumn.HeaderText = "Id";
-            personaIdDataGridViewTextBoxColumn.Name = "personaIdDataGridViewTextBoxColumn";
-            // 
-            // dNIPersonaDataGridViewTextBoxColumn
-            // 
-            dNIPersonaDataGridViewTextBoxColumn.DataPropertyName = "DNI_Persona";
-            dNIPersonaDataGridViewTextBoxColumn.HeaderText = "DNI";
-            dNIPersonaDataGridViewTextBoxColumn.Name = "dNIPersonaDataGridViewTextBoxColumn";
-            // 
-            // nombrePersonaDataGridViewTextBoxColumn
-            // 
-            nombrePersonaDataGridViewTextBoxColumn.DataPropertyName = "NombrePersona";
-            nombrePersonaDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            nombrePersonaDataGridViewTextBoxColumn.Name = "nombrePersonaDataGridViewTextBoxColumn";
-            // 
-            // apellidoPersonaDataGridViewTextBoxColumn
-            // 
-            apellidoPersonaDataGridViewTextBoxColumn.DataPropertyName = "ApellidoPersona";
-            apellidoPersonaDataGridViewTextBoxColumn.HeaderText = "Apellido";
-            apellidoPersonaDataGridViewTextBoxColumn.Name = "apellidoPersonaDataGridViewTextBoxColumn";
-            // 
-            // telefonoPersonaDataGridViewTextBoxColumn
-            // 
-            telefonoPersonaDataGridViewTextBoxColumn.DataPropertyName = "TelefonoPersona";
-            telefonoPersonaDataGridViewTextBoxColumn.HeaderText = "Teléfono";
-            telefonoPersonaDataGridViewTextBoxColumn.Name = "telefonoPersonaDataGridViewTextBoxColumn";
-            // 
-            // fechaNacimientoDataGridViewTextBoxColumn
-            // 
-            fechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "FechaNacimiento";
-            fechaNacimientoDataGridViewTextBoxColumn.HeaderText = "Fecha de Nacimiento";
-            fechaNacimientoDataGridViewTextBoxColumn.Name = "fechaNacimientoDataGridViewTextBoxColumn";
-            // 
-            // correoElectronicoDataGridViewTextBoxColumn
-            // 
-            correoElectronicoDataGridViewTextBoxColumn.DataPropertyName = "CorreoElectronico";
-            correoElectronicoDataGridViewTextBoxColumn.HeaderText = "Correo Electronico";
-            correoElectronicoDataGridViewTextBoxColumn.Name = "correoElectronicoDataGridViewTextBoxColumn";
-            // 
-            // nombreUsuarioDataGridViewTextBoxColumn
-            // 
-            nombreUsuarioDataGridViewTextBoxColumn.DataPropertyName = "NombreUsuario";
-            nombreUsuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
-            nombreUsuarioDataGridViewTextBoxColumn.Name = "nombreUsuarioDataGridViewTextBoxColumn";
-            // 
-            // contraseniaDataGridViewTextBoxColumn
-            // 
-            contraseniaDataGridViewTextBoxColumn.DataPropertyName = "Contrasenia";
-            contraseniaDataGridViewTextBoxColumn.HeaderText = "Contrasenia";
-            contraseniaDataGridViewTextBoxColumn.Name = "contraseniaDataGridViewTextBoxColumn";
-            contraseniaDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // ciudadDataGridViewTextBoxColumn
-            // 
-            ciudadDataGridViewTextBoxColumn.DataPropertyName = "Ciudad";
-            ciudadDataGridViewTextBoxColumn.HeaderText = "Ciudad";
-            ciudadDataGridViewTextBoxColumn.Name = "ciudadDataGridViewTextBoxColumn";
-            // 
-            // direccionDataGridViewTextBoxColumn
-            // 
-            direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
-            direccionDataGridViewTextBoxColumn.HeaderText = "Dirección";
-            direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
-            // 
-            // alturaDireccionDataGridViewTextBoxColumn
-            // 
-            alturaDireccionDataGridViewTextBoxColumn.DataPropertyName = "AlturaDireccion";
-            alturaDireccionDataGridViewTextBoxColumn.HeaderText = "Altura";
-            alturaDireccionDataGridViewTextBoxColumn.Name = "alturaDireccionDataGridViewTextBoxColumn";
-            // 
             // personaBindingSource
             // 
-            personaBindingSource.DataSource = typeof(Sistema_GYM_Genie.Clases.Persona);
             // 
             // TxtBuscarDNI
             // 
@@ -233,8 +118,6 @@
             Text = "FrmHijaMODCliente";
             PnlMODCliente.ResumeLayout(false);
             PnlMODCliente.PerformLayout();
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)DgvMODCliente).EndInit();
             ((System.ComponentModel.ISupportInitialize)personaBindingSource).EndInit();
             ResumeLayout(false);
         }
@@ -245,21 +128,7 @@
         private Label label1;
         private TextBox TxtBuscarDNI;
         private Label LblBuscarDNI;
-        private Panel panel1;
-        private DataGridView DgvMODCliente;
         private BindingSource personaBindingSource;
         private Button BtnMODCliente;
-        private DataGridViewTextBoxColumn personaIdDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dNIPersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nombrePersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn apellidoPersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn telefonoPersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn fechaNacimientoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn correoElectronicoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nombreUsuarioDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn contraseniaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn ciudadDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn alturaDireccionDataGridViewTextBoxColumn;
     }
 }

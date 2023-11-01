@@ -57,30 +57,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="clienteBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PreNoVisible.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAABAFJREFUaEPtmFuoFVUch0+Upqh5RU1NRSNTIgUVAs03RchLIYbggxBCPghC+GCB
-        BYEiPvdgZQUZWSaoD4qgvihqYkjeUfMCZSrdTDMzS/u+OXvRcvbMPmd0e9on5wcfe9bMmjXzW7PWf/3X
-        bipVqtSDrQNwCPonpXasg3AbjkO7NtMXjoBmTsAAaLcqzTSqSjONKqOXUUwzedFsNLwGa8Dw/T1chz/g
-        EhgNP4XFMAYegv9EWWaGwQo4B54vwnlYCU9Dmys28yP8XTkO/ADvwAvwBHSALjACXoQP4WeI77GNL+AZ
-        aFPFZgIOoTfAl25J3WE5/A5xGxr6HO7rF3oE3oS5SanazGQoqnHwHYQ2/qr8OqfsFJ9ZVz0FX4IPuQlO
-        apU1Z4pqEAQzGyp4LF/Bs1AXLYDfwIad0Pb8eJgHqh5mbM+h6dB6HqbBWbBNv858uGs5SVdD6J33oBuo
-        beAwmJiU6mPGyOf9tq2ca59AeP678CgUUk/YATZgT4XeVw6zW2DkecwTFd2rmR4Qolk8nF4F38Hzu8B3
-        a5Ucs8fAG78FJ2SspeC1VUnpTqXNfAY/wRVw7BuCa+kj8N7Xk9K/Ggsurl47DC1mFoPhG/CGo6CptLaC
-        12ckpWrFZtLY464teXoJrBeGV6whEDr4DGS9W6KBYAUr7oVekCW/knU0nadaZtZBnvxi1jmdlKrlO4Xo
-        ac7XD6q0B6ygiXjspxUWsU5JKV95Zn6FPBlMrGOUzJOLaTCz2xNpedKLVrJynkIo7pqUsjWl8ptlxrQm
-        T0Yq61xNStkyKOwD62Ua8aF+LitYsTdkKcT3J5NStsynXmk+rDKzFvI0HKzjPM1SH9gP1jkFj0OmnIhh
-        nvjwoZDWdvC6EzNPRpULkGXGX8tZmgXWMaCkZZYdOtpJ32LksoIhzhsMeYa+WOZAXns/KeXL3voAQg7W
-        GjOGdK+7X4n1HFwEr30NbvRaJRedneCNLkYuSkEuVp7/BRyvRVTLjPPyMrjYxuvNIrgB3rMFij6zqSOE
-        HhLThTDBw/B6OykVU56Zt8Bzm5JSs7H14DnNmcI8DHetOEVwok+HSWDj9pQJX1GlzUwF2zKzdijPhpAR
-        X4M5UBeNghAtxHRjY+XYjDgrKLSk2EzAiBYyBzF61n2TFTZWptU+JGyCxN7zz4SiSpsJbbpWLYG6b6xi
-        2fsfQ3qv/icsg1pZQZDjf0LzYZWZzVArH6u7jF5OzLQhV2X3MS+DC5x7iM5g0jcTDNtGJ3s/a9vsr+U2
-        lwuVfySY6MWGWsNJ0KBqCDNBfqWFYKg2Z3N1d8j5cs4j1yb3HP6JNxLSaigz96ryv+ZGVWmmUfW/MhNH
-        M9P4di3NaMKwXqpUqQdTTU3/ACp1jozYiYJcAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAUQAAAF3CAIAAABSZqWSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

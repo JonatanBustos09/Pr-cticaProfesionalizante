@@ -28,28 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaALTACliente));
             PnlALTACliente = new Panel();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            PreVisible = new PictureBox();
-            PreNoVisible = new PictureBox();
+            BtnEliminar = new Button();
+            DgvMODCliente = new DataGridView();
             BtnCancelar = new Button();
             BtnAgregar = new Button();
-            checkBoxProfesor = new CheckBox();
             DtpFecha = new DateTimePicker();
-            label11 = new Label();
-            TxtAltura = new TextBox();
-            label9 = new Label();
             TxtDireccion = new TextBox();
             label8 = new Label();
             TxtCiudad = new TextBox();
             label7 = new Label();
-            TxtContrasena = new TextBox();
-            label6 = new Label();
-            TxtUsuario = new TextBox();
-            label5 = new Label();
             TxtCorreo = new TextBox();
             label4 = new Label();
             label3 = new Label();
@@ -65,41 +55,41 @@
             pictureBox3 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            TxtAltura = new TextBox();
+            LblAltura = new Label();
+            TxtPeso = new TextBox();
+            LblPeso = new Label();
+            button1 = new Button();
+            clienteBindingSource = new BindingSource(components);
+            clienteIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            pesoClienteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            alturaCmDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             PnlALTACliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)PreVisible).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)PreNoVisible).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DgvMODCliente).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource).BeginInit();
             SuspendLayout();
             // 
             // PnlALTACliente
             // 
             PnlALTACliente.BackColor = Color.FromArgb(20, 20, 20);
             PnlALTACliente.BorderStyle = BorderStyle.Fixed3D;
-            PnlALTACliente.Controls.Add(pictureBox6);
-            PnlALTACliente.Controls.Add(pictureBox5);
-            PnlALTACliente.Controls.Add(pictureBox4);
-            PnlALTACliente.Controls.Add(PreVisible);
-            PnlALTACliente.Controls.Add(PreNoVisible);
+            PnlALTACliente.Controls.Add(button1);
+            PnlALTACliente.Controls.Add(TxtAltura);
+            PnlALTACliente.Controls.Add(LblAltura);
+            PnlALTACliente.Controls.Add(TxtPeso);
+            PnlALTACliente.Controls.Add(LblPeso);
+            PnlALTACliente.Controls.Add(BtnEliminar);
+            PnlALTACliente.Controls.Add(DgvMODCliente);
             PnlALTACliente.Controls.Add(BtnCancelar);
             PnlALTACliente.Controls.Add(BtnAgregar);
-            PnlALTACliente.Controls.Add(checkBoxProfesor);
             PnlALTACliente.Controls.Add(DtpFecha);
-            PnlALTACliente.Controls.Add(label11);
-            PnlALTACliente.Controls.Add(TxtAltura);
-            PnlALTACliente.Controls.Add(label9);
             PnlALTACliente.Controls.Add(TxtDireccion);
             PnlALTACliente.Controls.Add(label8);
             PnlALTACliente.Controls.Add(TxtCiudad);
             PnlALTACliente.Controls.Add(label7);
-            PnlALTACliente.Controls.Add(TxtContrasena);
-            PnlALTACliente.Controls.Add(label6);
-            PnlALTACliente.Controls.Add(TxtUsuario);
-            PnlALTACliente.Controls.Add(label5);
             PnlALTACliente.Controls.Add(TxtCorreo);
             PnlALTACliente.Controls.Add(label4);
             PnlALTACliente.Controls.Add(label3);
@@ -121,64 +111,34 @@
             PnlALTACliente.Size = new Size(1116, 738);
             PnlALTACliente.TabIndex = 9;
             // 
-            // pictureBox6
+            // BtnEliminar
             // 
-            pictureBox6.Anchor = AnchorStyles.Right;
-            pictureBox6.Image = Properties.Resources.Gimnasio13;
-            pictureBox6.Location = new Point(858, 462);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(148, 211);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 43;
-            pictureBox6.TabStop = false;
+            BtnEliminar.Anchor = AnchorStyles.Left;
+            BtnEliminar.BackColor = Color.FromArgb(64, 64, 64);
+            BtnEliminar.Cursor = Cursors.AppStarting;
+            BtnEliminar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnEliminar.ForeColor = Color.FromArgb(0, 205, 255);
+            BtnEliminar.Location = new Point(774, 216);
+            BtnEliminar.Name = "BtnEliminar";
+            BtnEliminar.Size = new Size(113, 33);
+            BtnEliminar.TabIndex = 42;
+            BtnEliminar.Text = "ELIMINAR";
+            BtnEliminar.UseVisualStyleBackColor = false;
             // 
-            // pictureBox5
+            // DgvMODCliente
             // 
-            pictureBox5.Anchor = AnchorStyles.Right;
-            pictureBox5.Image = Properties.Resources.Gimnasio11;
-            pictureBox5.Location = new Point(651, 248);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(148, 211);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 42;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Anchor = AnchorStyles.Right;
-            pictureBox4.Image = Properties.Resources.Gimnasio10;
-            pictureBox4.Location = new Point(858, 30);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(148, 211);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 41;
-            pictureBox4.TabStop = false;
-            // 
-            // PreVisible
-            // 
-            PreVisible.Anchor = AnchorStyles.Left;
-            PreVisible.BackColor = Color.DarkGray;
-            PreVisible.Image = Properties.Resources.icons8_visible_50;
-            PreVisible.Location = new Point(420, 411);
-            PreVisible.Name = "PreVisible";
-            PreVisible.Size = new Size(19, 19);
-            PreVisible.SizeMode = PictureBoxSizeMode.Zoom;
-            PreVisible.TabIndex = 39;
-            PreVisible.TabStop = false;
-            PreVisible.Click += PreVisible_Click;
-            // 
-            // PreNoVisible
-            // 
-            PreNoVisible.Anchor = AnchorStyles.Left;
-            PreNoVisible.BackColor = Color.DarkGray;
-            PreNoVisible.Image = (Image)resources.GetObject("PreNoVisible.Image");
-            PreNoVisible.Location = new Point(420, 411);
-            PreNoVisible.Name = "PreNoVisible";
-            PreNoVisible.Size = new Size(19, 19);
-            PreNoVisible.SizeMode = PictureBoxSizeMode.Zoom;
-            PreNoVisible.TabIndex = 40;
-            PreNoVisible.TabStop = false;
-            PreNoVisible.Click += PreNoVisible_Click;
+            DgvMODCliente.AllowUserToAddRows = false;
+            DgvMODCliente.AllowUserToDeleteRows = false;
+            DgvMODCliente.AutoGenerateColumns = false;
+            DgvMODCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgvMODCliente.Columns.AddRange(new DataGridViewColumn[] { clienteIdDataGridViewTextBoxColumn, pesoClienteDataGridViewTextBoxColumn, alturaCmDataGridViewTextBoxColumn });
+            DgvMODCliente.DataSource = clienteBindingSource;
+            DgvMODCliente.Dock = DockStyle.Bottom;
+            DgvMODCliente.Location = new Point(0, 368);
+            DgvMODCliente.Name = "DgvMODCliente";
+            DgvMODCliente.RowTemplate.Height = 25;
+            DgvMODCliente.Size = new Size(1112, 366);
+            DgvMODCliente.TabIndex = 41;
             // 
             // BtnCancelar
             // 
@@ -187,7 +147,7 @@
             BtnCancelar.Cursor = Cursors.AppStarting;
             BtnCancelar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
             BtnCancelar.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnCancelar.Location = new Point(152, 630);
+            BtnCancelar.Location = new Point(774, 255);
             BtnCancelar.Name = "BtnCancelar";
             BtnCancelar.Size = new Size(113, 33);
             BtnCancelar.TabIndex = 38;
@@ -201,7 +161,7 @@
             BtnAgregar.Cursor = Cursors.AppStarting;
             BtnAgregar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
             BtnAgregar.ForeColor = Color.FromArgb(0, 205, 255);
-            BtnAgregar.Location = new Point(328, 630);
+            BtnAgregar.Location = new Point(774, 138);
             BtnAgregar.Name = "BtnAgregar";
             BtnAgregar.Size = new Size(113, 33);
             BtnAgregar.TabIndex = 37;
@@ -209,68 +169,23 @@
             BtnAgregar.UseVisualStyleBackColor = false;
             BtnAgregar.Click += BtnAgregar_Click;
             // 
-            // checkBoxProfesor
-            // 
-            checkBoxProfesor.Anchor = AnchorStyles.Left;
-            checkBoxProfesor.Location = new Point(277, 569);
-            checkBoxProfesor.Name = "checkBoxProfesor";
-            checkBoxProfesor.Size = new Size(38, 38);
-            checkBoxProfesor.TabIndex = 36;
-            checkBoxProfesor.UseVisualStyleBackColor = true;
-            // 
             // DtpFecha
             // 
             DtpFecha.Anchor = AnchorStyles.Left;
             DtpFecha.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             DtpFecha.Format = DateTimePickerFormat.Short;
-            DtpFecha.Location = new Point(324, 289);
+            DtpFecha.Location = new Point(223, 303);
             DtpFecha.Name = "DtpFecha";
-            DtpFecha.Size = new Size(117, 21);
+            DtpFecha.Size = new Size(118, 21);
             DtpFecha.TabIndex = 35;
             DtpFecha.Value = new DateTime(2023, 10, 30, 0, 0, 0, 0);
-            // 
-            // label11
-            // 
-            label11.Anchor = AnchorStyles.Left;
-            label11.BackColor = Color.White;
-            label11.BorderStyle = BorderStyle.Fixed3D;
-            label11.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(152, 575);
-            label11.Name = "label11";
-            label11.Size = new Size(102, 21);
-            label11.TabIndex = 33;
-            label11.Text = "PROFESOR? ";
-            label11.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // TxtAltura
-            // 
-            TxtAltura.Anchor = AnchorStyles.Left;
-            TxtAltura.Cursor = Cursors.IBeam;
-            TxtAltura.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtAltura.Location = new Point(277, 535);
-            TxtAltura.Name = "TxtAltura";
-            TxtAltura.Size = new Size(164, 21);
-            TxtAltura.TabIndex = 30;
-            // 
-            // label9
-            // 
-            label9.Anchor = AnchorStyles.Left;
-            label9.BackColor = Color.White;
-            label9.BorderStyle = BorderStyle.Fixed3D;
-            label9.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(152, 533);
-            label9.Name = "label9";
-            label9.Size = new Size(102, 21);
-            label9.TabIndex = 29;
-            label9.Text = "ALTURA: ";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // TxtDireccion
             // 
             TxtDireccion.Anchor = AnchorStyles.Left;
             TxtDireccion.Cursor = Cursors.IBeam;
             TxtDireccion.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtDireccion.Location = new Point(277, 494);
+            TxtDireccion.Location = new Point(537, 222);
             TxtDireccion.Name = "TxtDireccion";
             TxtDireccion.Size = new Size(164, 21);
             TxtDireccion.TabIndex = 28;
@@ -281,7 +196,7 @@
             label8.BackColor = Color.White;
             label8.BorderStyle = BorderStyle.Fixed3D;
             label8.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(152, 493);
+            label8.Location = new Point(412, 221);
             label8.Name = "label8";
             label8.Size = new Size(102, 21);
             label8.TabIndex = 27;
@@ -293,7 +208,7 @@
             TxtCiudad.Anchor = AnchorStyles.Left;
             TxtCiudad.Cursor = Cursors.IBeam;
             TxtCiudad.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtCiudad.Location = new Point(277, 452);
+            TxtCiudad.Location = new Point(537, 180);
             TxtCiudad.Name = "TxtCiudad";
             TxtCiudad.Size = new Size(164, 21);
             TxtCiudad.TabIndex = 26;
@@ -304,66 +219,19 @@
             label7.BackColor = Color.White;
             label7.BorderStyle = BorderStyle.Fixed3D;
             label7.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(152, 450);
+            label7.Location = new Point(412, 178);
             label7.Name = "label7";
             label7.Size = new Size(102, 21);
             label7.TabIndex = 25;
             label7.Text = "CIUDAD: ";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // TxtContrasena
-            // 
-            TxtContrasena.Anchor = AnchorStyles.Left;
-            TxtContrasena.Cursor = Cursors.IBeam;
-            TxtContrasena.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtContrasena.Location = new Point(276, 410);
-            TxtContrasena.Name = "TxtContrasena";
-            TxtContrasena.Size = new Size(164, 21);
-            TxtContrasena.TabIndex = 24;
-            TxtContrasena.UseSystemPasswordChar = true;
-            // 
-            // label6
-            // 
-            label6.Anchor = AnchorStyles.Left;
-            label6.BackColor = Color.White;
-            label6.BorderStyle = BorderStyle.Fixed3D;
-            label6.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(152, 409);
-            label6.Name = "label6";
-            label6.Size = new Size(102, 21);
-            label6.TabIndex = 23;
-            label6.Text = "CONTRASEÑA: ";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // TxtUsuario
-            // 
-            TxtUsuario.Anchor = AnchorStyles.Left;
-            TxtUsuario.Cursor = Cursors.IBeam;
-            TxtUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtUsuario.Location = new Point(277, 372);
-            TxtUsuario.Name = "TxtUsuario";
-            TxtUsuario.Size = new Size(164, 21);
-            TxtUsuario.TabIndex = 22;
-            // 
-            // label5
-            // 
-            label5.Anchor = AnchorStyles.Left;
-            label5.BackColor = Color.White;
-            label5.BorderStyle = BorderStyle.Fixed3D;
-            label5.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(152, 370);
-            label5.Name = "label5";
-            label5.Size = new Size(102, 21);
-            label5.TabIndex = 21;
-            label5.Text = "USUARIO: ";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // TxtCorreo
             // 
             TxtCorreo.Anchor = AnchorStyles.Left;
             TxtCorreo.Cursor = Cursors.IBeam;
             TxtCorreo.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtCorreo.Location = new Point(277, 331);
+            TxtCorreo.Location = new Point(537, 138);
             TxtCorreo.Name = "TxtCorreo";
             TxtCorreo.Size = new Size(164, 21);
             TxtCorreo.TabIndex = 20;
@@ -374,7 +242,7 @@
             label4.BackColor = Color.White;
             label4.BorderStyle = BorderStyle.Fixed3D;
             label4.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(152, 331);
+            label4.Location = new Point(412, 138);
             label4.Name = "label4";
             label4.Size = new Size(102, 21);
             label4.TabIndex = 19;
@@ -387,7 +255,7 @@
             label3.BackColor = Color.White;
             label3.BorderStyle = BorderStyle.Fixed3D;
             label3.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(152, 290);
+            label3.Location = new Point(51, 304);
             label3.Name = "label3";
             label3.Size = new Size(137, 21);
             label3.TabIndex = 17;
@@ -399,7 +267,7 @@
             TxtTelefono.Anchor = AnchorStyles.Left;
             TxtTelefono.Cursor = Cursors.IBeam;
             TxtTelefono.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtTelefono.Location = new Point(277, 248);
+            TxtTelefono.Location = new Point(176, 261);
             TxtTelefono.Name = "TxtTelefono";
             TxtTelefono.Size = new Size(164, 21);
             TxtTelefono.TabIndex = 16;
@@ -410,7 +278,7 @@
             label2.BackColor = Color.White;
             label2.BorderStyle = BorderStyle.Fixed3D;
             label2.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(152, 246);
+            label2.Location = new Point(51, 259);
             label2.Name = "label2";
             label2.Size = new Size(102, 21);
             label2.TabIndex = 15;
@@ -422,7 +290,7 @@
             TxtApellido.Anchor = AnchorStyles.Left;
             TxtApellido.Cursor = Cursors.IBeam;
             TxtApellido.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtApellido.Location = new Point(277, 209);
+            TxtApellido.Location = new Point(176, 218);
             TxtApellido.Name = "TxtApellido";
             TxtApellido.Size = new Size(164, 21);
             TxtApellido.TabIndex = 14;
@@ -433,7 +301,7 @@
             LblApellido.BackColor = Color.White;
             LblApellido.BorderStyle = BorderStyle.Fixed3D;
             LblApellido.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblApellido.Location = new Point(152, 207);
+            LblApellido.Location = new Point(51, 218);
             LblApellido.Name = "LblApellido";
             LblApellido.Size = new Size(102, 21);
             LblApellido.TabIndex = 13;
@@ -445,7 +313,7 @@
             TxtNombre.Anchor = AnchorStyles.Left;
             TxtNombre.Cursor = Cursors.IBeam;
             TxtNombre.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtNombre.Location = new Point(277, 173);
+            TxtNombre.Location = new Point(176, 178);
             TxtNombre.Name = "TxtNombre";
             TxtNombre.Size = new Size(164, 21);
             TxtNombre.TabIndex = 12;
@@ -456,7 +324,7 @@
             LblNombre.BackColor = Color.White;
             LblNombre.BorderStyle = BorderStyle.Fixed3D;
             LblNombre.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblNombre.Location = new Point(152, 173);
+            LblNombre.Location = new Point(51, 178);
             LblNombre.Name = "LblNombre";
             LblNombre.Size = new Size(102, 21);
             LblNombre.TabIndex = 11;
@@ -468,7 +336,7 @@
             TxtDNI.Anchor = AnchorStyles.Left;
             TxtDNI.Cursor = Cursors.IBeam;
             TxtDNI.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtDNI.Location = new Point(277, 139);
+            TxtDNI.Location = new Point(176, 138);
             TxtDNI.Name = "TxtDNI";
             TxtDNI.Size = new Size(164, 21);
             TxtDNI.TabIndex = 10;
@@ -479,7 +347,7 @@
             LblDNI.BackColor = Color.White;
             LblDNI.BorderStyle = BorderStyle.Fixed3D;
             LblDNI.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblDNI.Location = new Point(152, 139);
+            LblDNI.Location = new Point(51, 138);
             LblDNI.Name = "LblDNI";
             LblDNI.Size = new Size(102, 21);
             LblDNI.TabIndex = 9;
@@ -492,7 +360,7 @@
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Impact", 34F, FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(0, 205, 255);
-            label1.Location = new Point(409, 30);
+            label1.Location = new Point(51, 43);
             label1.Name = "label1";
             label1.Size = new Size(281, 66);
             label1.TabIndex = 8;
@@ -532,6 +400,88 @@
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
+            // TxtAltura
+            // 
+            TxtAltura.Anchor = AnchorStyles.Left;
+            TxtAltura.Cursor = Cursors.IBeam;
+            TxtAltura.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtAltura.Location = new Point(537, 303);
+            TxtAltura.Name = "TxtAltura";
+            TxtAltura.Size = new Size(164, 21);
+            TxtAltura.TabIndex = 46;
+            // 
+            // LblAltura
+            // 
+            LblAltura.Anchor = AnchorStyles.Left;
+            LblAltura.BackColor = Color.White;
+            LblAltura.BorderStyle = BorderStyle.Fixed3D;
+            LblAltura.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblAltura.Location = new Point(412, 302);
+            LblAltura.Name = "LblAltura";
+            LblAltura.Size = new Size(102, 21);
+            LblAltura.TabIndex = 45;
+            LblAltura.Text = "ALTURA: ";
+            LblAltura.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // TxtPeso
+            // 
+            TxtPeso.Anchor = AnchorStyles.Left;
+            TxtPeso.Cursor = Cursors.IBeam;
+            TxtPeso.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtPeso.Location = new Point(537, 261);
+            TxtPeso.Name = "TxtPeso";
+            TxtPeso.Size = new Size(164, 21);
+            TxtPeso.TabIndex = 44;
+            // 
+            // LblPeso
+            // 
+            LblPeso.Anchor = AnchorStyles.Left;
+            LblPeso.BackColor = Color.White;
+            LblPeso.BorderStyle = BorderStyle.Fixed3D;
+            LblPeso.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblPeso.Location = new Point(412, 259);
+            LblPeso.Name = "LblPeso";
+            LblPeso.Size = new Size(102, 21);
+            LblPeso.TabIndex = 43;
+            LblPeso.Text = "PESO: ";
+            LblPeso.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Left;
+            button1.BackColor = Color.FromArgb(64, 64, 64);
+            button1.Cursor = Cursors.AppStarting;
+            button1.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
+            button1.ForeColor = Color.FromArgb(0, 205, 255);
+            button1.Location = new Point(774, 178);
+            button1.Name = "button1";
+            button1.Size = new Size(113, 33);
+            button1.TabIndex = 47;
+            button1.Text = "MODIFICAR";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // clienteBindingSource
+            // 
+            clienteBindingSource.DataSource = typeof(Sistema_GYM_Genie.Clases.Cliente);
+            // 
+            // clienteIdDataGridViewTextBoxColumn
+            // 
+            clienteIdDataGridViewTextBoxColumn.DataPropertyName = "ClienteId";
+            clienteIdDataGridViewTextBoxColumn.HeaderText = "ClienteId";
+            clienteIdDataGridViewTextBoxColumn.Name = "clienteIdDataGridViewTextBoxColumn";
+            // 
+            // pesoClienteDataGridViewTextBoxColumn
+            // 
+            pesoClienteDataGridViewTextBoxColumn.DataPropertyName = "PesoCliente";
+            pesoClienteDataGridViewTextBoxColumn.HeaderText = "PesoCliente";
+            pesoClienteDataGridViewTextBoxColumn.Name = "pesoClienteDataGridViewTextBoxColumn";
+            // 
+            // alturaCmDataGridViewTextBoxColumn
+            // 
+            alturaCmDataGridViewTextBoxColumn.DataPropertyName = "AlturaCm";
+            alturaCmDataGridViewTextBoxColumn.HeaderText = "AlturaCm";
+            alturaCmDataGridViewTextBoxColumn.Name = "alturaCmDataGridViewTextBoxColumn";
+            // 
             // FrmHijaALTACliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -543,14 +493,11 @@
             Text = "FrmHijaALTACliente";
             PnlALTACliente.ResumeLayout(false);
             PnlALTACliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)PreVisible).EndInit();
-            ((System.ComponentModel.ISupportInitialize)PreNoVisible).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DgvMODCliente).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource).EndInit();
             ResumeLayout(false);
         }
 
@@ -567,30 +514,28 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Label label11;
-        private TextBox TxtAltura;
-        private Label label9;
         private TextBox TxtDireccion;
         private Label label8;
         private TextBox TxtCiudad;
         private Label label7;
-        private TextBox TxtContrasena;
-        private Label label6;
-        private TextBox TxtUsuario;
-        private Label label5;
         private TextBox TxtCorreo;
         private Label label4;
         private Label label3;
         private TextBox TxtTelefono;
         private Label label2;
         private DateTimePicker DtpFecha;
-        private CheckBox checkBoxProfesor;
         private Button BtnAgregar;
         private Button BtnCancelar;
-        private PictureBox PreNoVisible;
-        private PictureBox PreVisible;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
+        private DataGridView DgvMODCliente;
+        private Button BtnEliminar;
+        private Button button1;
+        private TextBox TxtAltura;
+        private Label LblAltura;
+        private TextBox TxtPeso;
+        private Label LblPeso;
+        private DataGridViewTextBoxColumn clienteIdDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn pesoClienteDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn alturaCmDataGridViewTextBoxColumn;
+        private BindingSource clienteBindingSource;
     }
 }
