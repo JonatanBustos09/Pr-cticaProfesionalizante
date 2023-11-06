@@ -1,6 +1,6 @@
 ﻿namespace __Front___Sistema_GYM_Genie.Inscripcion
 {
-    partial class FormInscrip
+    partial class FrmHijaInscrip
     {
         /// <summary>
         /// Required designer variable.

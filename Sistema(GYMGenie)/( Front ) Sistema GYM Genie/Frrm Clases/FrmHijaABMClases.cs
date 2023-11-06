@@ -15,11 +15,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace __Front___Sistema_GYM_Genie.Frrm_Clases
 {
-    public partial class ABM_clases : Form
+    public partial class FrmHijaABMClases : Form
     {
         Principal principal = new Principal();
 
-        public ABM_clases()
+        public FrmHijaABMClases()
         {
             InitializeComponent();
         }

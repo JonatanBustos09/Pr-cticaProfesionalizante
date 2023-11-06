@@ -12,8 +12,8 @@ using Sistema_GYM_Genie.DBConection;
 namespace Sistema_GYM_Genie.Migrations
 {
     [DbContext(typeof(Appdbcontext))]
-    [Migration("20231105220931_InitialCreate45")]
-    partial class InitialCreate45
+    [Migration("20231106030250_Version1")]
+    partial class Version1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

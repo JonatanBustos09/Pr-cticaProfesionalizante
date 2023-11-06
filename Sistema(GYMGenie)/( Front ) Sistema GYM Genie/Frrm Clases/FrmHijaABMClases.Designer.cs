@@ -1,6 +1,6 @@
 ﻿namespace __Front___Sistema_GYM_Genie.Frrm_Clases
 {
-    partial class ABM_clases
+    partial class FrmHijaABMClases
     {
         /// <summary>
         /// Required designer variable.

@@ -14,9 +14,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace __Front___Sistema_GYM_Genie.Frms_Cliente
 {
-    public partial class FrmHijaALTACliente : Form
+    public partial class FrmHijaCliente : Form
     {
-        public FrmHijaALTACliente()
+        public FrmHijaCliente()
         {
             InitializeComponent();
         }

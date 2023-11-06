@@ -2874,19 +2874,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomir\\.nuget\\packages\\": {}
+    "C:\\Users\\Jonatan Bustos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
+      "projectUniqueName": "C:\\Users\\Jonatan Bustos\\Desktop\\Backup GymGenie\\v3\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
       "projectName": "( Front ) Sistema GYM Genie",
-      "projectPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
-      "packagesPath": "C:\\Users\\tomir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\obj\\",
+      "projectPath": "C:\\Users\\Jonatan Bustos\\Desktop\\Backup GymGenie\\v3\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
+      "packagesPath": "C:\\Users\\Jonatan Bustos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jonatan Bustos\\Desktop\\Backup GymGenie\\v3\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tomir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jonatan Bustos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2900,8 +2900,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
-              "projectPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj"
+            "C:\\Users\\Jonatan Bustos\\Desktop\\Backup GymGenie\\v3\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
+              "projectPath": "C:\\Users\\Jonatan Bustos\\Desktop\\Backup GymGenie\\v3\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj"
             }
           }
         }
@@ -2946,7 +2946,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

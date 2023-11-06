@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Sistema_GYM_Genie.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate45 : Migration
+    public partial class Version1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

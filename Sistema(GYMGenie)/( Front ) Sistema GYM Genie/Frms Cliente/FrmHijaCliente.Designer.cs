@@ -1,6 +1,6 @@
 ﻿namespace __Front___Sistema_GYM_Genie.Frms_Cliente
 {
-    partial class FrmHijaALTACliente
+    partial class FrmHijaCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaALTACliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaCliente));
             PnlALTACliente = new Panel();
+            button2 = new Button();
             BtnIngresar = new Button();
             dataGridView1 = new DataGridView();
             pesoClienteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -74,7 +75,6 @@
             pictureBox2 = new PictureBox();
             clienteBindingSource = new BindingSource(components);
             clienteBindingSource1 = new BindingSource(components);
-            button2 = new Button();
             PnlALTACliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)clienteBindingSource2).BeginInit();
@@ -127,12 +127,27 @@
             PnlALTACliente.TabIndex = 9;
             PnlALTACliente.Paint += PnlALTACliente_Paint;
             // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Left;
+            button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.Cursor = Cursors.AppStarting;
+            button2.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
+            button2.ForeColor = Color.FromArgb(0, 205, 255);
+            button2.Location = new Point(924, 138);
+            button2.Name = "button2";
+            button2.Size = new Size(113, 33);
+            button2.TabIndex = 50;
+            button2.Text = "RESUMEN";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // BtnIngresar
             // 
             BtnIngresar.Cursor = Cursors.AppStarting;
             BtnIngresar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
             BtnIngresar.ForeColor = Color.FromArgb(7, 29, 49);
-            BtnIngresar.Location = new Point(941, 420);
+            BtnIngresar.Location = new Point(924, 390);
             BtnIngresar.Name = "BtnIngresar";
             BtnIngresar.Size = new Size(113, 29);
             BtnIngresar.TabIndex = 49;
@@ -146,10 +161,11 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { pesoClienteDataGridViewTextBoxColumn, alturaCmDataGridViewTextBoxColumn, dNIPersonaDataGridViewTextBoxColumn, nombrePersonaDataGridViewTextBoxColumn, apellidoPersonaDataGridViewTextBoxColumn, telefonoPersonaDataGridViewTextBoxColumn, fechaNacimientoDataGridViewTextBoxColumn, correoElectronicoDataGridViewTextBoxColumn, ciudadDataGridViewTextBoxColumn, direccionDataGridViewTextBoxColumn });
             dataGridView1.DataSource = clienteBindingSource2;
-            dataGridView1.Location = new Point(-2, 513);
+            dataGridView1.Dock = DockStyle.Bottom;
+            dataGridView1.Location = new Point(0, 473);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(1111, 218);
+            dataGridView1.Size = new Size(1112, 261);
             dataGridView1.TabIndex = 48;
             // 
             // pesoClienteDataGridViewTextBoxColumn
@@ -563,21 +579,6 @@
             // clienteBindingSource1
             // 
             clienteBindingSource1.DataSource = typeof(Sistema_GYM_Genie.Clases.Cliente);
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.Left;
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.Cursor = Cursors.AppStarting;
-            button2.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
-            button2.ForeColor = Color.FromArgb(0, 205, 255);
-            button2.Location = new Point(924, 138);
-            button2.Name = "button2";
-            button2.Size = new Size(113, 33);
-            button2.TabIndex = 50;
-            button2.Text = "RESUMEN";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // FrmHijaALTACliente
             // 

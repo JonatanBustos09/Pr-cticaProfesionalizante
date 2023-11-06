@@ -39,19 +39,6 @@
             BtnIngresar = new Button();
             label1 = new Label();
             dataGridView1 = new DataGridView();
-            tituloDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            aliasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            sueldoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            dNIPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nombrePersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            apellidoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            telefonoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            fechaNacimientoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            correoElectronicoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nombreUsuarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            contraseniaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ciudadDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            direccionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             profesorBindingSource = new BindingSource(components);
             button1 = new Button();
             TxtAliasp = new TextBox();
@@ -76,6 +63,19 @@
             LblNombre = new Label();
             TxtDNIp = new TextBox();
             LblDNI = new Label();
+            tituloDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            aliasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            sueldoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            dNIPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombrePersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            apellidoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            telefonoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            fechaNacimientoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            correoElectronicoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombreUsuarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            contraseniaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ciudadDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            direccionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)profesorBindingSource).BeginInit();
@@ -96,6 +96,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(20, 20, 20);
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(TxtContra);
             panel1.Controls.Add(label6);
@@ -155,7 +156,7 @@
             label6.Name = "label6";
             label6.Size = new Size(102, 21);
             label6.TabIndex = 79;
-            label6.Text = "Contraseña: ";
+            label6.Text = "CONTRASEÑA: ";
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // TxtUsuario
@@ -178,15 +179,16 @@
             label5.Name = "label5";
             label5.Size = new Size(102, 21);
             label5.TabIndex = 77;
-            label5.Text = "Usuario: ";
+            label5.Text = "USUARIO: ";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // BtnIngresar
             // 
+            BtnIngresar.Anchor = AnchorStyles.Left;
             BtnIngresar.Cursor = Cursors.AppStarting;
             BtnIngresar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
             BtnIngresar.ForeColor = Color.FromArgb(7, 29, 49);
-            BtnIngresar.Location = new Point(856, 569);
+            BtnIngresar.Location = new Point(777, 363);
             BtnIngresar.Name = "BtnIngresar";
             BtnIngresar.Size = new Size(113, 29);
             BtnIngresar.TabIndex = 76;
@@ -204,7 +206,7 @@
             label1.Name = "label1";
             label1.Size = new Size(102, 21);
             label1.TabIndex = 75;
-            label1.Text = "Alias: ";
+            label1.Text = "ALIAS: ";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
@@ -213,89 +215,12 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { tituloDataGridViewTextBoxColumn, aliasDataGridViewTextBoxColumn, sueldoDataGridViewTextBoxColumn, dNIPersonaDataGridViewTextBoxColumn, nombrePersonaDataGridViewTextBoxColumn, apellidoPersonaDataGridViewTextBoxColumn, telefonoPersonaDataGridViewTextBoxColumn, fechaNacimientoDataGridViewTextBoxColumn, correoElectronicoDataGridViewTextBoxColumn, nombreUsuarioDataGridViewTextBoxColumn, contraseniaDataGridViewTextBoxColumn, ciudadDataGridViewTextBoxColumn, direccionDataGridViewTextBoxColumn });
             dataGridView1.DataSource = profesorBindingSource;
-            dataGridView1.Location = new Point(10, 630);
+            dataGridView1.Dock = DockStyle.Bottom;
+            dataGridView1.Location = new Point(0, 422);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(1111, 219);
+            dataGridView1.Size = new Size(1112, 312);
             dataGridView1.TabIndex = 74;
-            // 
-            // tituloDataGridViewTextBoxColumn
-            // 
-            tituloDataGridViewTextBoxColumn.DataPropertyName = "Titulo";
-            tituloDataGridViewTextBoxColumn.HeaderText = "Titulo";
-            tituloDataGridViewTextBoxColumn.Name = "tituloDataGridViewTextBoxColumn";
-            // 
-            // aliasDataGridViewTextBoxColumn
-            // 
-            aliasDataGridViewTextBoxColumn.DataPropertyName = "Alias";
-            aliasDataGridViewTextBoxColumn.HeaderText = "Alias";
-            aliasDataGridViewTextBoxColumn.Name = "aliasDataGridViewTextBoxColumn";
-            // 
-            // sueldoDataGridViewTextBoxColumn
-            // 
-            sueldoDataGridViewTextBoxColumn.DataPropertyName = "Sueldo";
-            sueldoDataGridViewTextBoxColumn.HeaderText = "Sueldo";
-            sueldoDataGridViewTextBoxColumn.Name = "sueldoDataGridViewTextBoxColumn";
-            // 
-            // dNIPersonaDataGridViewTextBoxColumn
-            // 
-            dNIPersonaDataGridViewTextBoxColumn.DataPropertyName = "DNI_Persona";
-            dNIPersonaDataGridViewTextBoxColumn.HeaderText = "DNI_Persona";
-            dNIPersonaDataGridViewTextBoxColumn.Name = "dNIPersonaDataGridViewTextBoxColumn";
-            // 
-            // nombrePersonaDataGridViewTextBoxColumn
-            // 
-            nombrePersonaDataGridViewTextBoxColumn.DataPropertyName = "NombrePersona";
-            nombrePersonaDataGridViewTextBoxColumn.HeaderText = "NombrePersona";
-            nombrePersonaDataGridViewTextBoxColumn.Name = "nombrePersonaDataGridViewTextBoxColumn";
-            // 
-            // apellidoPersonaDataGridViewTextBoxColumn
-            // 
-            apellidoPersonaDataGridViewTextBoxColumn.DataPropertyName = "ApellidoPersona";
-            apellidoPersonaDataGridViewTextBoxColumn.HeaderText = "ApellidoPersona";
-            apellidoPersonaDataGridViewTextBoxColumn.Name = "apellidoPersonaDataGridViewTextBoxColumn";
-            // 
-            // telefonoPersonaDataGridViewTextBoxColumn
-            // 
-            telefonoPersonaDataGridViewTextBoxColumn.DataPropertyName = "TelefonoPersona";
-            telefonoPersonaDataGridViewTextBoxColumn.HeaderText = "TelefonoPersona";
-            telefonoPersonaDataGridViewTextBoxColumn.Name = "telefonoPersonaDataGridViewTextBoxColumn";
-            // 
-            // fechaNacimientoDataGridViewTextBoxColumn
-            // 
-            fechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "FechaNacimiento";
-            fechaNacimientoDataGridViewTextBoxColumn.HeaderText = "FechaNacimiento";
-            fechaNacimientoDataGridViewTextBoxColumn.Name = "fechaNacimientoDataGridViewTextBoxColumn";
-            // 
-            // correoElectronicoDataGridViewTextBoxColumn
-            // 
-            correoElectronicoDataGridViewTextBoxColumn.DataPropertyName = "CorreoElectronico";
-            correoElectronicoDataGridViewTextBoxColumn.HeaderText = "CorreoElectronico";
-            correoElectronicoDataGridViewTextBoxColumn.Name = "correoElectronicoDataGridViewTextBoxColumn";
-            // 
-            // nombreUsuarioDataGridViewTextBoxColumn
-            // 
-            nombreUsuarioDataGridViewTextBoxColumn.DataPropertyName = "NombreUsuario";
-            nombreUsuarioDataGridViewTextBoxColumn.HeaderText = "NombreUsuario";
-            nombreUsuarioDataGridViewTextBoxColumn.Name = "nombreUsuarioDataGridViewTextBoxColumn";
-            // 
-            // contraseniaDataGridViewTextBoxColumn
-            // 
-            contraseniaDataGridViewTextBoxColumn.DataPropertyName = "Contrasenia";
-            contraseniaDataGridViewTextBoxColumn.HeaderText = "Contrasenia";
-            contraseniaDataGridViewTextBoxColumn.Name = "contraseniaDataGridViewTextBoxColumn";
-            // 
-            // ciudadDataGridViewTextBoxColumn
-            // 
-            ciudadDataGridViewTextBoxColumn.DataPropertyName = "Ciudad";
-            ciudadDataGridViewTextBoxColumn.HeaderText = "Ciudad";
-            ciudadDataGridViewTextBoxColumn.Name = "ciudadDataGridViewTextBoxColumn";
-            // 
-            // direccionDataGridViewTextBoxColumn
-            // 
-            direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
-            direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
-            direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
             // 
             // profesorBindingSource
             // 
@@ -579,11 +504,89 @@
             LblDNI.Text = "DNI: ";
             LblDNI.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // tituloDataGridViewTextBoxColumn
+            // 
+            tituloDataGridViewTextBoxColumn.DataPropertyName = "Titulo";
+            tituloDataGridViewTextBoxColumn.HeaderText = "Titulo";
+            tituloDataGridViewTextBoxColumn.Name = "tituloDataGridViewTextBoxColumn";
+            // 
+            // aliasDataGridViewTextBoxColumn
+            // 
+            aliasDataGridViewTextBoxColumn.DataPropertyName = "Alias";
+            aliasDataGridViewTextBoxColumn.HeaderText = "Alias";
+            aliasDataGridViewTextBoxColumn.Name = "aliasDataGridViewTextBoxColumn";
+            // 
+            // sueldoDataGridViewTextBoxColumn
+            // 
+            sueldoDataGridViewTextBoxColumn.DataPropertyName = "Sueldo";
+            sueldoDataGridViewTextBoxColumn.HeaderText = "Sueldo";
+            sueldoDataGridViewTextBoxColumn.Name = "sueldoDataGridViewTextBoxColumn";
+            // 
+            // dNIPersonaDataGridViewTextBoxColumn
+            // 
+            dNIPersonaDataGridViewTextBoxColumn.DataPropertyName = "DNI_Persona";
+            dNIPersonaDataGridViewTextBoxColumn.HeaderText = "DNI";
+            dNIPersonaDataGridViewTextBoxColumn.Name = "dNIPersonaDataGridViewTextBoxColumn";
+            // 
+            // nombrePersonaDataGridViewTextBoxColumn
+            // 
+            nombrePersonaDataGridViewTextBoxColumn.DataPropertyName = "NombrePersona";
+            nombrePersonaDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            nombrePersonaDataGridViewTextBoxColumn.Name = "nombrePersonaDataGridViewTextBoxColumn";
+            // 
+            // apellidoPersonaDataGridViewTextBoxColumn
+            // 
+            apellidoPersonaDataGridViewTextBoxColumn.DataPropertyName = "ApellidoPersona";
+            apellidoPersonaDataGridViewTextBoxColumn.HeaderText = "Apellido";
+            apellidoPersonaDataGridViewTextBoxColumn.Name = "apellidoPersonaDataGridViewTextBoxColumn";
+            // 
+            // telefonoPersonaDataGridViewTextBoxColumn
+            // 
+            telefonoPersonaDataGridViewTextBoxColumn.DataPropertyName = "TelefonoPersona";
+            telefonoPersonaDataGridViewTextBoxColumn.HeaderText = "Teléfono";
+            telefonoPersonaDataGridViewTextBoxColumn.Name = "telefonoPersonaDataGridViewTextBoxColumn";
+            // 
+            // fechaNacimientoDataGridViewTextBoxColumn
+            // 
+            fechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "FechaNacimiento";
+            fechaNacimientoDataGridViewTextBoxColumn.HeaderText = "Fecha Nacimiento";
+            fechaNacimientoDataGridViewTextBoxColumn.Name = "fechaNacimientoDataGridViewTextBoxColumn";
+            // 
+            // correoElectronicoDataGridViewTextBoxColumn
+            // 
+            correoElectronicoDataGridViewTextBoxColumn.DataPropertyName = "CorreoElectronico";
+            correoElectronicoDataGridViewTextBoxColumn.HeaderText = "Correo Electrónico";
+            correoElectronicoDataGridViewTextBoxColumn.Name = "correoElectronicoDataGridViewTextBoxColumn";
+            // 
+            // nombreUsuarioDataGridViewTextBoxColumn
+            // 
+            nombreUsuarioDataGridViewTextBoxColumn.DataPropertyName = "NombreUsuario";
+            nombreUsuarioDataGridViewTextBoxColumn.HeaderText = "Nombre Usuario";
+            nombreUsuarioDataGridViewTextBoxColumn.Name = "nombreUsuarioDataGridViewTextBoxColumn";
+            // 
+            // contraseniaDataGridViewTextBoxColumn
+            // 
+            contraseniaDataGridViewTextBoxColumn.DataPropertyName = "Contrasenia";
+            contraseniaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
+            contraseniaDataGridViewTextBoxColumn.Name = "contraseniaDataGridViewTextBoxColumn";
+            // 
+            // ciudadDataGridViewTextBoxColumn
+            // 
+            ciudadDataGridViewTextBoxColumn.DataPropertyName = "Ciudad";
+            ciudadDataGridViewTextBoxColumn.HeaderText = "Ciudad";
+            ciudadDataGridViewTextBoxColumn.Name = "ciudadDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            direccionDataGridViewTextBoxColumn.HeaderText = "Dirección";
+            direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
             // FrmHijaProfesor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(20, 20, 20);
+            BackColor = Color.White;
             ClientSize = new Size(1116, 738);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -603,20 +606,7 @@
         private Panel panel1;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn tituloDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn aliasDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn cBUDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn sueldoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dNIPersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nombrePersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn apellidoPersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn telefonoPersonaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn fechaNacimientoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn correoElectronicoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nombreUsuarioDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn contraseniaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn ciudadDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
         private BindingSource profesorBindingSource;
         private Button button1;
         private TextBox TxtAliasp;
@@ -647,5 +637,18 @@
         private Label label6;
         private TextBox TxtUsuario;
         private Label label5;
+        private DataGridViewTextBoxColumn tituloDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn aliasDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn sueldoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dNIPersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nombrePersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn apellidoPersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn telefonoPersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn fechaNacimientoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn correoElectronicoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nombreUsuarioDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn contraseniaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn ciudadDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
     }
 }

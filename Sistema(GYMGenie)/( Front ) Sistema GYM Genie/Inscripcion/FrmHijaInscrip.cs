@@ -12,11 +12,11 @@ using Sistema_GYM_Genie.DBConection;
 
 namespace __Front___Sistema_GYM_Genie.Inscripcion
 {
-    public partial class FormInscrip : Form
+    public partial class FrmHijaInscrip : Form
     {
         Principal principal = new Principal();
 
-        public FormInscrip()
+        public FrmHijaInscrip()
         {
             InitializeComponent();
         }

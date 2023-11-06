@@ -99,9 +99,7 @@ namespace __Front___Sistema_GYM_Genie
 
         private void BtnCliente_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new FrmHijaALTACliente());
-
-
+            AbrirFormHija(new FrmHijaCliente());
         }
 
         private void BtnProfesor_Click(object sender, EventArgs e)
@@ -111,22 +109,12 @@ namespace __Front___Sistema_GYM_Genie
 
         private void BtnClase_Click(object sender, EventArgs e)
         {
-            ABM_clases frmABM = new ABM_clases();
-            frmABM.ShowDialog();
-            this.Hide();
+            AbrirFormHija(new FrmHijaABMClases());
         }
 
         private void BtnIndicador_Click(object sender, EventArgs e)
         {
-            FormInscrip frmInscrip = new FormInscrip();
-            frmInscrip.ShowDialog();
-            this.Hide();
-
-        }
-
-        private void PnlContenedorInicio_Paint(object sender, PaintEventArgs e)
-        {
-
+            AbrirFormHija(new FrmHijaInscrip());
         }
     }
 }

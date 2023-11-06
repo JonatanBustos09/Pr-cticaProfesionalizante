@@ -235,7 +235,7 @@
             BtnInicio.Image = Properties.Resources.Logo;
             BtnInicio.Location = new Point(0, 13);
             BtnInicio.Name = "BtnInicio";
-            BtnInicio.Size = new Size(250, 226);
+            BtnInicio.Size = new Size(248, 215);
             BtnInicio.SizeMode = PictureBoxSizeMode.Zoom;
             BtnInicio.TabIndex = 0;
             BtnInicio.TabStop = false;
@@ -250,7 +250,6 @@
             PnlContenedorInicio.Name = "PnlContenedorInicio";
             PnlContenedorInicio.Size = new Size(1116, 738);
             PnlContenedorInicio.TabIndex = 2;
-            PnlContenedorInicio.Paint += PnlContenedorInicio_Paint;
             // 
             // FrmTableroInicio
             // 

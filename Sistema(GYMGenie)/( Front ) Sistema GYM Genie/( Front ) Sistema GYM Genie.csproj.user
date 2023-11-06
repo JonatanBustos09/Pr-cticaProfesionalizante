@@ -4,7 +4,7 @@
     <_LastSelectedProfileId>C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\%28 Front %29 Sistema GYM Genie\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Frms Cliente\FrmHijaALTACliente.cs">
+    <Compile Update="Frms Cliente\FrmHijaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Frms Inicio - Login\FrmHijaInicio.cs">
@@ -19,10 +19,10 @@
     <Compile Update="Frms Inicio - Login\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Frrm Clases\ABM_clases.cs">
+    <Compile Update="Frrm Clases\FrmHijaABMClases.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Inscripcion\FormInscrip.cs">
+    <Compile Update="Inscripcion\FrmHijaInscrip.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -28,7 +28,7 @@ namespace Sistema_GYM_Genie.DBConection
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server =CHINO\\SQLEXPRESS; database = DB_GymGenie12333; trusted_connection = true; Encrypt = False");
+            optionsBuilder.UseSqlServer("server =DESKTOP-TTV3J71\\SQLEXPRESS; database = DB_GymGenie; trusted_connection = true; Encrypt = False");
         }
     }
 }
