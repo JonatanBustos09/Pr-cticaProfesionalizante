@@ -22,5 +22,10 @@ namespace __Front___Sistema_GYM_Genie
             LblHora.Text = DateTime.Now.ToLongTimeString();
             LblFecha.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void PreInicio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

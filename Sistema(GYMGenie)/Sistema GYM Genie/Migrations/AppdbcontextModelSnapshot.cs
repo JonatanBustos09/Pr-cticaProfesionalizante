@@ -22,6 +22,8 @@ namespace Sistema_GYM_Genie.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.HasSequence("PersonaSequence");
+
             modelBuilder.Entity("Sistema_GYM_Genie.Clases.Clase", b =>
                 {
                     b.Property<int>("ClaseId")
@@ -41,60 +43,45 @@ namespace Sistema_GYM_Genie.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<string>("TipoClase")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                    b.Property<int?>("ProfesorDNI")
+                        .HasColumnType("int");
 
                     b.HasKey("ClaseId");
 
                     b.ToTable("Clases");
                 });
 
-            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Cliente", b =>
+            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Inscripcion", b =>
                 {
-                    b.Property<int>("ClienteId")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClienteId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<int>("AlturaCm")
+                    b.Property<int>("ClaseId")
                         .HasColumnType("int");
 
-                    b.Property<float>("PesoCliente")
-                        .HasColumnType("real");
-
-                    b.HasKey("ClienteId");
-
-                    b.ToTable("Clientes");
-                });
-
-            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Pago", b =>
-                {
-                    b.Property<int>("PagoId")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("ClienteDNI_Persona")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PagoId"));
+                    b.HasKey("id");
 
-                    b.Property<float>("MontoPago")
-                        .HasColumnType("real");
+                    b.HasIndex("ClaseId");
 
-                    b.HasKey("PagoId");
+                    b.HasIndex("ClienteDNI_Persona");
 
-                    b.ToTable("Pagos");
+                    b.ToTable("Incripciones");
                 });
 
             modelBuilder.Entity("Sistema_GYM_Genie.Clases.Persona", b =>
                 {
-                    b.Property<int>("PersonaId")
+                    b.Property<int>("DNI_Persona")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR [PersonaSequence]");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PersonaId"));
-
-                    b.Property<int>("AlturaDireccion")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("DNI_Persona"));
 
                     b.Property<string>("ApellidoPersona")
                         .HasMaxLength(25)
@@ -112,10 +99,6 @@ namespace Sistema_GYM_Genie.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("DNI_Persona")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
-
                     b.Property<string>("Direccion")
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
@@ -131,48 +114,15 @@ namespace Sistema_GYM_Genie.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.Property<bool>("Profesor")
-                        .HasColumnType("bit");
-
                     b.Property<string>("TelefonoPersona")
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
-                    b.HasKey("PersonaId");
+                    b.HasKey("DNI_Persona");
 
-                    b.ToTable("Personas");
-                });
+                    b.ToTable("Personas", (string)null);
 
-            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Profesor", b =>
-                {
-                    b.Property<int>("ProfesorId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProfesorId"));
-
-                    b.Property<string>("Alias")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
-
-                    b.Property<int>("CBU")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PersonaId")
-                        .HasColumnType("int");
-
-                    b.Property<float>("Sueldo")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Titulo")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
-
-                    b.HasKey("ProfesorId");
-
-                    b.HasIndex("PersonaId");
-
-                    b.ToTable("Profesores");
+                    b.UseTpcMappingStrategy();
                 });
 
             modelBuilder.Entity("Sistema_GYM_Genie.Clases.Reserva", b =>
@@ -192,23 +142,6 @@ namespace Sistema_GYM_Genie.Migrations
                     b.HasKey("ReservaId");
 
                     b.ToTable("Reservas");
-                });
-
-            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Rol", b =>
-                {
-                    b.Property<int>("RolId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RolId"));
-
-                    b.Property<string>("TipoRol")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
-
-                    b.HasKey("RolId");
-
-                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("Sistema_GYM_Genie.Clases.Turno", b =>
@@ -233,13 +166,57 @@ namespace Sistema_GYM_Genie.Migrations
                     b.ToTable("Turnos");
                 });
 
+            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Cliente", b =>
+                {
+                    b.HasBaseType("Sistema_GYM_Genie.Clases.Persona");
+
+                    b.Property<int>("AlturaCm")
+                        .HasColumnType("int");
+
+                    b.Property<float>("PesoCliente")
+                        .HasColumnType("real");
+
+                    b.Property<int>("id")
+                        .HasColumnType("int");
+
+                    b.ToTable("Clientes", (string)null);
+                });
+
             modelBuilder.Entity("Sistema_GYM_Genie.Clases.Profesor", b =>
                 {
-                    b.HasOne("Sistema_GYM_Genie.Clases.Persona", "Persona")
-                        .WithMany()
-                        .HasForeignKey("PersonaId");
+                    b.HasBaseType("Sistema_GYM_Genie.Clases.Persona");
 
-                    b.Navigation("Persona");
+                    b.Property<string>("Alias")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<float>("Sueldo")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Titulo")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.ToTable("Profesores", (string)null);
+                });
+
+            modelBuilder.Entity("Sistema_GYM_Genie.Clases.Inscripcion", b =>
+                {
+                    b.HasOne("Sistema_GYM_Genie.Clases.Clase", "Clase")
+                        .WithMany()
+                        .HasForeignKey("ClaseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Sistema_GYM_Genie.Clases.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteDNI_Persona")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Clase");
+
+                    b.Navigation("Cliente");
                 });
 #pragma warning restore 612, 618
         }

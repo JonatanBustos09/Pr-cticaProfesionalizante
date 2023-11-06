@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj": {}
+    "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj": {
+    "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
+        "projectUniqueName": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
         "projectName": "( Front ) Sistema GYM Genie",
-        "projectPath": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
-        "packagesPath": "C:\\Users\\Jonatan Bustos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\obj\\",
+        "projectPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\( Front ) Sistema GYM Genie.csproj",
+        "packagesPath": "C:\\Users\\tomir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\( Front ) Sistema GYM Genie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jonatan Bustos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
-                "projectPath": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj"
+              "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
+                "projectPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj"
               }
             }
           }
@@ -43,6 +43,18 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,21 +74,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
+    "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
+        "projectUniqueName": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
         "projectName": "( Back ) Sistema GYM Genie",
-        "projectPath": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
-        "packagesPath": "C:\\Users\\Jonatan Bustos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonatan Bustos\\Documents\\GitHub\\PracticaProfesionalizante--GRUPO-7\\Sistema(GYMGenie)\\Sistema GYM Genie\\obj\\",
+        "projectPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\( Back ) Sistema GYM Genie.csproj",
+        "packagesPath": "C:\\Users\\tomir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomir\\OneDrive\\Escritorio\\GitHub\\Sistema(GYMGenie)\\Sistema GYM Genie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jonatan Bustos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -133,7 +145,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

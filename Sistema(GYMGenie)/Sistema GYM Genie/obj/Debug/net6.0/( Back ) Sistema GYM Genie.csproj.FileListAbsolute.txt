@@ -26,3 +26,31 @@ C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sist
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.pdb
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.genruntimeconfig.cache
 C:\Users\Jonatan Bustos\Documents\GitHub\PracticaProfesionalizante--GRUPO-7\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\ref\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.deps.json
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.runtimeconfig.json
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.csproj.AssemblyReference.cache
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.AssemblyInfoInputs.cache
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.AssemblyInfo.cs
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.csproj.CoreCompileInputs.cache
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\refint\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.genruntimeconfig.cache
+C:\Users\tomir\source\repos\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\ref\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.deps.json
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.runtimeconfig.json
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\bin\Debug\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.csproj.AssemblyReference.cache
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.AssemblyInfoInputs.cache
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.AssemblyInfo.cs
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.csproj.CoreCompileInputs.cache
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\refint\( Back ) Sistema GYM Genie.dll
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.pdb
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\( Back ) Sistema GYM Genie.genruntimeconfig.cache
+C:\Users\tomir\OneDrive\Escritorio\GitHub\Sistema(GYMGenie)\Sistema GYM Genie\obj\Debug\net6.0\ref\( Back ) Sistema GYM Genie.dll

@@ -31,8 +31,25 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHijaALTACliente));
             PnlALTACliente = new Panel();
+            BtnIngresar = new Button();
+            dataGridView1 = new DataGridView();
+            pesoClienteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            alturaCmDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            dNIPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombrePersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            apellidoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            telefonoPersonaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            fechaNacimientoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            correoElectronicoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ciudadDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            direccionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            clienteBindingSource2 = new BindingSource(components);
+            button1 = new Button();
+            TxtAltura = new TextBox();
+            LblAltura = new Label();
+            TxtPeso = new TextBox();
+            LblPeso = new Label();
             BtnEliminar = new Button();
-            DgvMODCliente = new DataGridView();
             BtnCancelar = new Button();
             BtnAgregar = new Button();
             DtpFecha = new DateTimePicker();
@@ -55,34 +72,32 @@
             pictureBox3 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            TxtAltura = new TextBox();
-            LblAltura = new Label();
-            TxtPeso = new TextBox();
-            LblPeso = new Label();
-            button1 = new Button();
             clienteBindingSource = new BindingSource(components);
-            clienteIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            pesoClienteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            alturaCmDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            clienteBindingSource1 = new BindingSource(components);
+            button2 = new Button();
             PnlALTACliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)DgvMODCliente).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)clienteBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource1).BeginInit();
             SuspendLayout();
             // 
             // PnlALTACliente
             // 
             PnlALTACliente.BackColor = Color.FromArgb(20, 20, 20);
             PnlALTACliente.BorderStyle = BorderStyle.Fixed3D;
+            PnlALTACliente.Controls.Add(button2);
+            PnlALTACliente.Controls.Add(BtnIngresar);
+            PnlALTACliente.Controls.Add(dataGridView1);
             PnlALTACliente.Controls.Add(button1);
             PnlALTACliente.Controls.Add(TxtAltura);
             PnlALTACliente.Controls.Add(LblAltura);
             PnlALTACliente.Controls.Add(TxtPeso);
             PnlALTACliente.Controls.Add(LblPeso);
             PnlALTACliente.Controls.Add(BtnEliminar);
-            PnlALTACliente.Controls.Add(DgvMODCliente);
             PnlALTACliente.Controls.Add(BtnCancelar);
             PnlALTACliente.Controls.Add(BtnAgregar);
             PnlALTACliente.Controls.Add(DtpFecha);
@@ -110,6 +125,157 @@
             PnlALTACliente.Name = "PnlALTACliente";
             PnlALTACliente.Size = new Size(1116, 738);
             PnlALTACliente.TabIndex = 9;
+            PnlALTACliente.Paint += PnlALTACliente_Paint;
+            // 
+            // BtnIngresar
+            // 
+            BtnIngresar.Cursor = Cursors.AppStarting;
+            BtnIngresar.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
+            BtnIngresar.ForeColor = Color.FromArgb(7, 29, 49);
+            BtnIngresar.Location = new Point(941, 420);
+            BtnIngresar.Name = "BtnIngresar";
+            BtnIngresar.Size = new Size(113, 29);
+            BtnIngresar.TabIndex = 49;
+            BtnIngresar.Text = "VOLVER";
+            BtnIngresar.UseVisualStyleBackColor = true;
+            BtnIngresar.Click += BtnIngresar_Click;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { pesoClienteDataGridViewTextBoxColumn, alturaCmDataGridViewTextBoxColumn, dNIPersonaDataGridViewTextBoxColumn, nombrePersonaDataGridViewTextBoxColumn, apellidoPersonaDataGridViewTextBoxColumn, telefonoPersonaDataGridViewTextBoxColumn, fechaNacimientoDataGridViewTextBoxColumn, correoElectronicoDataGridViewTextBoxColumn, ciudadDataGridViewTextBoxColumn, direccionDataGridViewTextBoxColumn });
+            dataGridView1.DataSource = clienteBindingSource2;
+            dataGridView1.Location = new Point(-2, 513);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(1111, 218);
+            dataGridView1.TabIndex = 48;
+            // 
+            // pesoClienteDataGridViewTextBoxColumn
+            // 
+            pesoClienteDataGridViewTextBoxColumn.DataPropertyName = "PesoCliente";
+            pesoClienteDataGridViewTextBoxColumn.HeaderText = "PesoCliente";
+            pesoClienteDataGridViewTextBoxColumn.Name = "pesoClienteDataGridViewTextBoxColumn";
+            // 
+            // alturaCmDataGridViewTextBoxColumn
+            // 
+            alturaCmDataGridViewTextBoxColumn.DataPropertyName = "AlturaCm";
+            alturaCmDataGridViewTextBoxColumn.HeaderText = "AlturaCm";
+            alturaCmDataGridViewTextBoxColumn.Name = "alturaCmDataGridViewTextBoxColumn";
+            // 
+            // dNIPersonaDataGridViewTextBoxColumn
+            // 
+            dNIPersonaDataGridViewTextBoxColumn.DataPropertyName = "DNI_Persona";
+            dNIPersonaDataGridViewTextBoxColumn.HeaderText = "DNI_Persona";
+            dNIPersonaDataGridViewTextBoxColumn.Name = "dNIPersonaDataGridViewTextBoxColumn";
+            // 
+            // nombrePersonaDataGridViewTextBoxColumn
+            // 
+            nombrePersonaDataGridViewTextBoxColumn.DataPropertyName = "NombrePersona";
+            nombrePersonaDataGridViewTextBoxColumn.HeaderText = "NombrePersona";
+            nombrePersonaDataGridViewTextBoxColumn.Name = "nombrePersonaDataGridViewTextBoxColumn";
+            // 
+            // apellidoPersonaDataGridViewTextBoxColumn
+            // 
+            apellidoPersonaDataGridViewTextBoxColumn.DataPropertyName = "ApellidoPersona";
+            apellidoPersonaDataGridViewTextBoxColumn.HeaderText = "ApellidoPersona";
+            apellidoPersonaDataGridViewTextBoxColumn.Name = "apellidoPersonaDataGridViewTextBoxColumn";
+            // 
+            // telefonoPersonaDataGridViewTextBoxColumn
+            // 
+            telefonoPersonaDataGridViewTextBoxColumn.DataPropertyName = "TelefonoPersona";
+            telefonoPersonaDataGridViewTextBoxColumn.HeaderText = "TelefonoPersona";
+            telefonoPersonaDataGridViewTextBoxColumn.Name = "telefonoPersonaDataGridViewTextBoxColumn";
+            // 
+            // fechaNacimientoDataGridViewTextBoxColumn
+            // 
+            fechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "FechaNacimiento";
+            fechaNacimientoDataGridViewTextBoxColumn.HeaderText = "FechaNacimiento";
+            fechaNacimientoDataGridViewTextBoxColumn.Name = "fechaNacimientoDataGridViewTextBoxColumn";
+            // 
+            // correoElectronicoDataGridViewTextBoxColumn
+            // 
+            correoElectronicoDataGridViewTextBoxColumn.DataPropertyName = "CorreoElectronico";
+            correoElectronicoDataGridViewTextBoxColumn.HeaderText = "CorreoElectronico";
+            correoElectronicoDataGridViewTextBoxColumn.Name = "correoElectronicoDataGridViewTextBoxColumn";
+            // 
+            // ciudadDataGridViewTextBoxColumn
+            // 
+            ciudadDataGridViewTextBoxColumn.DataPropertyName = "Ciudad";
+            ciudadDataGridViewTextBoxColumn.HeaderText = "Ciudad";
+            ciudadDataGridViewTextBoxColumn.Name = "ciudadDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
+            direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
+            // clienteBindingSource2
+            // 
+            clienteBindingSource2.DataSource = typeof(Sistema_GYM_Genie.Clases.Cliente);
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Left;
+            button1.BackColor = Color.FromArgb(64, 64, 64);
+            button1.Cursor = Cursors.AppStarting;
+            button1.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
+            button1.ForeColor = Color.FromArgb(0, 205, 255);
+            button1.Location = new Point(774, 178);
+            button1.Name = "button1";
+            button1.Size = new Size(113, 33);
+            button1.TabIndex = 47;
+            button1.Text = "MODIFICAR";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // TxtAltura
+            // 
+            TxtAltura.Anchor = AnchorStyles.Left;
+            TxtAltura.Cursor = Cursors.IBeam;
+            TxtAltura.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtAltura.Location = new Point(537, 304);
+            TxtAltura.Name = "TxtAltura";
+            TxtAltura.Size = new Size(164, 20);
+            TxtAltura.TabIndex = 46;
+            // 
+            // LblAltura
+            // 
+            LblAltura.Anchor = AnchorStyles.Left;
+            LblAltura.BackColor = Color.White;
+            LblAltura.BorderStyle = BorderStyle.Fixed3D;
+            LblAltura.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblAltura.Location = new Point(412, 304);
+            LblAltura.Name = "LblAltura";
+            LblAltura.Size = new Size(102, 21);
+            LblAltura.TabIndex = 45;
+            LblAltura.Text = "ALTURA: ";
+            LblAltura.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // TxtPeso
+            // 
+            TxtPeso.Anchor = AnchorStyles.Left;
+            TxtPeso.Cursor = Cursors.IBeam;
+            TxtPeso.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtPeso.Location = new Point(537, 261);
+            TxtPeso.Name = "TxtPeso";
+            TxtPeso.Size = new Size(164, 20);
+            TxtPeso.TabIndex = 44;
+            // 
+            // LblPeso
+            // 
+            LblPeso.Anchor = AnchorStyles.Left;
+            LblPeso.BackColor = Color.White;
+            LblPeso.BorderStyle = BorderStyle.Fixed3D;
+            LblPeso.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblPeso.Location = new Point(412, 260);
+            LblPeso.Name = "LblPeso";
+            LblPeso.Size = new Size(102, 21);
+            LblPeso.TabIndex = 43;
+            LblPeso.Text = "PESO: ";
+            LblPeso.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // BtnEliminar
             // 
@@ -124,21 +290,7 @@
             BtnEliminar.TabIndex = 42;
             BtnEliminar.Text = "ELIMINAR";
             BtnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // DgvMODCliente
-            // 
-            DgvMODCliente.AllowUserToAddRows = false;
-            DgvMODCliente.AllowUserToDeleteRows = false;
-            DgvMODCliente.AutoGenerateColumns = false;
-            DgvMODCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvMODCliente.Columns.AddRange(new DataGridViewColumn[] { clienteIdDataGridViewTextBoxColumn, pesoClienteDataGridViewTextBoxColumn, alturaCmDataGridViewTextBoxColumn });
-            DgvMODCliente.DataSource = clienteBindingSource;
-            DgvMODCliente.Dock = DockStyle.Bottom;
-            DgvMODCliente.Location = new Point(0, 368);
-            DgvMODCliente.Name = "DgvMODCliente";
-            DgvMODCliente.RowTemplate.Height = 25;
-            DgvMODCliente.Size = new Size(1112, 366);
-            DgvMODCliente.TabIndex = 41;
+            BtnEliminar.Click += BtnEliminar_Click;
             // 
             // BtnCancelar
             // 
@@ -153,6 +305,7 @@
             BtnCancelar.TabIndex = 38;
             BtnCancelar.Text = "CANCELAR";
             BtnCancelar.UseVisualStyleBackColor = false;
+            BtnCancelar.Click += BtnCancelar_Click;
             // 
             // BtnAgregar
             // 
@@ -172,22 +325,23 @@
             // DtpFecha
             // 
             DtpFecha.Anchor = AnchorStyles.Left;
-            DtpFecha.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            DtpFecha.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             DtpFecha.Format = DateTimePickerFormat.Short;
-            DtpFecha.Location = new Point(223, 303);
+            DtpFecha.Location = new Point(207, 304);
             DtpFecha.Name = "DtpFecha";
-            DtpFecha.Size = new Size(118, 21);
+            DtpFecha.Size = new Size(133, 20);
             DtpFecha.TabIndex = 35;
             DtpFecha.Value = new DateTime(2023, 10, 30, 0, 0, 0, 0);
+            DtpFecha.ValueChanged += DtpFecha_ValueChanged;
             // 
             // TxtDireccion
             // 
             TxtDireccion.Anchor = AnchorStyles.Left;
             TxtDireccion.Cursor = Cursors.IBeam;
-            TxtDireccion.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtDireccion.Location = new Point(537, 222);
+            TxtDireccion.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtDireccion.Location = new Point(537, 218);
             TxtDireccion.Name = "TxtDireccion";
-            TxtDireccion.Size = new Size(164, 21);
+            TxtDireccion.Size = new Size(164, 20);
             TxtDireccion.TabIndex = 28;
             // 
             // label8
@@ -195,8 +349,8 @@
             label8.Anchor = AnchorStyles.Left;
             label8.BackColor = Color.White;
             label8.BorderStyle = BorderStyle.Fixed3D;
-            label8.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(412, 221);
+            label8.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(412, 217);
             label8.Name = "label8";
             label8.Size = new Size(102, 21);
             label8.TabIndex = 27;
@@ -207,10 +361,10 @@
             // 
             TxtCiudad.Anchor = AnchorStyles.Left;
             TxtCiudad.Cursor = Cursors.IBeam;
-            TxtCiudad.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtCiudad.Location = new Point(537, 180);
+            TxtCiudad.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtCiudad.Location = new Point(537, 178);
             TxtCiudad.Name = "TxtCiudad";
-            TxtCiudad.Size = new Size(164, 21);
+            TxtCiudad.Size = new Size(164, 20);
             TxtCiudad.TabIndex = 26;
             // 
             // label7
@@ -218,8 +372,8 @@
             label7.Anchor = AnchorStyles.Left;
             label7.BackColor = Color.White;
             label7.BorderStyle = BorderStyle.Fixed3D;
-            label7.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(412, 178);
+            label7.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(412, 177);
             label7.Name = "label7";
             label7.Size = new Size(102, 21);
             label7.TabIndex = 25;
@@ -230,10 +384,10 @@
             // 
             TxtCorreo.Anchor = AnchorStyles.Left;
             TxtCorreo.Cursor = Cursors.IBeam;
-            TxtCorreo.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtCorreo.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             TxtCorreo.Location = new Point(537, 138);
             TxtCorreo.Name = "TxtCorreo";
-            TxtCorreo.Size = new Size(164, 21);
+            TxtCorreo.Size = new Size(164, 20);
             TxtCorreo.TabIndex = 20;
             // 
             // label4
@@ -241,7 +395,7 @@
             label4.Anchor = AnchorStyles.Left;
             label4.BackColor = Color.White;
             label4.BorderStyle = BorderStyle.Fixed3D;
-            label4.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(412, 138);
             label4.Name = "label4";
             label4.Size = new Size(102, 21);
@@ -254,8 +408,8 @@
             label3.Anchor = AnchorStyles.Left;
             label3.BackColor = Color.White;
             label3.BorderStyle = BorderStyle.Fixed3D;
-            label3.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(51, 304);
+            label3.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(51, 303);
             label3.Name = "label3";
             label3.Size = new Size(137, 21);
             label3.TabIndex = 17;
@@ -266,10 +420,10 @@
             // 
             TxtTelefono.Anchor = AnchorStyles.Left;
             TxtTelefono.Cursor = Cursors.IBeam;
-            TxtTelefono.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtTelefono.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             TxtTelefono.Location = new Point(176, 261);
             TxtTelefono.Name = "TxtTelefono";
-            TxtTelefono.Size = new Size(164, 21);
+            TxtTelefono.Size = new Size(164, 20);
             TxtTelefono.TabIndex = 16;
             // 
             // label2
@@ -277,7 +431,7 @@
             label2.Anchor = AnchorStyles.Left;
             label2.BackColor = Color.White;
             label2.BorderStyle = BorderStyle.Fixed3D;
-            label2.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(51, 259);
             label2.Name = "label2";
             label2.Size = new Size(102, 21);
@@ -289,10 +443,10 @@
             // 
             TxtApellido.Anchor = AnchorStyles.Left;
             TxtApellido.Cursor = Cursors.IBeam;
-            TxtApellido.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtApellido.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             TxtApellido.Location = new Point(176, 218);
             TxtApellido.Name = "TxtApellido";
-            TxtApellido.Size = new Size(164, 21);
+            TxtApellido.Size = new Size(164, 20);
             TxtApellido.TabIndex = 14;
             // 
             // LblApellido
@@ -300,7 +454,7 @@
             LblApellido.Anchor = AnchorStyles.Left;
             LblApellido.BackColor = Color.White;
             LblApellido.BorderStyle = BorderStyle.Fixed3D;
-            LblApellido.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblApellido.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             LblApellido.Location = new Point(51, 218);
             LblApellido.Name = "LblApellido";
             LblApellido.Size = new Size(102, 21);
@@ -312,10 +466,10 @@
             // 
             TxtNombre.Anchor = AnchorStyles.Left;
             TxtNombre.Cursor = Cursors.IBeam;
-            TxtNombre.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtNombre.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             TxtNombre.Location = new Point(176, 178);
             TxtNombre.Name = "TxtNombre";
-            TxtNombre.Size = new Size(164, 21);
+            TxtNombre.Size = new Size(164, 20);
             TxtNombre.TabIndex = 12;
             // 
             // LblNombre
@@ -323,7 +477,7 @@
             LblNombre.Anchor = AnchorStyles.Left;
             LblNombre.BackColor = Color.White;
             LblNombre.BorderStyle = BorderStyle.Fixed3D;
-            LblNombre.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblNombre.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             LblNombre.Location = new Point(51, 178);
             LblNombre.Name = "LblNombre";
             LblNombre.Size = new Size(102, 21);
@@ -335,18 +489,20 @@
             // 
             TxtDNI.Anchor = AnchorStyles.Left;
             TxtDNI.Cursor = Cursors.IBeam;
-            TxtDNI.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtDNI.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             TxtDNI.Location = new Point(176, 138);
             TxtDNI.Name = "TxtDNI";
-            TxtDNI.Size = new Size(164, 21);
+            TxtDNI.Size = new Size(164, 20);
             TxtDNI.TabIndex = 10;
+            TxtDNI.TextChanged += validateNumber;
+            TxtDNI.Leave += TxtDNI_Leave;
             // 
             // LblDNI
             // 
             LblDNI.Anchor = AnchorStyles.Left;
             LblDNI.BackColor = Color.White;
             LblDNI.BorderStyle = BorderStyle.Fixed3D;
-            LblDNI.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblDNI.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             LblDNI.Location = new Point(51, 138);
             LblDNI.Name = "LblDNI";
             LblDNI.Size = new Size(102, 21);
@@ -360,11 +516,11 @@
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Impact", 34F, FontStyle.Italic, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(0, 205, 255);
-            label1.Location = new Point(51, 43);
+            label1.Location = new Point(51, 39);
             label1.Name = "label1";
             label1.Size = new Size(281, 66);
             label1.TabIndex = 8;
-            label1.Text = "ALTA CLIENTE";
+            label1.Text = "CLIENTE";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox3
@@ -400,87 +556,28 @@
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
-            // TxtAltura
-            // 
-            TxtAltura.Anchor = AnchorStyles.Left;
-            TxtAltura.Cursor = Cursors.IBeam;
-            TxtAltura.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtAltura.Location = new Point(537, 303);
-            TxtAltura.Name = "TxtAltura";
-            TxtAltura.Size = new Size(164, 21);
-            TxtAltura.TabIndex = 46;
-            // 
-            // LblAltura
-            // 
-            LblAltura.Anchor = AnchorStyles.Left;
-            LblAltura.BackColor = Color.White;
-            LblAltura.BorderStyle = BorderStyle.Fixed3D;
-            LblAltura.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblAltura.Location = new Point(412, 302);
-            LblAltura.Name = "LblAltura";
-            LblAltura.Size = new Size(102, 21);
-            LblAltura.TabIndex = 45;
-            LblAltura.Text = "ALTURA: ";
-            LblAltura.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // TxtPeso
-            // 
-            TxtPeso.Anchor = AnchorStyles.Left;
-            TxtPeso.Cursor = Cursors.IBeam;
-            TxtPeso.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            TxtPeso.Location = new Point(537, 261);
-            TxtPeso.Name = "TxtPeso";
-            TxtPeso.Size = new Size(164, 21);
-            TxtPeso.TabIndex = 44;
-            // 
-            // LblPeso
-            // 
-            LblPeso.Anchor = AnchorStyles.Left;
-            LblPeso.BackColor = Color.White;
-            LblPeso.BorderStyle = BorderStyle.Fixed3D;
-            LblPeso.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblPeso.Location = new Point(412, 259);
-            LblPeso.Name = "LblPeso";
-            LblPeso.Size = new Size(102, 21);
-            LblPeso.TabIndex = 43;
-            LblPeso.Text = "PESO: ";
-            LblPeso.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.Left;
-            button1.BackColor = Color.FromArgb(64, 64, 64);
-            button1.Cursor = Cursors.AppStarting;
-            button1.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
-            button1.ForeColor = Color.FromArgb(0, 205, 255);
-            button1.Location = new Point(774, 178);
-            button1.Name = "button1";
-            button1.Size = new Size(113, 33);
-            button1.TabIndex = 47;
-            button1.Text = "MODIFICAR";
-            button1.UseVisualStyleBackColor = false;
-            // 
             // clienteBindingSource
             // 
             clienteBindingSource.DataSource = typeof(Sistema_GYM_Genie.Clases.Cliente);
             // 
-            // clienteIdDataGridViewTextBoxColumn
+            // clienteBindingSource1
             // 
-            clienteIdDataGridViewTextBoxColumn.DataPropertyName = "ClienteId";
-            clienteIdDataGridViewTextBoxColumn.HeaderText = "ClienteId";
-            clienteIdDataGridViewTextBoxColumn.Name = "clienteIdDataGridViewTextBoxColumn";
+            clienteBindingSource1.DataSource = typeof(Sistema_GYM_Genie.Clases.Cliente);
             // 
-            // pesoClienteDataGridViewTextBoxColumn
+            // button2
             // 
-            pesoClienteDataGridViewTextBoxColumn.DataPropertyName = "PesoCliente";
-            pesoClienteDataGridViewTextBoxColumn.HeaderText = "PesoCliente";
-            pesoClienteDataGridViewTextBoxColumn.Name = "pesoClienteDataGridViewTextBoxColumn";
-            // 
-            // alturaCmDataGridViewTextBoxColumn
-            // 
-            alturaCmDataGridViewTextBoxColumn.DataPropertyName = "AlturaCm";
-            alturaCmDataGridViewTextBoxColumn.HeaderText = "AlturaCm";
-            alturaCmDataGridViewTextBoxColumn.Name = "alturaCmDataGridViewTextBoxColumn";
+            button2.Anchor = AnchorStyles.Left;
+            button2.BackColor = Color.FromArgb(64, 64, 64);
+            button2.Cursor = Cursors.AppStarting;
+            button2.Font = new Font("Impact", 14F, FontStyle.Italic, GraphicsUnit.Point);
+            button2.ForeColor = Color.FromArgb(0, 205, 255);
+            button2.Location = new Point(924, 138);
+            button2.Name = "button2";
+            button2.Size = new Size(113, 33);
+            button2.TabIndex = 50;
+            button2.Text = "RESUMEN";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // FrmHijaALTACliente
             // 
@@ -493,11 +590,13 @@
             Text = "FrmHijaALTACliente";
             PnlALTACliente.ResumeLayout(false);
             PnlALTACliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)DgvMODCliente).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)clienteBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource1).EndInit();
             ResumeLayout(false);
         }
 
@@ -526,7 +625,6 @@
         private DateTimePicker DtpFecha;
         private Button BtnAgregar;
         private Button BtnCancelar;
-        private DataGridView DgvMODCliente;
         private Button BtnEliminar;
         private Button button1;
         private TextBox TxtAltura;
@@ -534,8 +632,21 @@
         private TextBox TxtPeso;
         private Label LblPeso;
         private DataGridViewTextBoxColumn clienteIdDataGridViewTextBoxColumn;
+        private BindingSource clienteBindingSource;
+        private DataGridView dataGridView1;
+        private BindingSource clienteBindingSource2;
+        private BindingSource clienteBindingSource1;
         private DataGridViewTextBoxColumn pesoClienteDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn alturaCmDataGridViewTextBoxColumn;
-        private BindingSource clienteBindingSource;
+        private DataGridViewTextBoxColumn dNIPersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nombrePersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn apellidoPersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn telefonoPersonaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn fechaNacimientoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn correoElectronicoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn ciudadDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private Button BtnIngresar;
+        private Button button2;
     }
 }

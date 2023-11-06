@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Sistema_GYM_Genie.DBConection;
 using System.Diagnostics.CodeAnalysis;
+using System.Text;
 
 namespace Sistema_GYM_Genie.Clases
 {
@@ -8,86 +9,154 @@ namespace Sistema_GYM_Genie.Clases
     {
         Appdbcontext context = new Appdbcontext();
 
-        // ALTA de un Profesor
+        // ALTA de una Cliente
 
-        public string AgregarProfesor(Profesor ProfeNuevo)
+        public void AgregarCliente(Cliente clienteNuevo)
         {
-            // Realiza una consulta para verificar si el cliente ya existe en la base de datos.
-            var ProfeExistente = context.Profesores.FirstOrDefault(x => x.DNIProfesor == ProfeNuevo.DNIProfesor);
-            //FirstOrDefault recuperar el primer elemento de una secuencia que cumple con una condición específica, si no lo encuentra devuelve null
-
-            if (ProfeExistente == null)
-            {
-                // Si clienteExistente es null, el cliente no existe, entonces lo agregamos.
-                context.Profesores.Add(ProfeNuevo);
-                context.SaveChanges();
-                return ("Cliente agregado exitosamente.");
-            }
-            else
-            {
-                return ("El cliente ya existe.");
-            }
-        }
-        // BAJA de un Profesor
-        public void EliminarProfesor(Profesor profesorDelete)
-        {
-            context.Profesores.Remove(profesorDelete);
+            context.Clientes.Add(clienteNuevo);
             context.SaveChanges();
         }
-        //BUSCAR para Modificar un Profesor
-        public bool BuscarProfesor(int DNI_Persona)
+
+
+        //Baja Cliente
+        public bool EliminarCliente(int dni)
         {
-            var profesorEncontrado = context.Profesores.Find(DNI_Persona);
-            if (profesorEncontrado != null)
-            {
-                return true;
-            }
-            else
+            Cliente cliente = this.BuscarCliente(dni);
+
+            if (cliente == null)
             {
                 return false;
             }
-        }
-
-        // ALTA de una Cliente
-
-        public string AgregarCliente(Cliente clienteNuevo)
-        {
-            // Realiza una consulta para verificar si el cliente ya existe en la base de datos.
-            var clienteExistente = context.Clientes.FirstOrDefault(x => x.DNICliente == clienteNuevo.DNICliente);
-            //FirstOrDefault recuperar el primer elemento de una secuencia que cumple con una condición específica, si no lo encuentra devuelve null
-
-            if (clienteExistente == null)
-            {
-                // Si clienteExistente es null, el cliente no existe, entonces lo agregamos.
-                context.Clientes.Add(clienteNuevo);
-                context.SaveChanges();
-                return ("Cliente agregado exitosamente.");
-            }
-            else
-            {
-                return ("El cliente ya existe.");
-            }
-        }
-        //Baja Cliente
-        public void EliminarCliente(Cliente ClienteDelete)
-        {
-            context.Clientes.Remove(ClienteDelete);
+            context.Clientes.Remove(cliente);
             context.SaveChanges();
+            return true;
         }
 
         //BUSCAR para Modificar un Cliente
-        public bool BuscarCliente(int DNI_Cliente)
+        public Cliente BuscarCliente(int DNI_Cliente)
         {
-            var ClienteEncontrado = context.Clientes.Find(DNI_Cliente);
-            if (ClienteEncontrado != null)
-            {
-                return true;
-            }
-            else
+            return context.Clientes.Find(DNI_Cliente);
+
+        }
+        public void ModificarCliente(Cliente cliente)
+        {
+            context.Clientes.Update(cliente);
+            context.SaveChanges();
+        }
+
+        public List<Cliente> ListarClientes()
+        
+        {
+            return context.Clientes.ToList();
+
+        }
+            
+
+        //Agregar Profesor
+        public void AgregarProfesor(Profesor ProfesorNuevo)
+        {
+            context.Profesores.Add(ProfesorNuevo);
+            context.SaveChanges();
+        }
+
+        //Baja Profesor
+        public bool EliminarProfesor(int dni)
+        {
+            Profesor profesor = this.BuscarProfesor(dni);
+
+            if (profesor == null)
             {
                 return false;
             }
+            context.Profesores.Remove(profesor);
+            context.SaveChanges();
+            return true;
         }
+
+        //BUSCAR para Modificar un Profesor
+        public Profesor BuscarProfesor(int DNI_Profesor)
+        {
+            return context.Profesores.Find(DNI_Profesor);
+        }
+
+        public List<Profesor> ListarProfesores()
+        {
+            return context.Profesores.ToList();
+        }
+        public List<Clase> ListarClases()
+        {
+            return context.Clases.ToList();
+        }
+
+        public void ModificarProfesor(Profesor profesor)
+        {
+            context.Profesores.Update(profesor);
+            context.SaveChanges();
+        }
+
+        public void AgregarClase(Clase clasenueva)
+        {
+            context.Clases.Add(clasenueva);
+            context.SaveChanges();
+        }
+        public void ModificarClase(Clase clase)
+        {
+            context.Clases.Update(clase);
+            context.SaveChanges();
+        }
+
+        public void EliminarClase(Clase clase)
+        {
+            context.Clases.Remove(clase);
+            context.SaveChanges();
+        }
+
+        public void AgregarInscripcion(Clase claseid, Cliente DNI_Cliente)
+        {
+            Inscripcion inscripcion = new Inscripcion();
+            inscripcion.Clase = claseid;
+            inscripcion.Cliente = DNI_Cliente;
+
+            context.Incripciones.Add(inscripcion);
+            context.SaveChanges();
+
+        }
+
+        public string GenerarResumen(int dniCliente)
+        {
+            StringBuilder retornoRes = new StringBuilder();
+            
+            List<Inscripcion> inscripciones = context.Incripciones.Include(x=>x.Clase).Where(x => x.ClienteDNI_Persona == dniCliente).ToList();
+            foreach (var item in inscripciones)
+            {
+                retornoRes.AppendLine(item.NombreClase);
+            }
+
+            return retornoRes.ToString();
+            
+        }
+
+        public bool ValidarLogIn(string usuario, string contraseña)
+        {
+
+            //aca dejo un posible log ind, deberiamos evaluar que para dar de alta a los profesores con usuario y contraseña.
+            {
+                // Buscamos si existe una persona con el usuario y la contraseña ingresados
+                Profesor profe = context.Profesores.FirstOrDefault(p => p.NombreUsuario == usuario && p.Contrasenia == contraseña);
+
+                // Si la persona existe, devolvemos verdadero
+                if (profe != null)
+                {
+                    return true;
+                }
+                // Si no existe, devolvemos falso
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
 
     }
 

@@ -93,13 +93,14 @@
             PnlContenedor.Name = "PnlContenedor";
             PnlContenedor.Size = new Size(505, 330);
             PnlContenedor.TabIndex = 1;
+            PnlContenedor.Paint += PnlContenedor_Paint;
             PnlContenedor.MouseDown += PnlContenedor_MouseDown;
             // 
             // LblContrasena
             // 
             LblContrasena.BackColor = Color.White;
             LblContrasena.Cursor = Cursors.IBeam;
-            LblContrasena.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblContrasena.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             LblContrasena.Location = new Point(87, 178);
             LblContrasena.Name = "LblContrasena";
             LblContrasena.Size = new Size(317, 23);
@@ -112,7 +113,7 @@
             // 
             LblUsuario.BackColor = Color.White;
             LblUsuario.Cursor = Cursors.IBeam;
-            LblUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LblUsuario.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             LblUsuario.Location = new Point(87, 129);
             LblUsuario.Name = "LblUsuario";
             LblUsuario.Size = new Size(317, 23);
@@ -132,10 +133,10 @@
             // 
             // TxtUsuario
             // 
-            TxtUsuario.Font = new Font("Century Schoolbook", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            TxtUsuario.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
             TxtUsuario.Location = new Point(87, 133);
             TxtUsuario.Name = "TxtUsuario";
-            TxtUsuario.Size = new Size(317, 21);
+            TxtUsuario.Size = new Size(317, 20);
             TxtUsuario.TabIndex = 1;
             // 
             // BtnIngresar

@@ -48,6 +48,7 @@
             PreInicio.SizeMode = PictureBoxSizeMode.StretchImage;
             PreInicio.TabIndex = 0;
             PreInicio.TabStop = false;
+            PreInicio.Click += PreInicio_Click;
             // 
             // HoraFecha
             // 
