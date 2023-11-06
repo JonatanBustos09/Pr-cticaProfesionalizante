@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Jonatan Bustos\Desktop\Desarrollo de Software\Practica Profesionalizante\Gym Genie\%28 Front %29 Sistema GYM Genie\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Frms Cliente\FrmHijaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frms Inicio - Login\FrmHijaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frms Profesor\FrmHijaProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frms Inicio - Login\FrmTableroInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frms Inicio - Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frrm Clases\FrmHijaABMClases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Inscripcion\FrmHijaInscrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

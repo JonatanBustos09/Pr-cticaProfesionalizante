@@ -1,0 +1,54 @@
+C:\Users\Jonatan Bustos\Desktop\GymGenie\( Back ) Sistema GYM Genie.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\( Back ) Sistema GYM Genie.runtimeconfig.json
+C:\Users\Jonatan Bustos\Desktop\GymGenie\( Back ) Sistema GYM Genie.pdb
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Azure.Core.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Azure.Identity.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Data.SqlClient.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.EntityFrameworkCore.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.Logging.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.Options.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Extensions.Primitives.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Identity.Client.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.IdentityModel.Logging.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.SqlServer.Server.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\Microsoft.Win32.SystemEvents.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Configuration.ConfigurationManager.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Drawing.Common.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Memory.Data.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Runtime.Caching.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Security.Permissions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Text.Encodings.Web.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Text.Json.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\System.Windows.Extensions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Jonatan Bustos\Desktop\GymGenie\( Back ) Sistema GYM Genie.deps.json
